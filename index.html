@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snowboard Trip Search</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#08090a;--border:rgba(255,255,255,.1);--text:#f7f8f8;--muted:#9aa1ad;--soft:#d0d6e0;--accent:#7170ff;--accent2:#9de7ff;--good:#10b981}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 20% 0%,rgba(113,112,255,.26),transparent 34%),radial-gradient(circle at 80% 16%,rgba(157,231,255,.16),transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:0 auto;padding:32px 22px 44px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:64px}.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.04em}.logo{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#fff);box-shadow:0 0 45px rgba(113,112,255,.42)}.pill,.btn{border:1px solid var(--border);border-radius:999px;padding:10px 14px;background:rgba(255,255,255,.045);color:var(--soft);font-size:13px}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:stretch}.panel{border:1px solid var(--border);border-radius:26px;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03));box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 30px 90px rgba(0,0,0,.32)}.intro{padding:34px}.eyebrow{display:inline-flex;border:1px solid rgba(157,231,255,.25);background:rgba(157,231,255,.08);border-radius:999px;padding:6px 10px;color:#d9f7ff;font-size:12px}.intro h1{font-size:58px;line-height:.95;letter-spacing:-.07em;margin:18px 0 18px}.intro p{color:var(--muted);font-size:17px;line-height:1.6;max-width:690px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px}.btn.primary{background:linear-gradient(135deg,#5e6ad2,#828fff);color:#fff;border-color:rgba(255,255,255,.18)}.cards{display:grid;gap:14px}.card{padding:22px;display:grid;gap:12px}.card h2{margin:0;font-size:23px;letter-spacing:-.04em}.card p{margin:0;color:var(--muted);line-height:1.55}.meta{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:11px;border:1px solid var(--border);background:rgba(255,255,255,.04);padding:5px 8px;border-radius:999px;color:var(--soft)}.tag.good{border-color:rgba(16,185,129,.3);background:rgba(16,185,129,.09);color:#c8ffe4}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.mini{padding:18px}.mini b{font-size:22px}.mini span{display:block;color:var(--muted);font-size:12px;margin-top:6px}.foot{margin-top:28px;color:var(--muted);font-size:13px}.mono{font-family:'JetBrains Mono',ui-monospace,monospace}@media(max-width:860px){.top{margin-bottom:34px}.hero{grid-template-columns:1fr}.intro h1{font-size:42px}.grid{grid-template-columns:1fr}.wrap{padding:24px 16px 34px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="brand"><div class="logo"></div><span>Snowboard Trip Search</span></div>
+      <a class="pill" href="/sketches/001-dashboard-command-center/index.html">Start deciding</a>
+    </header>
+
+    <section class="hero">
+      <div class="panel intro">
+        <span class="eyebrow">Integrated MVP preview</span>
+        <h1>Total-trip snowboard decisions, not just cheap flights.</h1>
+        <p>Browse countries, compare regions, evaluate flight sales against the full fixture-backed trip estimate, and share read-only trip snapshots with friends.</p>
+        <div class="actions">
+          <a class="btn primary" href="/sketches/003-country-guide-atlas/index.html">Open Country Atlas</a>
+          <a class="btn" href="/sketches/001-dashboard-command-center/index.html">Open Deal Dashboard</a>
+          <a class="btn" href="/sketches/002-map-first-explorer/index.html">Open Map Explorer</a>
+        </div>
+        <div class="grid">
+          <div class="panel mini"><b>98%</b><span>Integrated MVP readiness</span></div>
+          <div class="panel mini"><b>0</b><span>Blocked Snowboard tasks</span></div>
+          <div class="panel mini"><b>14 + 11</b><span>Python + Node tests passing</span></div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <a class="panel card" href="/sketches/003-country-guide-atlas/index.html">
+          <div class="meta"><span class="tag good">Primary flow</span><span class="tag">fixture-backed estimates</span></div>
+          <h2>Country Atlas</h2>
+          <p>Japan and USA routes are wired to default estimate profiles with source confidence, caveats, and share snapshot state.</p>
+        </a>
+        <a class="panel card" href="/sketches/001-dashboard-command-center/index.html">
+          <div class="meta"><span class="tag good">Flight-sale decision</span><span class="tag">data-driven controls</span></div>
+          <h2>Deal Dashboard</h2>
+          <p>Enter an observed fare and switch fixture profiles to see whether the sale is worth it after lodging, lifts, transfers, rentals, food, and season-pass choices.</p>
+        </a>
+        <a class="panel card" href="/sketches/002-map-first-explorer/index.html">
+          <div class="meta"><span class="tag">Comparison mode</span><span class="tag">map-first</span></div>
+          <h2>Map Explorer</h2>
+          <p>Spatial comparison prototype for airports, resort clusters, and region tradeoffs.</p>
+        </a>
+      </div>
+    </section>
+    <p class="foot mono">Public preview landing page — no operator-dashboard links, just the snowboard product flows.</p>
+  </main>
+</body>
+</html>
