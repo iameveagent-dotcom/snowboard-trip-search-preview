@@ -1,0 +1,63 @@
+[
+  {
+    "id": "US",
+    "name": "United States",
+    "currency": "USD",
+    "common_gateway_airport_codes": [
+      "SLC"
+    ],
+    "travel_notes": [
+      "Domestic flights and rental cars are common for Cottonwood Canyon trips."
+    ],
+    "driving_notes": [
+      "Winter canyon road restrictions and traction rules can affect rental-car feasibility."
+    ],
+    "resort_region_ids": [
+      "us-utah-cottonwoods"
+    ],
+    "provenance": [
+      {
+        "source_type": "editorial_reference",
+        "source_name": "Visit Salt Lake destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Country/region summary is source-backed but not live travel advice.",
+        "source_url": "https://www.visitsaltlake.com/"
+      }
+    ]
+  },
+  {
+    "id": "JP",
+    "name": "Japan",
+    "currency": "JPY",
+    "common_gateway_airport_codes": [
+      "CTS",
+      "HND",
+      "NRT"
+    ],
+    "travel_notes": [
+      "International arrivals often connect through Tokyo before New Chitose for Hokkaido ski trips."
+    ],
+    "train_or_shuttle_notes": [
+      "Niseko/Rusutsu trips can be done with bus/shuttle or train plus local transfer."
+    ],
+    "cash_card_notes": [
+      "Carry some cash for rural transit, lockers, and smaller restaurants."
+    ],
+    "resort_region_ids": [
+      "jp-hokkaido-niseko-rusutsu"
+    ],
+    "provenance": [
+      {
+        "source_type": "editorial_reference",
+        "source_name": "Japan National Tourism Organization travel reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Country summary is source-backed but not live travel/entry advice.",
+        "source_url": "https://www.japan.travel/en/"
+      }
+    ]
+  }
+]

@@ -6,8 +6,8 @@ Entry point: `index.html`
 
 Key pages:
 
-- `/sketches/003-country-guide-atlas/`
-- `/sketches/001-dashboard-command-center/`
-- `/sketches/002-map-first-explorer/`
+- `sketches/003-country-guide-atlas/`
+- `sketches/001-dashboard-command-center/`
+- `sketches/002-map-first-explorer/`
 
-This bundle intentionally excludes operator-dashboard links and development/test files.
+This bundle intentionally excludes internal dashboard links and development/test files.

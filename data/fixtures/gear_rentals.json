@@ -1,0 +1,90 @@
+[
+  {
+    "id": "cottonwoods-snowboard-package",
+    "resort_or_region_id": "us-utah-cottonwoods",
+    "package_type": "board_boots_bindings",
+    "daily_range": {
+      "low": {
+        "amount": 40,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 60,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 80,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Snowboard + boots + bindings fixture range."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype Cottonwoods gear rental fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.snowbird.com/"
+      }
+    },
+    "multi_day_discount_notes": [
+      "Multi-day discounts may apply; fixture does not model exact discount tables."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype Cottonwoods gear rental fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-18T00:00:00.000Z",
+      "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+      "source_url": "https://www.snowbird.com/"
+    }
+  },
+  {
+    "id": "hokkaido-snowboard-package",
+    "resort_or_region_id": "jp-hokkaido-niseko-rusutsu",
+    "package_type": "board_boots_bindings",
+    "daily_range": {
+      "low": {
+        "amount": 5500,
+        "currency": "JPY"
+      },
+      "expected": {
+        "amount": 7500,
+        "currency": "JPY"
+      },
+      "high": {
+        "amount": 9500,
+        "currency": "JPY"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Snowboard + boots + bindings fixture range."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype Hokkaido gear rental fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.niseko.ne.jp/en/"
+      }
+    },
+    "multi_day_discount_notes": [
+      "Multi-day discounts may apply; fixture does not model exact discount tables."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype Hokkaido gear rental fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-18T00:00:00.000Z",
+      "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+      "source_url": "https://www.niseko.ne.jp/en/"
+    }
+  }
+]

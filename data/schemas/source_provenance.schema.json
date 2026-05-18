@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source_provenance.schema.json",
+  "title": "SourceProvenance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_type",
+    "source_name",
+    "confidence",
+    "freshness"
+  ],
+  "properties": {
+    "source_type": {
+      "enum": [
+        "official_page",
+        "partner_api",
+        "deep_link",
+        "manual_observation",
+        "fixture",
+        "derived_route",
+        "editorial_reference"
+      ]
+    },
+    "source_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "observed_for_dates": {
+      "type": "string"
+    },
+    "confidence": {
+      "enum": [
+        "exact_live",
+        "exact_observed",
+        "source_backed_range",
+        "manual_range",
+        "derived_estimate",
+        "fixture_estimate",
+        "unknown"
+      ]
+    },
+    "freshness": {
+      "enum": [
+        "live",
+        "recent",
+        "aging",
+        "stale",
+        "unknown"
+      ]
+    },
+    "license_notes": {
+      "type": "string"
+    },
+    "display_caveat": {
+      "type": "string"
+    }
+  }
+}

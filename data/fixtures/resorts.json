@@ -1,0 +1,422 @@
+[
+  {
+    "id": "alta",
+    "region_id": "us-utah-cottonwoods",
+    "name": "Alta Ski Area",
+    "coordinates": [
+      40.5888,
+      -111.638
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 2538,
+      "acreage": 2614,
+      "lifts": 6,
+      "annual_snowfall_in": 546,
+      "provenance": {
+        "source_type": "official_page",
+        "source_name": "Alta mountain statistics",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Mountain stats are source-backed resort metrics, not live conditions.",
+        "source_url": "https://www.alta.com/mountain"
+      }
+    },
+    "pass_affiliations": [
+      {
+        "pass_name": "Ikon",
+        "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+        "provenance": {
+          "source_type": "official_page",
+          "source_name": "Ikon pass partner page",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+          "source_url": "https://www.ikonpass.com/en/destinations/alta-ski-area"
+        }
+      }
+    ],
+    "lift_ticket_estimates": [
+      "cottonwoods-day-ticket"
+    ],
+    "rental_estimates": [
+      "cottonwoods-snowboard-package"
+    ],
+    "terrain_tags": [
+      "powder",
+      "advanced",
+      "ski-only"
+    ],
+    "suitability": {
+      "intermediate": "medium",
+      "expert": "high",
+      "powder": "high"
+    },
+    "official_urls": {
+      "resort_home": "https://www.alta.com/",
+      "lift_tickets": "https://www.alta.com/tickets-and-passes"
+    },
+    "provenance": [
+      {
+        "source_type": "official_page",
+        "source_name": "Alta official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Resort metadata is source-backed but manually curated.",
+        "source_url": "https://www.alta.com/"
+      }
+    ]
+  },
+  {
+    "id": "snowbird",
+    "region_id": "us-utah-cottonwoods",
+    "name": "Snowbird",
+    "coordinates": [
+      40.5811,
+      -111.6579
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 3240,
+      "acreage": 2500,
+      "lifts": 14,
+      "annual_snowfall_in": 500,
+      "provenance": {
+        "source_type": "official_page",
+        "source_name": "Snowbird mountain stats",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Mountain stats are source-backed resort metrics, not live conditions.",
+        "source_url": "https://www.snowbird.com/mountain-report/"
+      }
+    },
+    "pass_affiliations": [
+      {
+        "pass_name": "Ikon",
+        "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+        "provenance": {
+          "source_type": "official_page",
+          "source_name": "Ikon pass partner page",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+          "source_url": "https://www.ikonpass.com/en/destinations/snowbird"
+        }
+      }
+    ],
+    "lift_ticket_estimates": [
+      "cottonwoods-day-ticket"
+    ],
+    "rental_estimates": [
+      "cottonwoods-snowboard-package"
+    ],
+    "terrain_tags": [
+      "steep",
+      "powder",
+      "advanced"
+    ],
+    "suitability": {
+      "intermediate": "medium",
+      "expert": "high",
+      "powder": "high"
+    },
+    "official_urls": {
+      "resort_home": "https://www.snowbird.com/",
+      "lift_tickets": "https://www.snowbird.com/tickets-passes/"
+    },
+    "provenance": [
+      {
+        "source_type": "official_page",
+        "source_name": "Snowbird official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Resort metadata is source-backed but manually curated.",
+        "source_url": "https://www.snowbird.com/"
+      }
+    ]
+  },
+  {
+    "id": "brighton",
+    "region_id": "us-utah-cottonwoods",
+    "name": "Brighton Resort",
+    "coordinates": [
+      40.598,
+      -111.583
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 1875,
+      "acreage": 1050,
+      "lifts": 6,
+      "annual_snowfall_in": 500,
+      "provenance": {
+        "source_type": "official_page",
+        "source_name": "Brighton resort mountain page",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Mountain stats are source-backed resort metrics, not live conditions.",
+        "source_url": "https://brightonresort.com/"
+      }
+    },
+    "pass_affiliations": [
+      {
+        "pass_name": "Ikon",
+        "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+        "provenance": {
+          "source_type": "official_page",
+          "source_name": "Ikon pass partner page",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+          "source_url": "https://www.ikonpass.com/en/destinations/brighton-resort"
+        }
+      }
+    ],
+    "lift_ticket_estimates": [
+      "cottonwoods-day-ticket"
+    ],
+    "rental_estimates": [
+      "cottonwoods-snowboard-package"
+    ],
+    "terrain_tags": [
+      "night riding",
+      "trees",
+      "intermediate"
+    ],
+    "suitability": {
+      "beginner": "medium",
+      "intermediate": "high",
+      "powder": "medium"
+    },
+    "official_urls": {
+      "resort_home": "https://brightonresort.com/",
+      "lift_tickets": "https://brightonresort.com/tickets"
+    },
+    "provenance": [
+      {
+        "source_type": "official_page",
+        "source_name": "Brighton official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Resort metadata is source-backed but manually curated.",
+        "source_url": "https://brightonresort.com/"
+      }
+    ]
+  },
+  {
+    "id": "solitude",
+    "region_id": "us-utah-cottonwoods",
+    "name": "Solitude Mountain Resort",
+    "coordinates": [
+      40.6206,
+      -111.5919
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 2494,
+      "acreage": 1200,
+      "lifts": 8,
+      "annual_snowfall_in": 500,
+      "provenance": {
+        "source_type": "official_page",
+        "source_name": "Solitude mountain statistics",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Mountain stats are source-backed resort metrics, not live conditions.",
+        "source_url": "https://www.solitudemountain.com/"
+      }
+    },
+    "pass_affiliations": [
+      {
+        "pass_name": "Ikon",
+        "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+        "provenance": {
+          "source_type": "official_page",
+          "source_name": "Ikon pass partner page",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+          "source_url": "https://www.ikonpass.com/en/destinations/solitude-mountain-resort"
+        }
+      }
+    ],
+    "lift_ticket_estimates": [
+      "cottonwoods-day-ticket"
+    ],
+    "rental_estimates": [
+      "cottonwoods-snowboard-package"
+    ],
+    "terrain_tags": [
+      "trees",
+      "family",
+      "intermediate"
+    ],
+    "suitability": {
+      "beginner": "medium",
+      "intermediate": "high",
+      "powder": "medium"
+    },
+    "official_urls": {
+      "resort_home": "https://www.solitudemountain.com/",
+      "lift_tickets": "https://www.solitudemountain.com/plan-your-trip/tickets-and-passes"
+    },
+    "provenance": [
+      {
+        "source_type": "official_page",
+        "source_name": "Solitude official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Resort metadata is source-backed but manually curated.",
+        "source_url": "https://www.solitudemountain.com/"
+      }
+    ]
+  },
+  {
+    "id": "niseko-united",
+    "region_id": "jp-hokkaido-niseko-rusutsu",
+    "name": "Niseko United",
+    "coordinates": [
+      42.8648,
+      140.7043
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 3084,
+      "acreage": 2191,
+      "lifts": 29,
+      "annual_snowfall_in": 590,
+      "provenance": {
+        "source_type": "official_page",
+        "source_name": "Niseko United mountain stats",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Mountain stats are source-backed resort metrics, not live conditions.",
+        "source_url": "https://www.niseko.ne.jp/en/"
+      }
+    },
+    "pass_affiliations": [
+      {
+        "pass_name": "Ikon",
+        "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+        "provenance": {
+          "source_type": "official_page",
+          "source_name": "Ikon pass partner page",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+          "source_url": "https://www.ikonpass.com/en/destinations/niseko-united"
+        }
+      }
+    ],
+    "lift_ticket_estimates": [
+      "hokkaido-day-ticket"
+    ],
+    "rental_estimates": [
+      "hokkaido-snowboard-package"
+    ],
+    "terrain_tags": [
+      "powder",
+      "international",
+      "night skiing"
+    ],
+    "suitability": {
+      "intermediate": "high",
+      "expert": "medium",
+      "powder": "high"
+    },
+    "official_urls": {
+      "resort_home": "https://www.niseko.ne.jp/en/",
+      "lift_tickets": "https://www.niseko.ne.jp/en/lift/"
+    },
+    "provenance": [
+      {
+        "source_type": "official_page",
+        "source_name": "Niseko United official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Resort metadata is source-backed but manually curated.",
+        "source_url": "https://www.niseko.ne.jp/en/"
+      }
+    ]
+  },
+  {
+    "id": "rusutsu",
+    "region_id": "jp-hokkaido-niseko-rusutsu",
+    "name": "Rusutsu Resort",
+    "coordinates": [
+      42.7373,
+      140.8764
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 1952,
+      "acreage": 1023,
+      "lifts": 18,
+      "annual_snowfall_in": 472,
+      "provenance": {
+        "source_type": "official_page",
+        "source_name": "Rusutsu official winter page",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Mountain stats are source-backed resort metrics, not live conditions.",
+        "source_url": "https://rusutsu.com/en/ski/"
+      }
+    },
+    "pass_affiliations": [
+      {
+        "pass_name": "Epic",
+        "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+        "provenance": {
+          "source_type": "official_page",
+          "source_name": "Epic pass partner page",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+          "source_url": "https://www.epicpass.com/region/international-passes/japan/rusutsu.aspx"
+        }
+      }
+    ],
+    "lift_ticket_estimates": [
+      "hokkaido-day-ticket"
+    ],
+    "rental_estimates": [
+      "hokkaido-snowboard-package"
+    ],
+    "terrain_tags": [
+      "powder",
+      "trees",
+      "resort hotel"
+    ],
+    "suitability": {
+      "beginner": "medium",
+      "intermediate": "high",
+      "powder": "high"
+    },
+    "official_urls": {
+      "resort_home": "https://rusutsu.com/en/",
+      "lift_tickets": "https://rusutsu.com/en/ski/lift-ticket/"
+    },
+    "provenance": [
+      {
+        "source_type": "official_page",
+        "source_name": "Rusutsu official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Resort metadata is source-backed but manually curated.",
+        "source_url": "https://rusutsu.com/en/"
+      }
+    ]
+  }
+]

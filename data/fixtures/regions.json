@@ -1,0 +1,85 @@
+[
+  {
+    "id": "us-utah-cottonwoods",
+    "country_id": "US",
+    "name": "Salt Lake City / Cottonwood Canyons",
+    "description": "High-access Wasatch trip region anchored by Salt Lake City lodging and Cottonwood Canyon resorts.",
+    "centroid_lat_lng": [
+      40.5725,
+      -111.6535
+    ],
+    "gateway_airport_codes": [
+      "SLC"
+    ],
+    "resort_ids": [
+      "alta",
+      "snowbird",
+      "brighton",
+      "solitude"
+    ],
+    "lodging_zone_ids": [
+      "slc-sandy-midvale",
+      "cottonwood-base-areas"
+    ],
+    "transfer_option_ids": [
+      "slc-winter-rental-car",
+      "slc-cottonwoods-shuttle"
+    ],
+    "season_notes": [
+      "Peak powder demand and canyon traffic can affect both lodging cost and transfer time."
+    ],
+    "no_car_viability": "possible",
+    "provenance": [
+      {
+        "source_type": "editorial_reference",
+        "source_name": "Visit Salt Lake Cottonwood Canyons reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype region summary; verify current resort, road, and transit conditions.",
+        "source_url": "https://www.visitsaltlake.com/"
+      }
+    ]
+  },
+  {
+    "id": "jp-hokkaido-niseko-rusutsu",
+    "country_id": "JP",
+    "name": "Hokkaido / Niseko and Rusutsu",
+    "description": "International powder-trip region using New Chitose Airport, with Niseko and Rusutsu as first prototype resorts.",
+    "centroid_lat_lng": [
+      42.8048,
+      140.6874
+    ],
+    "gateway_airport_codes": [
+      "CTS"
+    ],
+    "resort_ids": [
+      "niseko-united",
+      "rusutsu"
+    ],
+    "lodging_zone_ids": [
+      "hirafu-niseko-village",
+      "sapporo-ski-base"
+    ],
+    "transfer_option_ids": [
+      "cts-resort-shuttle",
+      "cts-niseko-train-bus",
+      "cts-hokkaido-rental-car"
+    ],
+    "season_notes": [
+      "January and February lodging and transfers should be booked early; storms can slow road transfers."
+    ],
+    "no_car_viability": "easy",
+    "provenance": [
+      {
+        "source_type": "editorial_reference",
+        "source_name": "SkiJapan Hokkaido resort reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype region summary; verify current schedules, exchange rates, and lodging.",
+        "source_url": "https://www.snowjapan.com/japan-ski-resorts/hokkaido"
+      }
+    ]
+  }
+]

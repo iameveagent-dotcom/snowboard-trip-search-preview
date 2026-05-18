@@ -1,0 +1,314 @@
+[
+  {
+    "id": "slc-sandy-midvale",
+    "region_id": "us-utah-cottonwoods",
+    "name": "Salt Lake City / Sandy / Midvale",
+    "coordinates": [
+      40.6111,
+      -111.8999
+    ],
+    "distance_to_resorts": [
+      {
+        "resort_id": "snowbird",
+        "drive_minutes": {
+          "low_minutes": 35,
+          "expected_minutes": 50,
+          "high_minutes": 90,
+          "assumptions": [
+            "Clear road baseline plus canyon traffic/winter buffer."
+          ],
+          "provenance": {
+            "source_type": "derived_route",
+            "source_name": "OSRM/manual Cottonwoods route fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times."
+          }
+        }
+      },
+      {
+        "resort_id": "brighton",
+        "drive_minutes": {
+          "low_minutes": 40,
+          "expected_minutes": 60,
+          "high_minutes": 100,
+          "assumptions": [
+            "Clear road baseline plus canyon traffic/winter buffer."
+          ],
+          "provenance": {
+            "source_type": "derived_route",
+            "source_name": "OSRM/manual Big Cottonwood route fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times."
+          }
+        }
+      }
+    ],
+    "nightly_range": {
+      "low": {
+        "amount": 180,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 240,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 330,
+        "currency": "USD"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Moderate hotel or condo base shared by two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: SLC/Sandy",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.visitsaltlake.com/"
+      }
+    },
+    "car_required": true,
+    "nightlife_food_notes": [
+      "Best fit for cheaper lodging and city food options; canyon commute required."
+    ],
+    "lodging_deep_links": [
+      {
+        "provider": "Google Hotels",
+        "url": "https://www.google.com/travel/hotels/Salt%20Lake%20City"
+      }
+    ],
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: SLC/Sandy",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.visitsaltlake.com/"
+      }
+    ]
+  },
+  {
+    "id": "cottonwood-base-areas",
+    "region_id": "us-utah-cottonwoods",
+    "name": "Cottonwood Canyon base areas",
+    "coordinates": [
+      40.571,
+      -111.775
+    ],
+    "distance_to_resorts": [
+      {
+        "resort_id": "snowbird",
+        "drive_minutes": {
+          "low_minutes": 20,
+          "expected_minutes": 35,
+          "high_minutes": 75,
+          "assumptions": [
+            "Closer canyon base but still winter-road dependent."
+          ],
+          "provenance": {
+            "source_type": "derived_route",
+            "source_name": "OSRM/manual Cottonwood base route fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times."
+          }
+        }
+      }
+    ],
+    "nightly_range": {
+      "low": {
+        "amount": 260,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 380,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 560,
+        "currency": "USD"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Higher-cost lodging closer to canyon mouths."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Cottonwood base",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.visitsaltlake.com/"
+      }
+    },
+    "car_required": true,
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Cottonwood base",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.visitsaltlake.com/"
+      }
+    ]
+  },
+  {
+    "id": "hirafu-niseko-village",
+    "region_id": "jp-hokkaido-niseko-rusutsu",
+    "name": "Hirafu / Niseko Village",
+    "coordinates": [
+      42.8568,
+      140.7041
+    ],
+    "distance_to_resorts": [
+      {
+        "resort_id": "niseko-united",
+        "transit_minutes": {
+          "low_minutes": 5,
+          "expected_minutes": 15,
+          "high_minutes": 35,
+          "assumptions": [
+            "Village shuttle/walk timing fixture."
+          ],
+          "provenance": {
+            "source_type": "derived_route",
+            "source_name": "Niseko local shuttle/walk fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+            "source_url": "https://www.niseko.ne.jp/en/"
+          }
+        }
+      }
+    ],
+    "nightly_range": {
+      "low": {
+        "amount": 45000,
+        "currency": "JPY"
+      },
+      "expected": {
+        "amount": 65000,
+        "currency": "JPY"
+      },
+      "high": {
+        "amount": 90000,
+        "currency": "JPY"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Shared room or apartment base for two travelers in a resort village."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Hirafu/Niseko Village",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.niseko.ne.jp/en/"
+      }
+    },
+    "car_required": false,
+    "lodging_deep_links": [
+      {
+        "provider": "Google Hotels",
+        "url": "https://www.google.com/travel/hotels/Niseko"
+      }
+    ],
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Hirafu/Niseko Village",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.niseko.ne.jp/en/"
+      }
+    ]
+  },
+  {
+    "id": "sapporo-ski-base",
+    "region_id": "jp-hokkaido-niseko-rusutsu",
+    "name": "Sapporo city base",
+    "coordinates": [
+      43.0618,
+      141.3545
+    ],
+    "distance_to_resorts": [
+      {
+        "resort_id": "rusutsu",
+        "drive_minutes": {
+          "low_minutes": 90,
+          "expected_minutes": 120,
+          "high_minutes": 180,
+          "assumptions": [
+            "Long day-trip drive/shuttle fixture; winter weather can add delays."
+          ],
+          "provenance": {
+            "source_type": "derived_route",
+            "source_name": "Manual Sapporo to Rusutsu route fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+            "source_url": "https://rusutsu.com/en/"
+          }
+        }
+      }
+    ],
+    "nightly_range": {
+      "low": {
+        "amount": 18000,
+        "currency": "JPY"
+      },
+      "expected": {
+        "amount": 28000,
+        "currency": "JPY"
+      },
+      "high": {
+        "amount": 45000,
+        "currency": "JPY"
+      },
+      "unit": "night",
+      "assumptions": [
+        "City hotel base with longer resort transfers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Sapporo",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.snowjapan.com/japan-ski-resorts/hokkaido"
+      }
+    },
+    "car_required": false,
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Sapporo",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.snowjapan.com/japan-ski-resorts/hokkaido"
+      }
+    ]
+  }
+]

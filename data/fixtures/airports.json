@@ -1,0 +1,131 @@
+[
+  {
+    "code": "DTW",
+    "name": "Detroit Metro Airport",
+    "metro_area": "Detroit",
+    "country_id": "US",
+    "coordinates": [
+      42.2162,
+      -83.3554
+    ],
+    "user_priority": 1,
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-18T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "GRR",
+    "name": "Gerald R. Ford International Airport",
+    "metro_area": "Grand Rapids",
+    "country_id": "US",
+    "coordinates": [
+      42.8808,
+      -85.5228
+    ],
+    "user_priority": 2,
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-18T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "ORD",
+    "name": "Chicago O'Hare International Airport",
+    "metro_area": "Chicago",
+    "country_id": "US",
+    "coordinates": [
+      41.9742,
+      -87.9073
+    ],
+    "user_priority": 3,
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-18T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "SLC",
+    "name": "Salt Lake City International Airport",
+    "metro_area": "Salt Lake City",
+    "country_id": "US",
+    "coordinates": [
+      40.7899,
+      -111.9791
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-18T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "CTS",
+    "name": "New Chitose Airport",
+    "metro_area": "Sapporo / Hokkaido",
+    "country_id": "JP",
+    "coordinates": [
+      42.7752,
+      141.6923
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-18T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "HND",
+    "name": "Tokyo Haneda Airport",
+    "metro_area": "Tokyo",
+    "country_id": "JP",
+    "coordinates": [
+      35.5494,
+      139.7798
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-18T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "NRT",
+    "name": "Narita International Airport",
+    "metro_area": "Tokyo",
+    "country_id": "JP",
+    "coordinates": [
+      35.772,
+      140.3929
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-18T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  }
+]

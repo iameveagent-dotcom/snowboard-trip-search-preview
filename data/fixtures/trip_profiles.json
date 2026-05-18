@@ -1,0 +1,356 @@
+[
+  {
+    "id": "fixture-dtw-to-cottonwoods-2p-7n-5d",
+    "selected_origin_airport_codes": [
+      "DTW"
+    ],
+    "selected_country_or_region_id": "us-utah-cottonwoods",
+    "selected_resort_ids": [
+      "alta",
+      "snowbird",
+      "brighton",
+      "solitude"
+    ],
+    "party_size": 2,
+    "nights": 7,
+    "ski_days": 5,
+    "dates_or_window": "Prototype winter powder week",
+    "lodging_zone_id": "slc-sandy-midvale",
+    "transfer_option_id": "slc-winter-rental-car",
+    "assumptions": [
+      "Fixture estimates are prototype planning ranges, not live/exact quotes.",
+      "Food budget uses manual observations from Snowbird official dining source pages; not a live checkout quote and excludes alcohol/special-occasion dining."
+    ],
+    "line_items": [
+      {
+        "category": "flight",
+        "label": "Round-trip flight DTW to SLC",
+        "cost": {
+          "low": {
+            "amount": 300,
+            "currency": "USD"
+          },
+          "expected": {
+            "amount": 450,
+            "currency": "USD"
+          },
+          "high": {
+            "amount": 650,
+            "currency": "USD"
+          },
+          "unit": "person",
+          "assumptions": [
+            "Manual fare-observation fixture for winter trip comparison."
+          ],
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Google Flights deep-link observation",
+            "confidence": "fixture_estimate",
+            "freshness": "stale",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+            "source_url": "https://www.google.com/travel/flights"
+          }
+        },
+        "per_person": true,
+        "required": true,
+        "provenance": {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Google Flights deep-link observation",
+          "confidence": "fixture_estimate",
+          "freshness": "stale",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+          "source_url": "https://www.google.com/travel/flights"
+        }
+      },
+      {
+        "category": "lodging",
+        "label": "7 nights lodging in Salt Lake City / Sandy",
+        "fixture_ref": {
+          "file": "lodging_zones.json",
+          "id": "slc-sandy-midvale",
+          "range_field": "nightly_range",
+          "multiplier_field": "nights"
+        },
+        "per_person": false,
+        "required": true
+      },
+      {
+        "category": "transfer",
+        "label": "SLC rental car and winter driving buffer",
+        "fixture_ref": {
+          "file": "transfer_options.json",
+          "id": "slc-winter-rental-car",
+          "range_field": "estimated_cost"
+        },
+        "per_person": false,
+        "required": true
+      },
+      {
+        "category": "lift_ticket",
+        "label": "5 days lift tickets for Cottonwood resorts",
+        "fixture_ref": {
+          "file": "lift_tickets.json",
+          "id": "cottonwoods-day-ticket",
+          "range_field": "adult_range",
+          "multiplier_field": "ski_days",
+          "per_person_multiplier": true
+        },
+        "per_person": true,
+        "required": true
+      },
+      {
+        "category": "gear_rental",
+        "label": "5 days snowboard rental package",
+        "fixture_ref": {
+          "file": "gear_rentals.json",
+          "id": "cottonwoods-snowboard-package",
+          "range_field": "daily_range",
+          "multiplier_field": "ski_days",
+          "per_person_multiplier": true
+        },
+        "per_person": true,
+        "required": false
+      },
+      {
+        "category": "food",
+        "label": "7 days food budget",
+        "cost": {
+          "low": {
+            "amount": 30,
+            "currency": "USD"
+          },
+          "expected": {
+            "amount": 40,
+            "currency": "USD"
+          },
+          "high": {
+            "amount": 48.5714285714,
+            "currency": "USD"
+          },
+          "unit": "day",
+          "assumptions": [
+            "Per-person/day food budget from manual resort-dining source observations: breakfast/coffee plus casual lunch and dinner around Snowbird/Salt Lake base areas.",
+            "Excludes alcohol, fine dining, delivery fees, and grocery-heavy self-catering substitutions."
+          ],
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Snowbird official dining pages (The Summit and SeventyOne)",
+            "confidence": "source_backed_range",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T15:07:03.000Z",
+            "observed_for_dates": "Prototype winter powder week; resort casual dining pages observed May 2026",
+            "source_url": "https://www.snowbird.com/dining/the-summit/",
+            "display_caveat": "Manual per-person/day range backed by Snowbird official dining pages that publish resort casual dining venues with $$ price range; verify current menus, taxes, tips, groceries, and alcohol before booking."
+          }
+        },
+        "per_person": true,
+        "required": true,
+        "provenance": {
+          "source_type": "manual_observation",
+          "source_name": "Snowbird official dining pages (The Summit and SeventyOne)",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T15:07:03.000Z",
+          "observed_for_dates": "Prototype winter powder week; resort casual dining pages observed May 2026",
+          "source_url": "https://www.snowbird.com/dining/the-summit/",
+          "display_caveat": "Manual per-person/day range backed by Snowbird official dining pages that publish resort casual dining venues with $$ price range; verify current menus, taxes, tips, groceries, and alcohol before booking."
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source_type": "fixture",
+        "source_name": "Prototype Cottonwoods trip profile",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Trip profile is a prototype fixture and not live/exact."
+      }
+    ]
+  },
+  {
+    "id": "fixture-dtw-to-hokkaido-2p-7n-5d",
+    "selected_origin_airport_codes": [
+      "DTW"
+    ],
+    "selected_country_or_region_id": "jp-hokkaido-niseko-rusutsu",
+    "selected_resort_ids": [
+      "niseko-united",
+      "rusutsu"
+    ],
+    "party_size": 2,
+    "nights": 7,
+    "ski_days": 5,
+    "dates_or_window": "Prototype January powder week",
+    "lodging_zone_id": "hirafu-niseko-village",
+    "transfer_option_id": "cts-resort-shuttle",
+    "currency_conversion": {
+      "from": "JPY",
+      "to": "USD",
+      "rate": 150,
+      "provenance": {
+        "source_type": "fixture",
+        "source_name": "Prototype exchange-rate fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "stale",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "JPY fixture prices converted at 150 JPY = 1 USD for prototype comparability; verify live exchange rates."
+      }
+    },
+    "assumptions": [
+      "Fixture estimates are prototype planning ranges, not live/exact quotes.",
+      "JPY fixture prices converted at 150 JPY = 1 USD for prototype comparability.",
+      "Food budget uses manual observations from Niseko/Hirafu resort dining source pages; JPY prices are planning ranges, not live checkout totals."
+    ],
+    "line_items": [
+      {
+        "category": "flight",
+        "label": "Round-trip flight DTW to CTS via Tokyo",
+        "cost": {
+          "low": {
+            "amount": 1000,
+            "currency": "USD"
+          },
+          "expected": {
+            "amount": 1300,
+            "currency": "USD"
+          },
+          "high": {
+            "amount": 1700,
+            "currency": "USD"
+          },
+          "unit": "person",
+          "assumptions": [
+            "Manual fare-observation fixture for winter Japan comparison."
+          ],
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Google Flights deep-link observation",
+            "confidence": "fixture_estimate",
+            "freshness": "stale",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+            "source_url": "https://www.google.com/travel/flights"
+          }
+        },
+        "per_person": true,
+        "required": true,
+        "provenance": {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Google Flights deep-link observation",
+          "confidence": "fixture_estimate",
+          "freshness": "stale",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+          "source_url": "https://www.google.com/travel/flights"
+        }
+      },
+      {
+        "category": "lodging",
+        "label": "7 nights lodging in Hirafu / Niseko Village",
+        "fixture_ref": {
+          "file": "lodging_zones.json",
+          "id": "hirafu-niseko-village",
+          "range_field": "nightly_range",
+          "multiplier_field": "nights"
+        },
+        "per_person": false,
+        "required": true
+      },
+      {
+        "category": "transfer",
+        "label": "CTS resort shuttle for two travelers",
+        "fixture_ref": {
+          "file": "transfer_options.json",
+          "id": "cts-resort-shuttle",
+          "range_field": "estimated_cost"
+        },
+        "per_person": false,
+        "required": true
+      },
+      {
+        "category": "lift_ticket",
+        "label": "5 days lift tickets for Niseko/Rusutsu",
+        "fixture_ref": {
+          "file": "lift_tickets.json",
+          "id": "hokkaido-day-ticket",
+          "range_field": "adult_range",
+          "multiplier_field": "ski_days",
+          "per_person_multiplier": true
+        },
+        "per_person": true,
+        "required": true
+      },
+      {
+        "category": "gear_rental",
+        "label": "5 days snowboard rental package",
+        "fixture_ref": {
+          "file": "gear_rentals.json",
+          "id": "hokkaido-snowboard-package",
+          "range_field": "daily_range",
+          "multiplier_field": "ski_days",
+          "per_person_multiplier": true
+        },
+        "per_person": true,
+        "required": false
+      },
+      {
+        "category": "food",
+        "label": "Meals / casual food budget",
+        "cost": {
+          "low": {
+            "amount": 6000,
+            "currency": "JPY"
+          },
+          "expected": {
+            "amount": 9000,
+            "currency": "JPY"
+          },
+          "high": {
+            "amount": 13000,
+            "currency": "JPY"
+          },
+          "unit": "day",
+          "assumptions": [
+            "Per-person/day food budget from manual resort-dining source observations across Hirafu/Niseko casual slope-side dining.",
+            "Excludes alcohol, fine dining omakase/special dinners, and grocery-heavy self-catering substitutions."
+          ],
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Niseko Village and Grand Hirafu official dining pages",
+            "confidence": "source_backed_range",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T15:07:03.000Z",
+            "observed_for_dates": "Prototype January powder week; resort casual dining pages observed May 2026",
+            "source_url": "https://www.grand-hirafu.jp/winter/en/restaurant/",
+            "display_caveat": "Manual per-person/day JPY range backed by Niseko/Hirafu official resort dining pages; verify in-season menus, taxes/service charges, convenience-store meals, alcohol, and exchange rates before booking."
+          }
+        },
+        "per_person": true,
+        "required": true,
+        "provenance": {
+          "source_type": "manual_observation",
+          "source_name": "Niseko Village and Grand Hirafu official dining pages",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T15:07:03.000Z",
+          "observed_for_dates": "Prototype January powder week; resort casual dining pages observed May 2026",
+          "source_url": "https://www.grand-hirafu.jp/winter/en/restaurant/",
+          "display_caveat": "Manual per-person/day JPY range backed by Niseko/Hirafu official resort dining pages; verify in-season menus, taxes/service charges, convenience-store meals, alcohol, and exchange rates before booking."
+        }
+      }
+    ],
+    "provenance": [
+      {
+        "source_type": "fixture",
+        "source_name": "Prototype Hokkaido trip profile",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Trip profile is a prototype fixture and not live/exact."
+      }
+    ]
+  }
+]

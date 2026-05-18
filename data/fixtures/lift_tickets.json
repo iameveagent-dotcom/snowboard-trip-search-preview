@@ -1,0 +1,92 @@
+[
+  {
+    "id": "cottonwoods-day-ticket",
+    "resort_id": "us-utah-cottonwoods",
+    "ticket_type": "multi_day",
+    "adult_range": {
+      "low": {
+        "amount": 120,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 170,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 230,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Per-adult day-ticket fixture blended across Cottonwood resorts; pass holders may pay less."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype Cottonwoods lift ticket source set",
+        "confidence": "fixture_estimate",
+        "freshness": "aging",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+        "source_url": "https://www.snowbird.com/tickets-passes/"
+      }
+    },
+    "date_window": "Prototype winter season",
+    "caveats": [
+      "Not a live quote; verify exact dates and pass access."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype Cottonwoods lift ticket source set",
+      "confidence": "fixture_estimate",
+      "freshness": "aging",
+      "retrieved_at": "2026-05-18T00:00:00.000Z",
+      "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+      "source_url": "https://www.snowbird.com/tickets-passes/"
+    }
+  },
+  {
+    "id": "hokkaido-day-ticket",
+    "resort_id": "jp-hokkaido-niseko-rusutsu",
+    "ticket_type": "multi_day",
+    "adult_range": {
+      "low": {
+        "amount": 9500,
+        "currency": "JPY"
+      },
+      "expected": {
+        "amount": 11500,
+        "currency": "JPY"
+      },
+      "high": {
+        "amount": 14500,
+        "currency": "JPY"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Per-adult day-ticket fixture blended across Niseko/Rusutsu; pass holders may pay less."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype Hokkaido lift ticket source set",
+        "confidence": "fixture_estimate",
+        "freshness": "aging",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+        "source_url": "https://www.niseko.ne.jp/en/lift/"
+      }
+    },
+    "date_window": "Prototype winter season",
+    "caveats": [
+      "Not a live quote; verify exact dates, exchange rate, and pass access."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype Hokkaido lift ticket source set",
+      "confidence": "fixture_estimate",
+      "freshness": "aging",
+      "retrieved_at": "2026-05-18T00:00:00.000Z",
+      "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+      "source_url": "https://www.niseko.ne.jp/en/lift/"
+    }
+  }
+]

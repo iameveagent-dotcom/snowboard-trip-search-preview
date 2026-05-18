@@ -1,0 +1,423 @@
+[
+  {
+    "share_id": "share-hokkaido-readonly-v0",
+    "trip_estimate_id": "estimate-fixture-dtw-to-hokkaido-2p-7n-5d",
+    "share_url": "../snapshots/share-hokkaido-readonly-v0.html",
+    "snapshot_version": 1,
+    "created_at": "2026-05-18T12:30:00.000Z",
+    "access": {
+      "mode": "read_only",
+      "collaboration_enabled": false,
+      "permissions": {
+        "can_view": true,
+        "can_comment": false,
+        "can_edit": false,
+        "can_invite": false
+      }
+    },
+    "selected_origin_airport_codes": [
+      "DTW"
+    ],
+    "origins": [
+      {
+        "code": "DTW",
+        "name": "Detroit Metro Airport",
+        "metro_area": "Detroit",
+        "country_id": "US",
+        "coordinates": [
+          42.2162,
+          -83.3554
+        ],
+        "user_priority": 1,
+        "provenance": {
+          "source_type": "fixture",
+          "source_name": "Prototype airport fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+        }
+      }
+    ],
+    "destination": {
+      "id": "jp-hokkaido-niseko-rusutsu",
+      "name": "Hokkaido / Niseko and Rusutsu",
+      "description": "International powder-trip region using New Chitose Airport, with Niseko and Rusutsu as first prototype resorts.",
+      "gateway_airport_codes": [
+        "CTS"
+      ]
+    },
+    "selected_resort_ids": [
+      "niseko-united",
+      "rusutsu"
+    ],
+    "dates_or_window": "Prototype January powder week",
+    "party_size": 2,
+    "nights": 7,
+    "ski_days": 5,
+    "total_low": {
+      "amount": 6260,
+      "currency": "USD"
+    },
+    "total_expected": {
+      "amount": 8607,
+      "currency": "USD"
+    },
+    "total_high": {
+      "amount": 11613,
+      "currency": "USD"
+    },
+    "per_person_expected": {
+      "amount": 4304,
+      "currency": "USD"
+    },
+    "line_items": [
+      {
+        "category": "flight",
+        "label": "Round-trip flight DTW to CTS via Tokyo",
+        "cost": {
+          "low": {
+            "amount": 2000,
+            "currency": "USD"
+          },
+          "expected": {
+            "amount": 2600,
+            "currency": "USD"
+          },
+          "high": {
+            "amount": 3400,
+            "currency": "USD"
+          },
+          "unit": "trip",
+          "assumptions": [
+            "Manual fare-observation fixture for winter Japan comparison."
+          ],
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Google Flights deep-link observation",
+            "confidence": "fixture_estimate",
+            "freshness": "stale",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+            "source_url": "https://www.google.com/travel/flights"
+          }
+        },
+        "per_person": true,
+        "required": true,
+        "provenance": {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Google Flights deep-link observation",
+          "confidence": "fixture_estimate",
+          "freshness": "stale",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+          "source_url": "https://www.google.com/travel/flights"
+        }
+      },
+      {
+        "category": "lodging",
+        "label": "7 nights lodging in Hirafu / Niseko Village",
+        "cost": {
+          "low": {
+            "amount": 2100,
+            "currency": "USD"
+          },
+          "expected": {
+            "amount": 3033,
+            "currency": "USD"
+          },
+          "high": {
+            "amount": 4200,
+            "currency": "USD"
+          },
+          "unit": "trip",
+          "assumptions": [
+            "Shared room or apartment base for two travelers in a resort village."
+          ],
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype lodging fixture: Hirafu/Niseko Village",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.niseko.ne.jp/en/"
+          }
+        },
+        "per_person": false,
+        "required": true,
+        "provenance": {
+          "source_type": "manual_observation",
+          "source_name": "Prototype lodging fixture: Hirafu/Niseko Village",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.niseko.ne.jp/en/"
+        },
+        "original_currency": "JPY",
+        "fx_assumption": "150 JPY = 1 USD",
+        "fixture_source_id": "hirafu-niseko-village"
+      },
+      {
+        "category": "transfer",
+        "label": "CTS resort shuttle for two travelers",
+        "cost": {
+          "low": {
+            "amount": 600,
+            "currency": "USD"
+          },
+          "expected": {
+            "amount": 867,
+            "currency": "USD"
+          },
+          "high": {
+            "amount": 1200,
+            "currency": "USD"
+          },
+          "unit": "trip",
+          "assumptions": [
+            "Round-trip shared bus/shuttle for two travelers."
+          ],
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype CTS resort shuttle fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.niseko.ne.jp/en/access/"
+          }
+        },
+        "per_person": false,
+        "required": true,
+        "provenance": {
+          "source_type": "manual_observation",
+          "source_name": "Prototype CTS resort shuttle fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.niseko.ne.jp/en/access/"
+        },
+        "original_currency": "JPY",
+        "fx_assumption": "150 JPY = 1 USD",
+        "fixture_source_id": "cts-resort-shuttle"
+      },
+      {
+        "category": "lift_ticket",
+        "label": "5 days lift tickets for Niseko/Rusutsu",
+        "cost": {
+          "low": {
+            "amount": 633,
+            "currency": "USD"
+          },
+          "expected": {
+            "amount": 767,
+            "currency": "USD"
+          },
+          "high": {
+            "amount": 967,
+            "currency": "USD"
+          },
+          "unit": "trip",
+          "assumptions": [
+            "Per-adult day-ticket fixture blended across Niseko/Rusutsu; pass holders may pay less."
+          ],
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Hokkaido lift ticket source set",
+            "confidence": "fixture_estimate",
+            "freshness": "aging",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+            "source_url": "https://www.niseko.ne.jp/en/lift/"
+          }
+        },
+        "per_person": true,
+        "required": true,
+        "provenance": {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Hokkaido lift ticket source set",
+          "confidence": "fixture_estimate",
+          "freshness": "aging",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "source_url": "https://www.niseko.ne.jp/en/lift/"
+        },
+        "original_currency": "JPY",
+        "fx_assumption": "150 JPY = 1 USD",
+        "fixture_source_id": "hokkaido-day-ticket"
+      },
+      {
+        "category": "gear_rental",
+        "label": "5 days snowboard rental package",
+        "cost": {
+          "low": {
+            "amount": 367,
+            "currency": "USD"
+          },
+          "expected": {
+            "amount": 500,
+            "currency": "USD"
+          },
+          "high": {
+            "amount": 633,
+            "currency": "USD"
+          },
+          "unit": "trip",
+          "assumptions": [
+            "Snowboard + boots + bindings fixture range."
+          ],
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Hokkaido gear rental fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.niseko.ne.jp/en/"
+          }
+        },
+        "per_person": true,
+        "required": false,
+        "provenance": {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Hokkaido gear rental fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.niseko.ne.jp/en/"
+        },
+        "original_currency": "JPY",
+        "fx_assumption": "150 JPY = 1 USD",
+        "fixture_source_id": "hokkaido-snowboard-package"
+      },
+      {
+        "category": "food",
+        "label": "Meals / casual food budget",
+        "cost": {
+          "low": {
+            "amount": 560,
+            "currency": "USD"
+          },
+          "expected": {
+            "amount": 840,
+            "currency": "USD"
+          },
+          "high": {
+            "amount": 1213,
+            "currency": "USD"
+          },
+          "unit": "trip",
+          "assumptions": [
+            "Per-person/day food budget from manual resort-dining source observations across Hirafu/Niseko casual slope-side dining.",
+            "Excludes alcohol, fine dining omakase/special dinners, and grocery-heavy self-catering substitutions."
+          ],
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Niseko Village and Grand Hirafu official dining pages",
+            "confidence": "source_backed_range",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T15:07:03.000Z",
+            "observed_for_dates": "Prototype January powder week; resort casual dining pages observed May 2026",
+            "source_url": "https://www.grand-hirafu.jp/winter/en/restaurant/",
+            "display_caveat": "Manual per-person/day JPY range backed by Niseko/Hirafu official resort dining pages; verify in-season menus, taxes/service charges, convenience-store meals, alcohol, and exchange rates before booking."
+          }
+        },
+        "per_person": true,
+        "required": true,
+        "provenance": {
+          "source_type": "manual_observation",
+          "source_name": "Niseko Village and Grand Hirafu official dining pages",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T15:07:03.000Z",
+          "observed_for_dates": "Prototype January powder week; resort casual dining pages observed May 2026",
+          "source_url": "https://www.grand-hirafu.jp/winter/en/restaurant/",
+          "display_caveat": "Manual per-person/day JPY range backed by Niseko/Hirafu official resort dining pages; verify in-season menus, taxes/service charges, convenience-store meals, alcohol, and exchange rates before booking."
+        },
+        "original_currency": "JPY",
+        "fx_assumption": "150 JPY = 1 USD"
+      }
+    ],
+    "assumptions": [
+      "Fixture estimates are prototype planning ranges, not live/exact quotes.",
+      "JPY fixture prices converted at 150 JPY = 1 USD for prototype comparability.",
+      "Food budget uses manual observations from Niseko/Hirafu resort dining source pages; JPY prices are planning ranges, not live checkout totals."
+    ],
+    "confidence_summary": {
+      "lowest_confidence": "fixture_estimate",
+      "stale_fields": [
+        "Round-trip flight DTW to CTS via Tokyo"
+      ],
+      "unknown_fields": [],
+      "caveats": [
+        "Round-trip flight DTW to CTS via Tokyo: Prototype flight fare fixture; verify live fare through source/deep link.",
+        "7 nights lodging in Hirafu / Niseko Village: Prototype fixture cost range, not live inventory or an exact quote.",
+        "CTS resort shuttle for two travelers: Prototype fixture cost range, not live inventory or an exact quote.",
+        "5 days lift tickets for Niseko/Rusutsu: Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+        "5 days snowboard rental package: Prototype fixture cost range, not live inventory or an exact quote.",
+        "Meals / casual food budget: Manual per-person/day JPY range backed by Niseko/Hirafu official resort dining pages; verify in-season menus, taxes/service charges, convenience-store meals, alcohol, and exchange rates before booking."
+      ]
+    },
+    "source_links": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype Google Flights deep-link observation",
+        "confidence": "fixture_estimate",
+        "freshness": "stale",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+        "source_url": "https://www.google.com/travel/flights"
+      },
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Hirafu/Niseko Village",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.niseko.ne.jp/en/"
+      },
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype CTS resort shuttle fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.niseko.ne.jp/en/access/"
+      },
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype Hokkaido lift ticket source set",
+        "confidence": "fixture_estimate",
+        "freshness": "aging",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+        "source_url": "https://www.niseko.ne.jp/en/lift/"
+      },
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype Hokkaido gear rental fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.niseko.ne.jp/en/"
+      },
+      {
+        "source_type": "manual_observation",
+        "source_name": "Niseko Village and Grand Hirafu official dining pages",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T15:07:03.000Z",
+        "observed_for_dates": "Prototype January powder week; resort casual dining pages observed May 2026",
+        "source_url": "https://www.grand-hirafu.jp/winter/en/restaurant/",
+        "display_caveat": "Manual per-person/day JPY range backed by Niseko/Hirafu official resort dining pages; verify in-season menus, taxes/service charges, convenience-store meals, alcohol, and exchange rates before booking."
+      }
+    ]
+  }
+]

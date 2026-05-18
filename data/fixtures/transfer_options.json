@@ -1,0 +1,365 @@
+[
+  {
+    "id": "slc-winter-rental-car",
+    "from_airport_code": "SLC",
+    "to_region_or_resort_id": "us-utah-cottonwoods",
+    "mode": "rental_car",
+    "duration": {
+      "low_minutes": 35,
+      "expected_minutes": 55,
+      "high_minutes": 105,
+      "assumptions": [
+        "Airport pickup plus canyon drive and winter traffic buffer."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "OSRM/manual SLC to Cottonwoods route fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times."
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 520,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 520,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 530,
+        "currency": "USD"
+      },
+      "unit": "vehicle",
+      "assumptions": [
+        "7-day AWD-capable rental estimate plus parking/fuel buffer."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype SLC rental-car fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
+      }
+    },
+    "snow_driving_risk": "high",
+    "car_required_after_arrival": true,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.visitsaltlake.com/",
+    "provenance": [
+      {
+        "source_type": "derived_route",
+        "source_name": "OSRM/manual SLC to Cottonwoods route fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times."
+      },
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype SLC rental-car fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
+      }
+    ]
+  },
+  {
+    "id": "slc-cottonwoods-shuttle",
+    "from_airport_code": "SLC",
+    "to_region_or_resort_id": "us-utah-cottonwoods",
+    "mode": "shuttle",
+    "duration": {
+      "low_minutes": 60,
+      "expected_minutes": 90,
+      "high_minutes": 150,
+      "assumptions": [
+        "Airport-to-lodging/resort shuttle fixture with canyon weather buffer."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Manual SLC shuttle route fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.visitsaltlake.com/"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 160,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 260,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 420,
+        "currency": "USD"
+      },
+      "unit": "group",
+      "assumptions": [
+        "Round-trip shared shuttle range for two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype SLC shuttle fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.visitsaltlake.com/"
+      }
+    },
+    "snow_driving_risk": "low",
+    "car_required_after_arrival": false,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.visitsaltlake.com/",
+    "provenance": [
+      {
+        "source_type": "derived_route",
+        "source_name": "Manual SLC shuttle route fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.visitsaltlake.com/"
+      },
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype SLC shuttle fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.visitsaltlake.com/"
+      }
+    ]
+  },
+  {
+    "id": "cts-resort-shuttle",
+    "from_airport_code": "CTS",
+    "to_region_or_resort_id": "jp-hokkaido-niseko-rusutsu",
+    "mode": "shuttle",
+    "duration": {
+      "low_minutes": 150,
+      "expected_minutes": 190,
+      "high_minutes": 260,
+      "assumptions": [
+        "New Chitose to Niseko/Rusutsu winter bus/shuttle fixture."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Manual CTS resort shuttle fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.niseko.ne.jp/en/access/"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 90000,
+        "currency": "JPY"
+      },
+      "expected": {
+        "amount": 130000,
+        "currency": "JPY"
+      },
+      "high": {
+        "amount": 180000,
+        "currency": "JPY"
+      },
+      "unit": "group",
+      "assumptions": [
+        "Round-trip shared bus/shuttle for two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype CTS resort shuttle fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.niseko.ne.jp/en/access/"
+      }
+    },
+    "snow_driving_risk": "low",
+    "car_required_after_arrival": false,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.niseko.ne.jp/en/access/",
+    "provenance": [
+      {
+        "source_type": "derived_route",
+        "source_name": "Manual CTS resort shuttle fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.niseko.ne.jp/en/access/"
+      },
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype CTS resort shuttle fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.niseko.ne.jp/en/access/"
+      }
+    ]
+  },
+  {
+    "id": "cts-niseko-train-bus",
+    "from_airport_code": "CTS",
+    "to_region_or_resort_id": "jp-hokkaido-niseko-rusutsu",
+    "mode": "mixed",
+    "duration": {
+      "low_minutes": 180,
+      "expected_minutes": 240,
+      "high_minutes": 330,
+      "assumptions": [
+        "Train/bus connections vary; fixture uses conservative winter transfer window."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Manual CTS train/bus fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.japan.travel/en/"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 10000,
+        "currency": "JPY"
+      },
+      "expected": {
+        "amount": 16000,
+        "currency": "JPY"
+      },
+      "high": {
+        "amount": 24000,
+        "currency": "JPY"
+      },
+      "unit": "group",
+      "assumptions": [
+        "Public transport fixture range for two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype CTS train/bus fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.japan.travel/en/"
+      }
+    },
+    "snow_driving_risk": "low",
+    "car_required_after_arrival": false,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.japan.travel/en/",
+    "provenance": [
+      {
+        "source_type": "derived_route",
+        "source_name": "Manual CTS train/bus fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.japan.travel/en/"
+      },
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype CTS train/bus fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.japan.travel/en/"
+      }
+    ]
+  },
+  {
+    "id": "cts-hokkaido-rental-car",
+    "from_airport_code": "CTS",
+    "to_region_or_resort_id": "jp-hokkaido-niseko-rusutsu",
+    "mode": "rental_car",
+    "duration": {
+      "low_minutes": 130,
+      "expected_minutes": 170,
+      "high_minutes": 260,
+      "assumptions": [
+        "Winter self-drive fixture from New Chitose to resort zone."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Manual CTS rental-car route fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.snowjapan.com/japan-ski-resorts/hokkaido"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 56000,
+        "currency": "JPY"
+      },
+      "expected": {
+        "amount": 82000,
+        "currency": "JPY"
+      },
+      "high": {
+        "amount": 120000,
+        "currency": "JPY"
+      },
+      "unit": "vehicle",
+      "assumptions": [
+        "7-day rental, toll/fuel/winter buffer fixture."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype CTS rental-car fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
+      }
+    },
+    "snow_driving_risk": "high",
+    "car_required_after_arrival": false,
+    "route_polyline_source": "fixture",
+    "provenance": [
+      {
+        "source_type": "derived_route",
+        "source_name": "Manual CTS rental-car route fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.snowjapan.com/japan-ski-resorts/hokkaido"
+      },
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype CTS rental-car fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-18T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
+      }
+    ]
+  }
+]
