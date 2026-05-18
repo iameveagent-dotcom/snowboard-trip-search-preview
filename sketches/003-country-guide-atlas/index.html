@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <title>Snowboard Trip — Country Atlas</title>
+  <style>
+    :root{--bg:#08090a;--panel:#0f1011;--surface:rgba(255,255,255,.04);--surface2:rgba(255,255,255,.07);--border:rgba(255,255,255,.09);--text:#f7f8f8;--muted:#8a8f98;--soft:#d0d6e0;--accent:#7170ff;--accent2:#9de7ff;--good:#10b981;--warn:#f5b86b;--bad:#fb7185}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,rgba(113,112,255,.22),transparent 34%),radial-gradient(circle at 80% 20%,rgba(157,231,255,.12),transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;font-feature-settings:'cv01','ss03'}button{font:inherit}a{color:inherit;text-decoration:none}.app{min-height:100vh}.top{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid var(--border);background:rgba(8,9,10,.72);backdrop-filter:blur(20px);position:sticky;top:0;z-index:10}.brand{display:flex;gap:12px;align-items:center;font-weight:650;letter-spacing:-.4px}.logo{width:28px;height:28px;border-radius:9px;background:linear-gradient(135deg,var(--accent),#fff);box-shadow:0 0 40px rgba(113,112,255,.4)}.nav,.countries,.actions,.chips{display:flex;gap:8px;flex-wrap:wrap}.pill,.btn{border:1px solid var(--border);background:rgba(255,255,255,.035);color:var(--soft);border-radius:999px;padding:8px 12px;font-size:13px}.btn.primary{background:linear-gradient(135deg,#5e6ad2,#828fff);color:white;border-color:rgba(255,255,255,.14)}.grid{display:grid;gap:16px}.card{background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid var(--border);border-radius:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 20px 70px rgba(0,0,0,.25)}.small{font-size:12px;color:var(--muted)}.mono{font-family:'JetBrains Mono',ui-monospace,monospace}.metric{font-size:25px;letter-spacing:-.7px;font-weight:650}.muted{color:var(--muted);line-height:1.55}.tag{font-size:11px;border:1px solid var(--border);background:rgba(255,255,255,.04);padding:4px 8px;border-radius:999px;color:var(--soft)}.fresh{border-color:rgba(16,185,129,.28);background:rgba(16,185,129,.08);color:#bef7dc}.bar{height:7px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden}.bar span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2))}.atlas{max-width:1440px;margin:auto;padding:34px 28px}.atlas h1{font-size:56px;line-height:.96;letter-spacing:-1.3px;margin:12px 0;max-width:1080px}.countries{margin:24px 0}.country{cursor:pointer}.country.active{background:rgba(113,112,255,.16);border-color:rgba(113,112,255,.5);color:#fff}.country-page{display:none}.country-page.active{display:block}.hero-card{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}.photo{min-height:390px;border-radius:18px;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(113,112,255,.16)),url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"><rect width="800" height="500" fill="%230b1020"/><path d="M0 380 L180 170 L310 310 L450 110 L800 390 Z" fill="%23d0d6e0" fill-opacity=".16"/><path d="M120 500 L330 210 L520 500 Z" fill="%237170ff" fill-opacity=".20"/></svg>') center/cover}.photo:after{content:attr(data-caption);position:absolute;left:18px;bottom:18px;color:#fff;background:rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:8px 12px;font-size:12px}.guide{padding:22px}.metrics{grid-template-columns:repeat(4,1fr);margin:18px 0}.cards{grid-template-columns:repeat(3,1fr);margin-top:18px}.resort-card{padding:17px;display:grid;gap:12px}.resort-card h3{margin:0;font-size:19px;letter-spacing:-.3px}.metric-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.metric-box{border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.035);border-radius:14px;padding:10px}.cost{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid rgba(255,255,255,.07);padding-top:12px}.compare{margin-top:18px;padding:18px}.row{display:grid;grid-template-columns:1.1fr repeat(4,1fr);gap:10px;align-items:center;padding:12px;border-bottom:1px solid rgba(255,255,255,.06)}.estimate-panel{margin-top:18px;padding:18px}.estimate-grid{grid-template-columns:repeat(2,1fr);margin-top:12px}.estimate-card{padding:17px;display:grid;gap:12px}.badge{font-size:11px;border:1px solid rgba(157,231,255,.28);background:rgba(157,231,255,.08);color:#d9f7ff;padding:4px 8px;border-radius:999px}.badge.warn{border-color:rgba(245,184,107,.34);background:rgba(245,184,107,.1);color:#ffe2b6}.badge.bad{border-color:rgba(251,113,133,.34);background:rgba(251,113,133,.1);color:#ffd2db}.line-items{display:grid;gap:8px}.line-item{display:grid;grid-template-columns:1.35fr .9fr .8fr;gap:10px;align-items:start;border-top:1px solid rgba(255,255,255,.07);padding-top:8px}.caveats{margin:0;padding-left:18px;color:var(--muted);line-height:1.45}.status{min-height:20px;color:#bef7dc}@media(max-width:1000px){.hero-card,.cards{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.atlas h1{font-size:40px}.row{grid-template-columns:1fr 1fr}.top{height:auto;gap:14px;align-items:flex-start;flex-direction:column;padding:18px 20px}.atlas{padding:26px 20px}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand"><div class="logo"></div>Snowboard Country Atlas</div>
+      <nav class="nav"><button class="pill">Saved</button><button class="pill">Friends</button><button class="btn primary">Compare dates</button></nav>
+    </header>
+    <main class="atlas">
+      <span class="tag">Country-level planning</span>
+      <h1>Pick the country first, then drill into regions and resorts with cost, logistics, and data freshness visible.</h1>
+      <div class="countries" aria-label="Country pages">
+        <button class="pill country active" data-country="japan" data-default-estimate="fixture-dtw-to-hokkaido-2p-7n-5d" onclick="showCountry('japan', 'fixture-dtw-to-hokkaido-2p-7n-5d')">Japan</button>
+        <button class="pill country" data-country="canada" data-default-estimate="fixture-dtw-to-hokkaido-2p-7n-5d" onclick="showCountry('canada', 'fixture-dtw-to-hokkaido-2p-7n-5d')">Canada</button>
+        <button class="pill country" data-country="austria" data-default-estimate="fixture-dtw-to-hokkaido-2p-7n-5d" onclick="showCountry('austria', 'fixture-dtw-to-hokkaido-2p-7n-5d')">Austria</button>
+        <button class="pill country" data-country="usa" data-default-estimate="fixture-dtw-to-cottonwoods-2p-7n-5d" onclick="showCountry('usa', 'fixture-dtw-to-cottonwoods-2p-7n-5d')">USA</button>
+      </div>
+
+      <section class="country-page active" id="country-japan" aria-labelledby="title-japan">
+        <section class="hero-card">
+          <div class="photo" data-caption="Hokkaido, Hakuba, Tohoku snow corridors"></div>
+          <div class="card guide">
+            <div class="small mono">JAPAN GUIDE · Source freshness: Updated Jan 2026</div>
+            <h2 id="title-japan">Hokkaido quick-decision brief</h2>
+            <p class="muted">Best gateway is usually Sapporo New Chitose (CTS). If airfare is cheap but lodging is peak-season expensive, compare Sapporo city + train/bus days against Niseko village lodging.</p>
+            <div class="grid metrics"><div><div class="small">Gateway</div><div class="metric">CTS</div></div><div><div class="small">Car need</div><div class="metric">Low</div></div><div><div class="small">Lift/day</div><div class="metric">$72–$95</div></div><div><div class="small">7-night target</div><div class="metric">$2.4k</div></div></div>
+            <div class="actions"><button class="btn primary">Build Japan trip</button><a class="btn" href="#country-japan">Open country page</a></div>
+          </div>
+        </section>
+        <section class="grid cards" aria-label="Japan region and resort cards">
+          <article class="card resort-card"><div class="chips"><span class="tag">Niseko</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Jan 2026</span></div><h3>Most English-friendly powder hub</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>CTS</b></div><div class="metric-box"><div class="small">Car need</div><b>Low</b></div></div><p class="muted"><b>Tip:</b> Use Hirafu lodging for easiest first trip; check Kutchan/Sapporo if village rates spike.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$2.8k–$4.2k / 7 nights</b></div></article>
+          <article class="card resort-card"><div class="chips"><span class="tag">Rusutsu</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Jan 2026</span></div><h3>Resort-stay premium with shuttle planning</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>CTS</b></div><div class="metric-box"><div class="small">Car need</div><b>Medium</b></div></div><p class="muted"><b>Tip:</b> Pair with Niseko only if transfer windows match flight days.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$2.6k–$3.9k / 7 nights</b></div></article>
+          <article class="card resort-card"><div class="chips"><span class="tag">Hakuba Valley</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Dec 2025</span></div><h3>Tokyo gateway with broad terrain choice</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>HND/NRT</b></div><div class="metric-box"><div class="small">Car need</div><b>Medium</b></div></div><p class="muted"><b>Tip:</b> Compare Shinkansen plus bus time against overnight highway bus savings.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$2.2k–$3.4k / 7 nights</b></div></article>
+        </section>
+      </section>
+
+      <section class="country-page" id="country-canada" aria-labelledby="title-canada">
+        <section class="hero-card"><div class="photo" data-caption="BC mega-resorts and interior powder towns"></div><div class="card guide"><div class="small mono">CANADA GUIDE · Source freshness: Updated Jan 2026</div><h2 id="title-canada">Canada snowboard planning brief</h2><p class="muted">Vancouver works for Whistler simplicity; Calgary unlocks Banff and Kicking Horse; Kelowna is the interior shortcut when fares line up.</p><div class="grid metrics"><div><div class="small">Gateway</div><div class="metric">YVR/YYC</div></div><div><div class="small">Car need</div><div class="metric">Med</div></div><div><div class="small">Lift/day</div><div class="metric">$95–$175</div></div><div><div class="small">7-night target</div><div class="metric">$2.1k</div></div></div><div class="actions"><button class="btn primary">Build Canada trip</button><a class="btn" href="#country-canada">Open country page</a></div></div></section>
+        <section class="grid cards" aria-label="Canada region and resort cards">
+          <article class="card resort-card"><div class="chips"><span class="tag">Whistler Blackcomb</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Jan 2026</span></div><h3>No-car flagship, high lodging volatility</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>YVR</b></div><div class="metric-box"><div class="small">Car need</div><b>Low</b></div></div><p class="muted"><b>Tip:</b> Book shuttle-friendly lodging early; day tickets are painful without pass coverage.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$2.7k–$4.6k / 7 nights</b></div></article>
+          <article class="card resort-card"><div class="chips"><span class="tag">Banff / Lake Louise</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Dec 2025</span></div><h3>Town-base value with multiple mountains</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>YYC</b></div><div class="metric-box"><div class="small">Car need</div><b>Low</b></div></div><p class="muted"><b>Tip:</b> Use Banff as base if group wants nightlife and shuttle simplicity.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$2.1k–$3.4k / 7 nights</b></div></article>
+          <article class="card resort-card"><div class="chips"><span class="tag">Revelstoke</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Nov 2025</span></div><h3>Advanced terrain with transfer friction</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>YLW/YYC</b></div><div class="metric-box"><div class="small">Car need</div><b>High</b></div></div><p class="muted"><b>Tip:</b> Only choose it when the group values terrain over convenience.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$2.3k–$3.8k / 7 nights</b></div></article>
+        </section>
+      </section>
+
+      <section class="country-page" id="country-austria" aria-labelledby="title-austria">
+        <section class="hero-card"><div class="photo" data-caption="Rail-friendly Tyrol and mega-pass valleys"></div><div class="card guide"><div class="small mono">AUSTRIA GUIDE · Source freshness: Updated Jan 2026</div><h2 id="title-austria">Austria snowboard planning brief</h2><p class="muted">Austria wins when airfare to Munich, Zurich, or Innsbruck is cheap and the group wants walkable villages, rail options, and lower on-mountain costs than North America.</p><div class="grid metrics"><div><div class="small">Gateway</div><div class="metric">MUC/INN</div></div><div><div class="small">Car need</div><div class="metric">Low</div></div><div><div class="small">Lift/day</div><div class="metric">€62–€78</div></div><div><div class="small">7-night target</div><div class="metric">$2.0k</div></div></div><div class="actions"><button class="btn primary">Build Austria trip</button><a class="btn" href="#country-austria">Open country page</a></div></div></section>
+        <section class="grid cards" aria-label="Austria region and resort cards">
+          <article class="card resort-card"><div class="chips"><span class="tag">St. Anton / Arlberg</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Jan 2026</span></div><h3>Rail-access classic with expert terrain</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>ZRH/MUC</b></div><div class="metric-box"><div class="small">Car need</div><b>Low</b></div></div><p class="muted"><b>Tip:</b> Stay near rail or ski bus lines; nightlife adds lodging premium.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$2.2k–$3.6k / 7 nights</b></div></article>
+          <article class="card resort-card"><div class="chips"><span class="tag">Sölden</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Dec 2025</span></div><h3>High-altitude snow reliability</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>INN/MUC</b></div><div class="metric-box"><div class="small">Car need</div><b>Medium</b></div></div><p class="muted"><b>Tip:</b> Use it as the early/late season fallback when snow risk matters.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$2.0k–$3.2k / 7 nights</b></div></article>
+          <article class="card resort-card"><div class="chips"><span class="tag">Mayrhofen / Zillertal</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Dec 2025</span></div><h3>Value valley with broad pass coverage</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>INN/MUC</b></div><div class="metric-box"><div class="small">Car need</div><b>Low</b></div></div><p class="muted"><b>Tip:</b> Great for mixed-level groups that want village energy and train access.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$1.8k–$3.0k / 7 nights</b></div></article>
+        </section>
+      </section>
+
+      <section class="country-page" id="country-usa" aria-labelledby="title-usa">
+        <section class="hero-card"><div class="photo" data-caption="Rockies, Tahoe, Utah, and Pacific Northwest"></div><div class="card guide"><div class="small mono">USA GUIDE · Source freshness: Updated Jan 2026</div><h2 id="title-usa">USA snowboard planning brief</h2><p class="muted">The US is easiest when pass alignment is known first. Salt Lake City is the simplest airport-to-snow math; Colorado has breadth but transfer and lodging costs vary sharply.</p><div class="grid metrics"><div><div class="small">Gateway</div><div class="metric">SLC/DEN</div></div><div><div class="small">Car need</div><div class="metric">Med</div></div><div><div class="small">Lift/day</div><div class="metric">$120–$240</div></div><div><div class="small">7-night target</div><div class="metric">$2.5k</div></div></div><div class="actions"><button class="btn primary">Build USA trip</button><a class="btn" href="#country-usa">Open country page</a></div></div></section>
+        <section class="grid cards" aria-label="USA region and resort cards">
+          <article class="card resort-card"><div class="chips"><span class="tag">Salt Lake Cottonwoods</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Jan 2026</span></div><h3>Fastest airport-to-snow option</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>SLC</b></div><div class="metric-box"><div class="small">Car need</div><b>Medium</b></div></div><p class="muted"><b>Tip:</b> Base in Sandy/SLC for cost control; monitor canyon traffic and reservation rules.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$2.0k–$3.5k / 7 nights</b></div></article>
+          <article class="card resort-card"><div class="chips"><span class="tag">Summit County Colorado</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Dec 2025</span></div><h3>Pass-friendly breadth with I-70 risk</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>DEN</b></div><div class="metric-box"><div class="small">Car need</div><b>Medium</b></div></div><p class="muted"><b>Tip:</b> Price airport shuttles before renting; weekend I-70 can erase fare savings.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$2.4k–$4.3k / 7 nights</b></div></article>
+          <article class="card resort-card"><div class="chips"><span class="tag">Tahoe North/South</span><span class="tag fresh" data-field="freshness">Source freshness: Updated Nov 2025</span></div><h3>Flexible airports, storm-dependent timing</h3><div class="small">Quick metrics</div><div class="metric-pair"><div class="metric-box"><div class="small">Gateway</div><b>RNO/SMF</b></div><div class="metric-box"><div class="small">Car need</div><b>High</b></div></div><p class="muted"><b>Tip:</b> Use Tahoe when lodging deals appear and chains/road risk is acceptable.</p><div class="cost"><span class="small">Cost range</span><b data-field="cost-range">$2.2k–$3.9k / 7 nights</b></div></article>
+        </section>
+      </section>
+
+      <section class="card estimate-panel" id="fixture-estimates" aria-label="Fixture-backed trip estimates" data-active-estimate="fixture-dtw-to-hokkaido-2p-7n-5d">
+        <div class="chips"><span class="tag">Atlas MVP estimate engine</span><span class="tag fresh">Generated from src/estimate/estimate_engine.js via buildFixtureTripEstimate</span></div>
+        <h2>Fixture-backed trip estimates</h2>
+        <p class="muted">Cottonwoods and Hokkaido use the same fixture profile IDs and total math as the estimate engine. Badges expose source confidence, while caveats show what still needs live verification.</p><p class="small" data-selected-estimate-summary>Selected estimate: Hokkaido / Niseko and Rusutsu · USD 8,607</p><div class="actions"><button class="btn" onclick="shareAtlasSnapshot()">Share selected atlas snapshot</button><span class="small status" data-atlas-share-status></span></div><p class="small" data-selected-estimate-summary>Selected estimate: Hokkaido / Niseko and Rusutsu · USD 8,607</p><div class="actions"><button class="btn primary" onclick="shareAtlasSnapshot()">Share selected fixture snapshot</button><span class="small status" data-atlas-share-status></span></div>
+        <div class="grid estimate-grid">
+          <article class="card estimate-card" onclick="selectAtlasEstimate('fixture-dtw-to-cottonwoods-2p-7n-5d')" data-estimate-profile="fixture-dtw-to-cottonwoods-2p-7n-5d" data-estimate-id="estimate-fixture-dtw-to-cottonwoods-2p-7n-5d">
+            <div class="chips"><span class="tag">Salt Lake Cottonwoods</span><span class="badge">Source-backed range</span><span class="badge warn">Prototype fixture estimate</span></div>
+            <h3>DTW → Salt Lake City / Cottonwood Canyons</h3>
+            <div class="grid metrics"><div><div class="small">Expected total</div><div class="metric">USD 5,960</div></div><div><div class="small">Per person</div><div class="metric">USD 2,980 per person</div></div><div><div class="small">Low–high</div><div class="metric">USD 4,400–7,920</div></div><div><div class="small">Profile</div><div class="metric">2p · 7n · 5d</div></div></div>
+            <div class="line-items" aria-label="Cottonwoods estimate line items">
+              <div class="line-item small"><b>Line item</b><b>Fixture/source</b><b>Confidence</b></div>
+              <div class="line-item"><span>Round-trip flight DTW to SLC</span><span>Prototype Google Flights deep-link observation</span><span class="badge warn">Prototype fixture estimate</span></div>
+              <div class="line-item"><span>7 nights lodging in Salt Lake City / Sandy</span><span>slc-sandy-midvale</span><span class="badge warn">Prototype fixture estimate</span></div>
+              <div class="line-item"><span>SLC rental car and winter driving buffer</span><span>slc-winter-rental-car</span><span class="badge warn">Prototype fixture estimate</span></div>
+              <div class="line-item"><span>5 days lift tickets for Cottonwood resorts</span><span>cottonwoods-day-ticket</span><span class="badge warn">Prototype fixture estimate</span></div>
+              <div class="line-item"><span>5 days snowboard rental package</span><span>cottonwoods-snowboard-package</span><span class="badge warn">Prototype fixture estimate</span></div>
+              <div class="line-item"><span>7 days food budget</span><span>Snowbird official dining pages (The Summit and SeventyOne)</span><span class="badge">Source-backed range</span></div>
+            </div>
+            <ul class="caveats"><li>Prototype flight fare fixture; verify live fare through source/deep link.</li><li>Prototype fixture cost range, not live inventory or an exact quote.</li><li>Manual per-person/day range backed by Snowbird official dining pages that publish resort casual dining venues with $$ price range; verify current menus, taxes, tips, groceries, and alcohol before booking.</li></ul>
+            <div class="actions"><button class="btn primary" onclick="buildTripFromEstimate('fixture-dtw-to-cottonwoods-2p-7n-5d')">Build trip from fixture estimate</button><span class="small status" data-build-status="fixture-dtw-to-cottonwoods-2p-7n-5d"></span></div>
+          </article>
+          <article class="card estimate-card" onclick="selectAtlasEstimate('fixture-dtw-to-hokkaido-2p-7n-5d')" data-estimate-profile="fixture-dtw-to-hokkaido-2p-7n-5d" data-estimate-id="estimate-fixture-dtw-to-hokkaido-2p-7n-5d">
+            <div class="chips"><span class="tag">Hokkaido / Niseko and Rusutsu</span><span class="badge">Source-backed range</span><span class="badge warn">Prototype fixture estimate</span></div>
+            <h3>DTW → Hokkaido powder week</h3>
+            <div class="grid metrics"><div><div class="small">Expected total</div><div class="metric">USD 8,607</div></div><div><div class="small">Per person</div><div class="metric">USD 4,304 per person</div></div><div><div class="small">Low–high</div><div class="metric">USD 6,260–11,613</div></div><div><div class="small">Profile</div><div class="metric">2p · 7n · 5d</div></div></div>
+            <div class="line-items" aria-label="Hokkaido estimate line items">
+              <div class="line-item small"><b>Line item</b><b>Fixture/source</b><b>Confidence</b></div>
+              <div class="line-item"><span>Round-trip flight DTW to CTS via Tokyo</span><span>Prototype Google Flights deep-link observation</span><span class="badge warn">Prototype fixture estimate</span></div>
+              <div class="line-item"><span>7 nights lodging in Hirafu / Niseko Village</span><span>hirafu-niseko-village</span><span class="badge warn">Prototype fixture estimate</span></div>
+              <div class="line-item"><span>CTS resort shuttle for two travelers</span><span>cts-resort-shuttle</span><span class="badge warn">Prototype fixture estimate</span></div>
+              <div class="line-item"><span>5 days lift tickets for Niseko/Rusutsu</span><span>hokkaido-day-ticket</span><span class="badge warn">Prototype fixture estimate</span></div>
+              <div class="line-item"><span>5 days snowboard rental package</span><span>hokkaido-snowboard-package</span><span class="badge warn">Prototype fixture estimate</span></div>
+              <div class="line-item"><span>Meals / casual food budget</span><span>Niseko Village and Grand Hirafu official dining pages</span><span class="badge">Source-backed range</span></div>
+            </div>
+            <ul class="caveats"><li>Prototype flight fare fixture; verify live fare through source/deep link.</li><li>JPY fixture prices converted at 150 JPY = 1 USD for prototype comparability.</li><li>Manual per-person/day JPY range backed by Niseko/Hirafu official resort dining pages; verify in-season menus, taxes/service charges, convenience-store meals, alcohol, and exchange rates before booking.</li></ul>
+            <div class="actions"><button class="btn primary" onclick="buildTripFromEstimate('fixture-dtw-to-hokkaido-2p-7n-5d')">Build trip from fixture estimate</button><span class="small status" data-build-status="fixture-dtw-to-hokkaido-2p-7n-5d"></span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="card compare">
+        <h2>Country comparison snapshot</h2>
+        <div class="row small"><b>Country / lead region</b><b>Airports</b><b>No-car</b><b>Lift/day</b><b>Expected total</b></div>
+        <div class="row"><span>Japan / Hokkaido</span><span>CTS</span><span>High</span><span>$72–$95</span><b>$2.4k–$3.7k</b></div>
+        <div class="row"><span>Canada / Banff</span><span>YYC</span><span>High</span><span>$95–$145</span><b>$2.1k–$3.4k</b></div>
+        <div class="row"><span>Austria / Tyrol</span><span>MUC/INN</span><span>High</span><span>€62–€78</span><b>$1.8k–$3.2k</b></div>
+        <div class="row"><span>USA / Utah</span><span>SLC</span><span>Medium</span><span>$120–$240</span><b>$2.0k–$3.5k</b></div>
+      </section>
+    </main>
+  </div>
+  <script>
+    // Fixture estimates above are generated from the Node estimate engine: buildFixtureTripEstimate(profileId).
+    window.ATLAS_FIXTURE_ESTIMATES = {
+      'fixture-dtw-to-cottonwoods-2p-7n-5d': { id: 'estimate-fixture-dtw-to-cottonwoods-2p-7n-5d', region: 'Salt Lake Cottonwoods', expected: 'USD 5,960', perPerson: 'USD 2,980 per person', shareId: 'share-cottonwoods-readonly' },
+      'fixture-dtw-to-hokkaido-2p-7n-5d': { id: 'estimate-fixture-dtw-to-hokkaido-2p-7n-5d', region: 'Hokkaido / Niseko and Rusutsu', expected: 'USD 8,607', perPerson: 'USD 4,304 per person', shareId: 'share-hokkaido-readonly' }
+    };
+    window.ATLAS_STATE = { activeCountry: 'japan', activeEstimateProfileId: 'fixture-dtw-to-hokkaido-2p-7n-5d' };
+    function createShareSnapshotFromEstimate(profileId){
+      var estimate = window.ATLAS_FIXTURE_ESTIMATES[profileId];
+      if(!estimate){ return null; }
+      return { shareId: estimate.shareId, profileId: profileId, estimateId: estimate.id, region: estimate.region, expected: estimate.expected, source: 'createShareableTripSnapshot' };
+    }
+    function selectAtlasEstimate(profileId){
+      var estimate = window.ATLAS_FIXTURE_ESTIMATES[profileId];
+      if(!estimate){ return null; }
+      window.ATLAS_STATE.activeEstimateProfileId = profileId;
+      var panel = document.getElementById('fixture-estimates');
+      if(panel){ panel.dataset.activeEstimate = profileId; }
+      document.querySelectorAll('.estimate-card').forEach(function(card){
+        card.classList.toggle('active', card.dataset.estimateProfile === profileId);
+      });
+      var summary = document.querySelector('[data-selected-estimate-summary]');
+      if(summary){ summary.textContent = 'Selected estimate: ' + estimate.region + ' · ' + estimate.expected + ' · ' + estimate.perPerson; }
+      return estimate;
+    }
+    function shareAtlasSnapshot(){
+      var snapshot = createShareSnapshotFromEstimate(window.ATLAS_STATE.activeEstimateProfileId);
+      window.lastAtlasShareSnapshot = snapshot;
+      var status = document.querySelector('[data-atlas-share-status]');
+      if(status && snapshot){ status.textContent = 'Share snapshot ready: ' + snapshot.region + ' · ' + snapshot.expected; }
+      return snapshot;
+    }
+    window.buildTripFromEstimate = function(profileId){
+      var estimate = window.ATLAS_FIXTURE_ESTIMATES[profileId];
+      var status = document.querySelector('[data-build-status="' + profileId + '"]');
+      if(!estimate){ return null; }
+      if(status){ status.textContent = 'Trip draft started from ' + estimate.id + ' using estimate engine fixture profile.'; }
+      window.lastBuiltTripEstimate = { profileId: profileId, estimateId: estimate.id, source: 'buildFixtureTripEstimate' };
+      return window.lastBuiltTripEstimate;
+    };
+    function showCountry(slug, profileId, updateHash){
+      document.querySelectorAll('.country').forEach(function(button){
+        button.classList.toggle('active', button.dataset.country === slug);
+      });
+      document.querySelectorAll('.country-page').forEach(function(page){
+        page.classList.toggle('active', page.id === 'country-' + slug);
+      });
+      window.ATLAS_STATE.activeCountry = slug;
+      if(profileId){ selectAtlasEstimate(profileId); }
+      window.ATLAS_STATE.activeCountry = slug;
+      var defaultProfileId = profileId || (document.querySelector('[data-country="' + slug + '"]') || {}).dataset?.defaultEstimate;
+      if(defaultProfileId){ selectAtlasEstimate(defaultProfileId); }
+      if(updateHash !== false){
+        history.replaceState(null, '', '#country-' + slug);
+      }
+    }
+    var initial = (location.hash || '#country-japan').replace('#country-', '');
+    if(document.getElementById('country-' + initial)){var initialButton=document.querySelector('[data-country="' + initial + '"]');showCountry(initial, initialButton && initialButton.dataset.defaultEstimate, false)}
+    selectAtlasEstimate(window.ATLAS_STATE.activeEstimateProfileId);
+  </script>
+</body>
+</html>
