@@ -87,7 +87,8 @@
       "photo_url": "https://res.cloudinary.com/altaskiarea/image/upload/f_auto,q_65/e_gradient_fade:35,y_-0.4/v1760557154/resources/Test-Marquees/Homepage88group4.jpg",
       "source_url": "https://www.alta.com/",
       "source_type": "official_resort_media",
-      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change."
+      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change.",
+      "local_path": "assets/resort-media/alta.jpg"
     }
   },
   {
@@ -178,7 +179,8 @@
       "photo_url": "https://www.snowbird.com/_bluedrop/images/sites/default/files/2024-09/Reed-Tyler_2024_7789-crp_about-snowbird_trams_1000x667.jpg?u=aHR0cHM6Ly9jbXMuc25vd2JpcmQuY29tL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNC0wOS9SZWVkLVR5bGVyXzIwMjRfNzc4OS1jcnBfYWJvdXQtc25vd2JpcmRfdHJhbXNfMTAwMHg2NjcuanBn&d=5778d69ca89a53fec2a30cffd39377c4&q=75&w=1000&h=667",
       "source_url": "https://www.snowbird.com/",
       "source_type": "official_resort_media",
-      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change."
+      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change.",
+      "local_path": "assets/resort-media/snowbird.webp"
     }
   },
   {
@@ -451,7 +453,8 @@
       "photo_url": "https://www.niseko.ne.jp/en/wp-content/uploads/2018/11/NU_Top_Slide_Feel-The-Powder.jpg",
       "source_url": "https://www.niseko.ne.jp/en/",
       "source_type": "official_resort_media",
-      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change."
+      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change.",
+      "local_path": "assets/resort-media/niseko-united.jpg"
     }
   },
   {
@@ -542,7 +545,8 @@
       "photo_url": "https://rusutsu.com/assets/img/common/ogp.jpg",
       "source_url": "https://rusutsu.com/en/",
       "source_type": "official_resort_media",
-      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change."
+      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change.",
+      "local_path": "assets/resort-media/rusutsu.jpg"
     }
   },
   {
@@ -997,7 +1001,8 @@
       "photo_url": "https://www.palisadestahoe.com/-/media/squaw-alpine/logos/pt_eagle-logo_white-background_app-thumbnail.jpg",
       "source_url": "https://www.palisadestahoe.com/",
       "source_type": "official_resort_media",
-      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change."
+      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change.",
+      "local_path": "assets/resort-media/palisades-tahoe.jpg"
     }
   },
   {
@@ -1361,7 +1366,8 @@
       "photo_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Whistler_Panorama_2.jpg",
       "source_url": "https://www.whistlerblackcomb.com/",
       "source_type": "official_resort_media",
-      "display_caveat": "Trail-map and skiable-area links are official; this preview photo is a Wikimedia Commons scenic image because the official page did not expose a stable direct image URL during QA."
+      "display_caveat": "Trail-map and skiable-area links are official; this preview photo is a Wikimedia Commons scenic image because the official page did not expose a stable direct image URL during QA.",
+      "local_path": "assets/resort-media/whistler-blackcomb.jpg"
     }
   },
   {
@@ -1543,13 +1549,14 @@
       "photo_url": "https://www.stantonamarlberg.com/XooWebKit/bin/imagecache.php/13b46_4fa6f18b20/708f_jJ23H/skifahren_230624.jpg",
       "source_url": "https://www.stantonamarlberg.com/",
       "source_type": "official_resort_media",
-      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change."
+      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change.",
+      "local_path": "assets/resort-media/st-anton-arlberg.jpg"
     }
   },
   {
     "id": "lech-zurs",
     "region_id": "at-arlberg-tyrol",
-    "name": "Lech Zürs am Arlberg",
+    "name": "Lech Z\u00fcrs am Arlberg",
     "coordinates": [
       47.2089,
       10.1417
@@ -1561,7 +1568,7 @@
       "annual_snowfall_in": 350,
       "provenance": {
         "source_type": "official_page",
-        "source_name": "Lech Zürs am Arlberg mountain stats",
+        "source_name": "Lech Z\u00fcrs am Arlberg mountain stats",
         "confidence": "source_backed_range",
         "freshness": "recent",
         "retrieved_at": "2026-05-19T00:00:00.000Z",
@@ -1607,7 +1614,7 @@
     "provenance": [
       {
         "source_type": "official_page",
-        "source_name": "Lech Zürs am Arlberg official site",
+        "source_name": "Lech Z\u00fcrs am Arlberg official site",
         "confidence": "source_backed_range",
         "freshness": "recent",
         "retrieved_at": "2026-05-19T00:00:00.000Z",
@@ -1621,7 +1628,7 @@
       "display": "302 km of pistes",
       "provenance": {
         "source_type": "official_page",
-        "source_name": "Lech Zürs am Arlberg mountain statistics / trail map",
+        "source_name": "Lech Z\u00fcrs am Arlberg mountain statistics / trail map",
         "confidence": "source_backed_range",
         "freshness": "recent",
         "retrieved_at": "2026-05-19T00:00:00.000Z",
@@ -1816,7 +1823,8 @@
       "photo_url": "https://www.revelstokemountainresort.com/uploads/webcams/village.jpg?1779193577",
       "source_url": "https://www.revelstokemountainresort.com/",
       "source_type": "official_resort_media",
-      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change."
+      "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change.",
+      "local_path": "assets/resort-media/revelstoke.jpg"
     }
   },
   {
@@ -2000,5 +2008,769 @@
       "source_type": "official_resort_media",
       "display_caveat": "Photo/trail-map links are official resort media or official resort pages; image availability can change."
     }
+  },
+  {
+    "id": "lake-louise",
+    "region_id": "ca-banff-lake-louise",
+    "name": "Lake Louise Ski Resort",
+    "coordinates": [
+      51.4419,
+      -116.1627
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 3250,
+      "acreage": 4200,
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Lake Louise Ski Resort mountain stats",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+        "source_url": "https://www.skilouise.com/"
+      }
+    },
+    "pass_affiliations": [
+      {
+        "pass_name": "Ikon",
+        "access_summary": "Pass affiliation included for prototype filtering; verify current Ikon access and blackout rules before purchase.",
+        "provenance": {
+          "source_type": "official_resort",
+          "source_name": "Ikon Pass destination listing",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+          "source_url": "https://www.ikonpass.com/en/destinations/lake-louise"
+        }
+      }
+    ],
+    "terrain_tags": [
+      "snowboard",
+      "powder",
+      "destination",
+      "banff"
+    ],
+    "suitability": {
+      "intermediate": "high",
+      "expert": "high",
+      "powder": "high"
+    },
+    "official_urls": {
+      "resort_home": "https://www.skilouise.com/",
+      "trail_map": "https://www.skilouise.com/mountain/trail-map/",
+      "lift_tickets": "https://www.skilouise.com/tickets-passes/"
+    },
+    "skiable_area": {
+      "value": 4200,
+      "unit": "acres",
+      "display": "4,200 acres",
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Lake Louise Ski Resort mountain stats",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+        "source_url": "https://www.skilouise.com/"
+      }
+    },
+    "media": {
+      "trail_map_url": "https://www.skilouise.com/mountain/trail-map/",
+      "photo_url": "https://www.skilouise.com/",
+      "source_url": "https://www.skilouise.com/",
+      "source_type": "official_resort_media",
+      "display_caveat": "Official trail-map link is source-backed; preview image is a local placeholder until Lake Louise-specific public media is archived.",
+      "local_path": "assets/resort-media/whistler-blackcomb.jpg"
+    },
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Lake Louise Ski Resort official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+        "source_url": "https://www.skilouise.com/"
+      }
+    ]
+  },
+  {
+    "id": "sunshine-village",
+    "region_id": "ca-banff-lake-louise",
+    "name": "Banff Sunshine Village",
+    "coordinates": [
+      51.1152,
+      -115.7636
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 3514,
+      "acreage": 3358,
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Banff Sunshine Village mountain stats",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+        "source_url": "https://www.skibanff.com/"
+      }
+    },
+    "pass_affiliations": [
+      {
+        "pass_name": "Ikon",
+        "access_summary": "Pass affiliation included for prototype filtering; verify current Ikon access and blackout rules before purchase.",
+        "provenance": {
+          "source_type": "official_resort",
+          "source_name": "Ikon Pass destination listing",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+          "source_url": "https://www.ikonpass.com/en/destinations/banff-sunshine"
+        }
+      }
+    ],
+    "terrain_tags": [
+      "snowboard",
+      "powder",
+      "destination",
+      "banff"
+    ],
+    "suitability": {
+      "intermediate": "high",
+      "expert": "high",
+      "powder": "high"
+    },
+    "official_urls": {
+      "resort_home": "https://www.skibanff.com/",
+      "trail_map": "https://www.skibanff.com/explore/trail-maps",
+      "lift_tickets": "https://www.skibanff.com/"
+    },
+    "skiable_area": {
+      "value": 3358,
+      "unit": "acres",
+      "display": "3,358 acres",
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Banff Sunshine Village mountain stats",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+        "source_url": "https://www.skibanff.com/"
+      }
+    },
+    "media": {
+      "trail_map_url": "https://www.skibanff.com/explore/trail-maps",
+      "photo_url": "https://www.skibanff.com/",
+      "source_url": "https://www.skibanff.com/",
+      "source_type": "official_resort_media",
+      "display_caveat": "Official trail-map link is source-backed; preview image is a local placeholder until Sunshine-specific public media is archived.",
+      "local_path": "assets/resort-media/revelstoke.jpg"
+    },
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Banff Sunshine Village official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+        "source_url": "https://www.skibanff.com/"
+      }
+    ]
+  },
+  {
+    "id": "zermatt",
+    "region_id": "ch-swiss-alps",
+    "name": "Zermatt Matterhorn",
+    "coordinates": [
+      46.0207,
+      7.7491
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 0,
+      "acreage": null,
+      "piste_km": 360,
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Zermatt Matterhorn official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Zermatt Matterhorn resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.zermatt.ch/en"
+      }
+    },
+    "pass_affiliations": [],
+    "lift_ticket_estimates": [],
+    "rental_estimates": [],
+    "terrain_tags": [
+      "snowboard",
+      "europe",
+      "glacier",
+      "village"
+    ],
+    "suitability": {
+      "intermediate": "high",
+      "expert": "medium",
+      "powder": "medium"
+    },
+    "official_urls": {
+      "resort_home": "https://www.zermatt.ch/en",
+      "trail_map": "https://www.zermatt.ch/en/Media/Planning-hikes-tours/Piste-map",
+      "lift_tickets": "https://www.zermatt.ch/en"
+    },
+    "skiable_area": {
+      "value": 360,
+      "unit": "km of pistes",
+      "display": "360 km of pistes",
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Zermatt Matterhorn official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Zermatt Matterhorn resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.zermatt.ch/en"
+      }
+    },
+    "media": {
+      "trail_map_url": "https://www.zermatt.ch/en/Media/Planning-hikes-tours/Piste-map",
+      "photo_url": "https://www.zermatt.ch/en",
+      "source_url": "https://www.zermatt.ch/en",
+      "source_type": "official_resort_media",
+      "display_caveat": "Official resort/trail-map source is linked; preview image delivery should be verified before public presentation."
+    },
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Zermatt Matterhorn official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Zermatt Matterhorn resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.zermatt.ch/en"
+      }
+    ]
+  },
+  {
+    "id": "verbier",
+    "region_id": "ch-swiss-alps",
+    "name": "Verbier 4 Vall\u00e9es",
+    "coordinates": [
+      46.096,
+      7.228
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 0,
+      "acreage": null,
+      "piste_km": 410,
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Verbier 4 Vall\u00e9es official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Verbier 4 Vall\u00e9es resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.verbier.ch/"
+      }
+    },
+    "pass_affiliations": [],
+    "lift_ticket_estimates": [],
+    "rental_estimates": [],
+    "terrain_tags": [
+      "snowboard",
+      "europe",
+      "freeride",
+      "village"
+    ],
+    "suitability": {
+      "intermediate": "high",
+      "expert": "medium",
+      "powder": "medium"
+    },
+    "official_urls": {
+      "resort_home": "https://www.verbier.ch/",
+      "trail_map": "https://www.verbier4vallees.ch/en/Practical-information/Interactive-map",
+      "lift_tickets": "https://www.verbier.ch/"
+    },
+    "skiable_area": {
+      "value": 410,
+      "unit": "km of pistes",
+      "display": "410 km of pistes",
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Verbier 4 Vall\u00e9es official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Verbier 4 Vall\u00e9es resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.verbier.ch/"
+      }
+    },
+    "media": {
+      "trail_map_url": "https://www.verbier4vallees.ch/en/Practical-information/Interactive-map",
+      "photo_url": "https://www.verbier.ch/",
+      "source_url": "https://www.verbier.ch/",
+      "source_type": "official_resort_media",
+      "display_caveat": "Official resort/trail-map source is linked; preview image delivery should be verified before public presentation."
+    },
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Verbier 4 Vall\u00e9es official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Verbier 4 Vall\u00e9es resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.verbier.ch/"
+      }
+    ]
+  },
+  {
+    "id": "chamonix-mont-blanc",
+    "region_id": "fr-french-alps",
+    "name": "Chamonix Mont-Blanc",
+    "coordinates": [
+      45.9237,
+      6.8694
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 0,
+      "acreage": null,
+      "piste_km": 150,
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Chamonix Mont-Blanc official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Chamonix Mont-Blanc resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.chamonix.com/"
+      }
+    },
+    "pass_affiliations": [],
+    "lift_ticket_estimates": [],
+    "rental_estimates": [],
+    "terrain_tags": [
+      "snowboard",
+      "europe",
+      "expert",
+      "glacier"
+    ],
+    "suitability": {
+      "intermediate": "high",
+      "expert": "medium",
+      "powder": "medium"
+    },
+    "official_urls": {
+      "resort_home": "https://www.chamonix.com/",
+      "trail_map": "https://www.chamonix.com/activities/skiing/ski-areas-and-lifts",
+      "lift_tickets": "https://www.chamonix.com/"
+    },
+    "skiable_area": {
+      "value": 150,
+      "unit": "km of pistes",
+      "display": "150 km of pistes",
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Chamonix Mont-Blanc official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Chamonix Mont-Blanc resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.chamonix.com/"
+      }
+    },
+    "media": {
+      "trail_map_url": "https://www.chamonix.com/activities/skiing/ski-areas-and-lifts",
+      "photo_url": "https://www.chamonix.com/",
+      "source_url": "https://www.chamonix.com/",
+      "source_type": "official_resort_media",
+      "display_caveat": "Official resort/trail-map source is linked; preview image delivery should be verified before public presentation."
+    },
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Chamonix Mont-Blanc official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Chamonix Mont-Blanc resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.chamonix.com/"
+      }
+    ]
+  },
+  {
+    "id": "val-disere-tignes",
+    "region_id": "fr-french-alps",
+    "name": "Val d\u2019Is\u00e8re / Tignes",
+    "coordinates": [
+      45.45,
+      6.98
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 0,
+      "acreage": null,
+      "piste_km": 300,
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Val d\u2019Is\u00e8re / Tignes official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Val d\u2019Is\u00e8re / Tignes resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.valdisere.com/en/"
+      }
+    },
+    "pass_affiliations": [],
+    "lift_ticket_estimates": [],
+    "rental_estimates": [],
+    "terrain_tags": [
+      "snowboard",
+      "europe",
+      "high-alpine",
+      "destination"
+    ],
+    "suitability": {
+      "intermediate": "high",
+      "expert": "medium",
+      "powder": "medium"
+    },
+    "official_urls": {
+      "resort_home": "https://www.valdisere.com/en/",
+      "trail_map": "https://www.valdisere.com/en/ski-area/ski-map/",
+      "lift_tickets": "https://www.valdisere.com/en/"
+    },
+    "skiable_area": {
+      "value": 300,
+      "unit": "km of pistes",
+      "display": "300 km of pistes",
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Val d\u2019Is\u00e8re / Tignes official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Val d\u2019Is\u00e8re / Tignes resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.valdisere.com/en/"
+      }
+    },
+    "media": {
+      "trail_map_url": "https://www.valdisere.com/en/ski-area/ski-map/",
+      "photo_url": "https://www.valdisere.com/en/",
+      "source_url": "https://www.valdisere.com/en/",
+      "source_type": "official_resort_media",
+      "display_caveat": "Official resort/trail-map source is linked; preview image delivery should be verified before public presentation."
+    },
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Val d\u2019Is\u00e8re / Tignes official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Val d\u2019Is\u00e8re / Tignes resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.valdisere.com/en/"
+      }
+    ]
+  },
+  {
+    "id": "cortina-dampezzo",
+    "region_id": "it-dolomites",
+    "name": "Cortina d\u2019Ampezzo",
+    "coordinates": [
+      46.5405,
+      12.1357
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 0,
+      "acreage": null,
+      "piste_km": 120,
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Cortina d\u2019Ampezzo official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Cortina d\u2019Ampezzo resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.dolomiti.org/en/cortina/"
+      }
+    },
+    "pass_affiliations": [],
+    "lift_ticket_estimates": [],
+    "rental_estimates": [],
+    "terrain_tags": [
+      "snowboard",
+      "europe",
+      "dolomites",
+      "scenic"
+    ],
+    "suitability": {
+      "intermediate": "high",
+      "expert": "medium",
+      "powder": "medium"
+    },
+    "official_urls": {
+      "resort_home": "https://www.dolomiti.org/en/cortina/",
+      "trail_map": "https://www.dolomitisuperski.com/en/Ski-area/Cortina-d-Ampezzo/Ski-map",
+      "lift_tickets": "https://www.dolomiti.org/en/cortina/"
+    },
+    "skiable_area": {
+      "value": 120,
+      "unit": "km of pistes",
+      "display": "120 km of pistes",
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Cortina d\u2019Ampezzo official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Cortina d\u2019Ampezzo resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.dolomiti.org/en/cortina/"
+      }
+    },
+    "media": {
+      "trail_map_url": "https://www.dolomitisuperski.com/en/Ski-area/Cortina-d-Ampezzo/Ski-map",
+      "photo_url": "https://www.dolomiti.org/en/cortina/",
+      "source_url": "https://www.dolomiti.org/en/cortina/",
+      "source_type": "official_resort_media",
+      "display_caveat": "Official resort/trail-map source is linked; preview image delivery should be verified before public presentation."
+    },
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Cortina d\u2019Ampezzo official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Cortina d\u2019Ampezzo resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.dolomiti.org/en/cortina/"
+      }
+    ]
+  },
+  {
+    "id": "val-gardena",
+    "region_id": "it-dolomites",
+    "name": "Val Gardena",
+    "coordinates": [
+      46.56,
+      11.72
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 0,
+      "acreage": null,
+      "piste_km": 175,
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Val Gardena official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Val Gardena resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.valgardena.it/en/"
+      }
+    },
+    "pass_affiliations": [],
+    "lift_ticket_estimates": [],
+    "rental_estimates": [],
+    "terrain_tags": [
+      "snowboard",
+      "europe",
+      "dolomites",
+      "village"
+    ],
+    "suitability": {
+      "intermediate": "high",
+      "expert": "medium",
+      "powder": "medium"
+    },
+    "official_urls": {
+      "resort_home": "https://www.valgardena.it/en/",
+      "trail_map": "https://www.valgardena.it/en/winter-holidays-dolomites/skiing/slope-map/",
+      "lift_tickets": "https://www.valgardena.it/en/"
+    },
+    "skiable_area": {
+      "value": 175,
+      "unit": "km of pistes",
+      "display": "175 km of pistes",
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Val Gardena official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Val Gardena resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.valgardena.it/en/"
+      }
+    },
+    "media": {
+      "trail_map_url": "https://www.valgardena.it/en/winter-holidays-dolomites/skiing/slope-map/",
+      "photo_url": "https://www.valgardena.it/en/",
+      "source_url": "https://www.valgardena.it/en/",
+      "source_type": "official_resort_media",
+      "display_caveat": "Official resort/trail-map source is linked; preview image delivery should be verified before public presentation."
+    },
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Val Gardena official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Val Gardena resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.valgardena.it/en/"
+      }
+    ]
+  },
+  {
+    "id": "levi",
+    "region_id": "fi-lapland",
+    "name": "Levi Ski Resort",
+    "coordinates": [
+      67.805,
+      24.802
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 0,
+      "acreage": null,
+      "piste_km": 43,
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Levi Ski Resort official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Levi Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.levi.fi/en/"
+      }
+    },
+    "pass_affiliations": [],
+    "lift_ticket_estimates": [],
+    "rental_estimates": [],
+    "terrain_tags": [
+      "snowboard",
+      "europe",
+      "lapland",
+      "northern-lights"
+    ],
+    "suitability": {
+      "intermediate": "high",
+      "expert": "medium",
+      "powder": "medium"
+    },
+    "official_urls": {
+      "resort_home": "https://www.levi.fi/en/",
+      "trail_map": "https://www.levi.fi/en/ski/slope-map/",
+      "lift_tickets": "https://www.levi.fi/en/"
+    },
+    "skiable_area": {
+      "value": 43,
+      "unit": "km of pistes",
+      "display": "43 km of pistes",
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Levi Ski Resort official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Levi Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.levi.fi/en/"
+      }
+    },
+    "media": {
+      "trail_map_url": "https://www.levi.fi/en/ski/slope-map/",
+      "photo_url": "https://www.levi.fi/en/",
+      "source_url": "https://www.levi.fi/en/",
+      "source_type": "official_resort_media",
+      "display_caveat": "Official resort/trail-map source is linked; preview image delivery should be verified before public presentation."
+    },
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Levi Ski Resort official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Levi Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.levi.fi/en/"
+      }
+    ]
+  },
+  {
+    "id": "ruka",
+    "region_id": "fi-lapland",
+    "name": "Ruka Ski Resort",
+    "coordinates": [
+      66.165,
+      29.15
+    ],
+    "mountain_metrics": {
+      "vertical_ft": 0,
+      "acreage": null,
+      "piste_km": 19,
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Ruka Ski Resort official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Ruka Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.ruka.fi/en"
+      }
+    },
+    "pass_affiliations": [],
+    "lift_ticket_estimates": [],
+    "rental_estimates": [],
+    "terrain_tags": [
+      "snowboard",
+      "europe",
+      "lapland",
+      "early-season"
+    ],
+    "suitability": {
+      "intermediate": "high",
+      "expert": "medium",
+      "powder": "medium"
+    },
+    "official_urls": {
+      "resort_home": "https://www.ruka.fi/en",
+      "trail_map": "https://www.ruka.fi/en/ski-resort/slope-map",
+      "lift_tickets": "https://www.ruka.fi/en"
+    },
+    "skiable_area": {
+      "value": 19,
+      "unit": "km of pistes",
+      "display": "19 km of pistes",
+      "provenance": {
+        "source_type": "official_resort",
+        "source_name": "Ruka Ski Resort official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Ruka Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.ruka.fi/en"
+      }
+    },
+    "media": {
+      "trail_map_url": "https://www.ruka.fi/en/ski-resort/slope-map",
+      "photo_url": "https://www.ruka.fi/en",
+      "source_url": "https://www.ruka.fi/en",
+      "source_type": "official_resort_media",
+      "display_caveat": "Official resort/trail-map source is linked; preview image delivery should be verified before public presentation."
+    },
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Ruka Ski Resort official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Ruka Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+        "source_url": "https://www.ruka.fi/en"
+      }
+    ]
   }
 ]

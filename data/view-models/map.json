@@ -1,0 +1,4433 @@
+{
+  "filters": [
+    {
+      "id": "all-layers",
+      "label": "All layers",
+      "region_ids": [
+        "us-utah-cottonwoods",
+        "jp-hokkaido-niseko-rusutsu",
+        "us-colorado-summit-county",
+        "us-tahoe-north-south",
+        "ca-whistler-sea-to-sky",
+        "at-arlberg-tyrol",
+        "ca-interior-bc-powder-highway",
+        "ca-banff-lake-louise",
+        "ch-swiss-alps",
+        "fr-french-alps",
+        "it-dolomites",
+        "fi-lapland"
+      ],
+      "resort_ids": [
+        "alta",
+        "snowbird",
+        "brighton",
+        "solitude",
+        "niseko-united",
+        "rusutsu",
+        "breckenridge",
+        "keystone",
+        "copper-mountain",
+        "arapahoe-basin",
+        "palisades-tahoe",
+        "heavenly",
+        "northstar",
+        "kirkwood",
+        "whistler-blackcomb",
+        "cypress-mountain",
+        "st-anton-arlberg",
+        "lech-zurs",
+        "stubai-glacier",
+        "revelstoke",
+        "kicking-horse",
+        "panorama",
+        "lake-louise",
+        "sunshine-village",
+        "zermatt",
+        "verbier",
+        "chamonix-mont-blanc",
+        "val-disere-tignes",
+        "cortina-dampezzo",
+        "val-gardena",
+        "levi",
+        "ruka"
+      ],
+      "markers": [
+        {
+          "id": "alta",
+          "label": "Alta Ski Area",
+          "type": "resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.5888,
+            -111.638
+          ]
+        },
+        {
+          "id": "snowbird",
+          "label": "Snowbird",
+          "type": "resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.5811,
+            -111.6579
+          ]
+        },
+        {
+          "id": "brighton",
+          "label": "Brighton Resort",
+          "type": "resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.598,
+            -111.583
+          ]
+        },
+        {
+          "id": "solitude",
+          "label": "Solitude Mountain Resort",
+          "type": "resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.6206,
+            -111.5919
+          ]
+        },
+        {
+          "id": "niseko-united",
+          "label": "Niseko United",
+          "type": "resort",
+          "region_id": "jp-hokkaido-niseko-rusutsu",
+          "coordinates": [
+            42.8648,
+            140.7043
+          ]
+        },
+        {
+          "id": "rusutsu",
+          "label": "Rusutsu Resort",
+          "type": "resort",
+          "region_id": "jp-hokkaido-niseko-rusutsu",
+          "coordinates": [
+            42.7373,
+            140.8764
+          ]
+        },
+        {
+          "id": "breckenridge",
+          "label": "Breckenridge Ski Resort",
+          "type": "resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.4817,
+            -106.0384
+          ]
+        },
+        {
+          "id": "keystone",
+          "label": "Keystone Resort",
+          "type": "resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.6053,
+            -105.9542
+          ]
+        },
+        {
+          "id": "copper-mountain",
+          "label": "Copper Mountain",
+          "type": "resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.5022,
+            -106.1497
+          ]
+        },
+        {
+          "id": "arapahoe-basin",
+          "label": "Arapahoe Basin",
+          "type": "resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.6423,
+            -105.8717
+          ]
+        },
+        {
+          "id": "palisades-tahoe",
+          "label": "Palisades Tahoe",
+          "type": "resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            39.1969,
+            -120.2357
+          ]
+        },
+        {
+          "id": "heavenly",
+          "label": "Heavenly Mountain Resort",
+          "type": "resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            38.9353,
+            -119.9399
+          ]
+        },
+        {
+          "id": "northstar",
+          "label": "Northstar California",
+          "type": "resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            39.2746,
+            -120.1213
+          ]
+        },
+        {
+          "id": "kirkwood",
+          "label": "Kirkwood Mountain Resort",
+          "type": "resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            38.6848,
+            -120.0652
+          ]
+        },
+        {
+          "id": "whistler-blackcomb",
+          "label": "Whistler Blackcomb",
+          "type": "resort",
+          "region_id": "ca-whistler-sea-to-sky",
+          "coordinates": [
+            50.1163,
+            -122.9574
+          ]
+        },
+        {
+          "id": "cypress-mountain",
+          "label": "Cypress Mountain",
+          "type": "resort",
+          "region_id": "ca-whistler-sea-to-sky",
+          "coordinates": [
+            49.3956,
+            -123.2044
+          ]
+        },
+        {
+          "id": "st-anton-arlberg",
+          "label": "St. Anton am Arlberg",
+          "type": "resort",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.1292,
+            10.2682
+          ]
+        },
+        {
+          "id": "lech-zurs",
+          "label": "Lech Zürs am Arlberg",
+          "type": "resort",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.2089,
+            10.1417
+          ]
+        },
+        {
+          "id": "stubai-glacier",
+          "label": "Stubai Glacier",
+          "type": "resort",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.011,
+            11.117
+          ]
+        },
+        {
+          "id": "revelstoke",
+          "label": "Revelstoke Mountain Resort",
+          "type": "resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.9581,
+            -118.1631
+          ]
+        },
+        {
+          "id": "kicking-horse",
+          "label": "Kicking Horse Mountain Resort",
+          "type": "resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            51.2978,
+            -117.0488
+          ]
+        },
+        {
+          "id": "panorama",
+          "label": "Panorama Mountain Resort",
+          "type": "resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.4594,
+            -116.2386
+          ]
+        },
+        {
+          "id": "lake-louise",
+          "label": "Lake Louise Ski Resort",
+          "type": "resort",
+          "region_id": "ca-banff-lake-louise",
+          "coordinates": [
+            51.4419,
+            -116.1627
+          ]
+        },
+        {
+          "id": "sunshine-village",
+          "label": "Banff Sunshine Village",
+          "type": "resort",
+          "region_id": "ca-banff-lake-louise",
+          "coordinates": [
+            51.1152,
+            -115.7636
+          ]
+        },
+        {
+          "id": "zermatt",
+          "label": "Zermatt Matterhorn",
+          "type": "resort",
+          "region_id": "ch-swiss-alps",
+          "coordinates": [
+            46.0207,
+            7.7491
+          ]
+        },
+        {
+          "id": "verbier",
+          "label": "Verbier 4 Vallées",
+          "type": "resort",
+          "region_id": "ch-swiss-alps",
+          "coordinates": [
+            46.096,
+            7.228
+          ]
+        },
+        {
+          "id": "chamonix-mont-blanc",
+          "label": "Chamonix Mont-Blanc",
+          "type": "resort",
+          "region_id": "fr-french-alps",
+          "coordinates": [
+            45.9237,
+            6.8694
+          ]
+        },
+        {
+          "id": "val-disere-tignes",
+          "label": "Val d’Isère / Tignes",
+          "type": "resort",
+          "region_id": "fr-french-alps",
+          "coordinates": [
+            45.45,
+            6.98
+          ]
+        },
+        {
+          "id": "cortina-dampezzo",
+          "label": "Cortina d’Ampezzo",
+          "type": "resort",
+          "region_id": "it-dolomites",
+          "coordinates": [
+            46.5405,
+            12.1357
+          ]
+        },
+        {
+          "id": "val-gardena",
+          "label": "Val Gardena",
+          "type": "resort",
+          "region_id": "it-dolomites",
+          "coordinates": [
+            46.56,
+            11.72
+          ]
+        },
+        {
+          "id": "levi",
+          "label": "Levi Ski Resort",
+          "type": "resort",
+          "region_id": "fi-lapland",
+          "coordinates": [
+            67.805,
+            24.802
+          ]
+        },
+        {
+          "id": "ruka",
+          "label": "Ruka Ski Resort",
+          "type": "resort",
+          "region_id": "fi-lapland",
+          "coordinates": [
+            66.165,
+            29.15
+          ]
+        }
+      ],
+      "resort_cards": [
+        {
+          "id": "alta",
+          "name": "Alta Ski Area",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.5888,
+            -111.638
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.ikonpass.com/en/destinations/alta-ski-area"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,614 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Alta Ski Area mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.alta.com/mountain/maps"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.alta.com/mountain/maps",
+          "image": {
+            "src": "assets/resort-media/alta.jpg",
+            "alt": "Alta Ski Area resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Alta official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.alta.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "snowbird",
+          "name": "Snowbird",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.5811,
+            -111.6579
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.ikonpass.com/en/destinations/snowbird"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,500 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Snowbird mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.snowbird.com/mountain-report/#maps"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.snowbird.com/mountain-report/#maps",
+          "image": {
+            "src": "assets/resort-media/snowbird.webp",
+            "alt": "Snowbird resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Snowbird official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.snowbird.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "brighton",
+          "name": "Brighton Resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.598,
+            -111.583
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.ikonpass.com/en/destinations/brighton-resort"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "1,050 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Brighton Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://brightonresort.com/trail-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://brightonresort.com/trail-map",
+          "image": {
+            "src": "https://cdn.sanity.io/images/8ts88bij/brighton/b988caeaee9431536dd7ff392d37f51b39c33766-2500x1406.jpg?w=1200&fm=jpg&fit=min",
+            "alt": "Brighton Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Brighton official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://brightonresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "solitude",
+          "name": "Solitude Mountain Resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.6206,
+            -111.5919
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.ikonpass.com/en/destinations/solitude-mountain-resort"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "1,200 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Solitude Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.solitudemountain.com/mountain-and-village/maps-and-directions"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.solitudemountain.com/mountain-and-village/maps-and-directions",
+          "image": {
+            "src": "https://www.solitudemountain.com/-/media/solitude/images/winter/mountain/solitude-winter-mountain.jpg",
+            "alt": "Solitude Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Solitude official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.solitudemountain.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "niseko-united",
+          "name": "Niseko United",
+          "region_id": "jp-hokkaido-niseko-rusutsu",
+          "coordinates": [
+            42.8648,
+            140.7043
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.ikonpass.com/en/destinations/niseko-united"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,191 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Niseko United mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.niseko.ne.jp/en/map/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.niseko.ne.jp/en/map/",
+          "image": {
+            "src": "assets/resort-media/niseko-united.jpg",
+            "alt": "Niseko United resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Niseko United official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.niseko.ne.jp/en/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "rusutsu",
+          "name": "Rusutsu Resort",
+          "region_id": "jp-hokkaido-niseko-rusutsu",
+          "coordinates": [
+            42.7373,
+            140.8764
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.epicpass.com/region/international-passes/japan/rusutsu.aspx"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "1,023 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Rusutsu Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://rusutsu.com/en/ski/trail-map/"
+              }
+            ]
+          },
+          "trail_map_url": "https://rusutsu.com/en/ski/trail-map/",
+          "image": {
+            "src": "assets/resort-media/rusutsu.jpg",
+            "alt": "Rusutsu Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Rusutsu official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://rusutsu.com/en/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "breckenridge",
+          "name": "Breckenridge Ski Resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.4817,
+            -106.0384
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.breckenridge.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,908 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Breckenridge Ski Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.breckenridge.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.breckenridge.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "https://www.breckenridge.com/-/media/breckenridge/images/hero-images/winter/breckenridge-winter-mountain.jpg",
+            "alt": "Breckenridge Ski Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Breckenridge Ski Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.breckenridge.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "keystone",
+          "name": "Keystone Resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.6053,
+            -105.9542
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.keystoneresort.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,148 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Keystone Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.keystoneresort.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.keystoneresort.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "https://www.keystoneresort.com/-/media/keystone/images/hero-images/winter/keystone-winter-mountain.jpg",
+            "alt": "Keystone Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Keystone Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.keystoneresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "copper-mountain",
+          "name": "Copper Mountain",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.5022,
+            -106.1497
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.coppercolorado.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,507 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Copper Mountain mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.coppercolorado.com/the-mountain/trail-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.coppercolorado.com/the-mountain/trail-map",
+          "image": {
+            "src": "https://www.coppercolorado.com/_bluedrop/images/sites/default/files/2024-10/TAMY%20scenics%202.jpg",
+            "alt": "Copper Mountain resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Copper Mountain official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.coppercolorado.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "arapahoe-basin",
+          "name": "Arapahoe Basin",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.6423,
+            -105.8717
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.arapahoebasin.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "1,428 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Arapahoe Basin mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.arapahoebasin.com/the-mountain/trail-maps/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.arapahoebasin.com/the-mountain/trail-maps/",
+          "image": {
+            "src": "https://www.arapahoebasin.com/uploaded/ogimage/website-thumbnail-blue-logo-right.jpg",
+            "alt": "Arapahoe Basin resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Arapahoe Basin official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.arapahoebasin.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "palisades-tahoe",
+          "name": "Palisades Tahoe",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            39.1969,
+            -120.2357
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.palisadestahoe.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "6,000 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Palisades Tahoe mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.palisadestahoe.com/mountain-information/trail-maps"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.palisadestahoe.com/mountain-information/trail-maps",
+          "image": {
+            "src": "assets/resort-media/palisades-tahoe.jpg",
+            "alt": "Palisades Tahoe resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Palisades Tahoe official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.palisadestahoe.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "heavenly",
+          "name": "Heavenly Mountain Resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            38.9353,
+            -119.9399
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.skiheavenly.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "4,800 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Heavenly Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.skiheavenly.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.skiheavenly.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "https://www.skiheavenly.com/-/media/heavenly/images/hero-images/winter/heavenly-winter-mountain.jpg",
+            "alt": "Heavenly Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Heavenly Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.skiheavenly.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "northstar",
+          "name": "Northstar California",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            39.2746,
+            -120.1213
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.northstarcalifornia.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,170 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Northstar California mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.northstarcalifornia.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.northstarcalifornia.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "https://www.northstarcalifornia.com/-/media/northstar/images/hero-images/winter/northstar-winter-mountain.jpg",
+            "alt": "Northstar California resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Northstar California official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.northstarcalifornia.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "kirkwood",
+          "name": "Kirkwood Mountain Resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            38.6848,
+            -120.0652
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.kirkwood.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,300 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Kirkwood Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.kirkwood.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.kirkwood.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "https://www.kirkwood.com/-/media/kirkwood/images/hero-images/winter/kirkwood-winter-mountain.jpg",
+            "alt": "Kirkwood Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Kirkwood Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.kirkwood.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "whistler-blackcomb",
+          "name": "Whistler Blackcomb",
+          "region_id": "ca-whistler-sea-to-sky",
+          "coordinates": [
+            50.1163,
+            -122.9574
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.whistlerblackcomb.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "8,171 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Whistler Blackcomb mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.whistlerblackcomb.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.whistlerblackcomb.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "assets/resort-media/whistler-blackcomb.jpg",
+            "alt": "Whistler Blackcomb resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Whistler Blackcomb official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.whistlerblackcomb.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "cypress-mountain",
+          "name": "Cypress Mountain",
+          "region_id": "ca-whistler-sea-to-sky",
+          "coordinates": [
+            49.3956,
+            -123.2044
+          ],
+          "tags": [
+            {
+              "pass_name": "Indy",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Indy pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://cypressmountain.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "600 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Cypress Mountain mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://cypressmountain.com/downhill-conditions-and-cams"
+              }
+            ]
+          },
+          "trail_map_url": "https://cypressmountain.com/downhill-conditions-and-cams",
+          "image": {
+            "src": "https://cdn.sanity.io/images/8ts88bij/cypress/354ffd67a251d62680a509854015faaa56675e2b-2112x1188.jpg?w=1200&fm=jpg&fit=min",
+            "alt": "Cypress Mountain resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Cypress Mountain official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://cypressmountain.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "st-anton-arlberg",
+          "name": "St. Anton am Arlberg",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.1292,
+            10.2682
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.stantonamarlberg.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "302 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "St. Anton am Arlberg mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.stantonamarlberg.com/en/winter/interactive-ski-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.stantonamarlberg.com/en/winter/interactive-ski-map",
+          "image": {
+            "src": "assets/resort-media/st-anton-arlberg.jpg",
+            "alt": "St. Anton am Arlberg resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "St. Anton am Arlberg official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.stantonamarlberg.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "lech-zurs",
+          "name": "Lech Zürs am Arlberg",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.2089,
+            10.1417
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.lechzuers.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "302 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Lech Zürs am Arlberg mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.lechzuers.com/en/winter/skiing/ski-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.lechzuers.com/en/winter/skiing/ski-map",
+          "image": {
+            "src": "https://www.lechzuers.com/lechzuers/images/logos/logo.svg",
+            "alt": "Lech Zürs am Arlberg resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Lech Zürs am Arlberg official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.lechzuers.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "stubai-glacier",
+          "name": "Stubai Glacier",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.011,
+            11.117
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.stubaier-gletscher.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "65 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Stubai Glacier mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.stubaier-gletscher.com/en/stubai-live/open-lifts-slopes/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.stubaier-gletscher.com/en/stubai-live/open-lifts-slopes/",
+          "image": {
+            "src": "https://www.stubaier-gletscher.com/fileadmin/_processed_/f/4/csm_Stubaier_Gletscher_Winter_0f2c9d7d8e.jpg",
+            "alt": "Stubai Glacier resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Stubai Glacier official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.stubaier-gletscher.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "revelstoke",
+          "name": "Revelstoke Mountain Resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.9581,
+            -118.1631
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.revelstokemountainresort.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,121 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Revelstoke Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.revelstokemountainresort.com/mountain/trail-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.revelstokemountainresort.com/mountain/trail-map",
+          "image": {
+            "src": "assets/resort-media/revelstoke.jpg",
+            "alt": "Revelstoke Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Revelstoke Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.revelstokemountainresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "kicking-horse",
+          "name": "Kicking Horse Mountain Resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            51.2978,
+            -117.0488
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://kickinghorseresort.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,486 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Kicking Horse Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://kickinghorseresort.com/mountain-info/trail-map/"
+              }
+            ]
+          },
+          "trail_map_url": "https://kickinghorseresort.com/mountain-info/trail-map/",
+          "image": {
+            "src": "https://kickinghorseresort.com/wp-content/uploads/2022/10/kicking-horse-winter.jpg",
+            "alt": "Kicking Horse Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Kicking Horse Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://kickinghorseresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "panorama",
+          "name": "Panorama Mountain Resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.4594,
+            -116.2386
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.panoramaresort.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,975 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Panorama Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.panoramaresort.com/mountain/trail-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.panoramaresort.com/mountain/trail-map",
+          "image": {
+            "src": "https://www.panoramaresort.com/assets/Home-Page-Assets/Web.TigeLussier-10_home.png",
+            "alt": "Panorama Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Panorama Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.panoramaresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "lake-louise",
+          "name": "Lake Louise Ski Resort",
+          "region_id": "ca-banff-lake-louise",
+          "coordinates": [
+            51.4419,
+            -116.1627
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation included for prototype filtering; verify current Ikon access and blackout rules before purchase.",
+              "provenance": {
+                "source_type": "official_resort",
+                "source_name": "Ikon Pass destination listing",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+                "source_url": "https://www.ikonpass.com/en/destinations/lake-louise"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "4,200 acres",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Lake Louise Ski Resort mountain stats",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+                "source_url": "https://www.skilouise.com/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.skilouise.com/mountain/trail-map/",
+          "image": {
+            "src": "assets/resort-media/whistler-blackcomb.jpg",
+            "alt": "Lake Louise Ski Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Lake Louise Ski Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+              "source_url": "https://www.skilouise.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "sunshine-village",
+          "name": "Banff Sunshine Village",
+          "region_id": "ca-banff-lake-louise",
+          "coordinates": [
+            51.1152,
+            -115.7636
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation included for prototype filtering; verify current Ikon access and blackout rules before purchase.",
+              "provenance": {
+                "source_type": "official_resort",
+                "source_name": "Ikon Pass destination listing",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+                "source_url": "https://www.ikonpass.com/en/destinations/banff-sunshine"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,358 acres",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Banff Sunshine Village mountain stats",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+                "source_url": "https://www.skibanff.com/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.skibanff.com/explore/trail-maps",
+          "image": {
+            "src": "assets/resort-media/revelstoke.jpg",
+            "alt": "Banff Sunshine Village resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Banff Sunshine Village official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+              "source_url": "https://www.skibanff.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "zermatt",
+          "name": "Zermatt Matterhorn",
+          "region_id": "ch-swiss-alps",
+          "coordinates": [
+            46.0207,
+            7.7491
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "360 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Zermatt Matterhorn official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Zermatt Matterhorn resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.zermatt.ch/en"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.zermatt.ch/en/Media/Planning-hikes-tours/Piste-map",
+          "image": {
+            "src": "https://www.zermatt.ch/en",
+            "alt": "Zermatt Matterhorn resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Zermatt Matterhorn official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Zermatt Matterhorn resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.zermatt.ch/en"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "verbier",
+          "name": "Verbier 4 Vallées",
+          "region_id": "ch-swiss-alps",
+          "coordinates": [
+            46.096,
+            7.228
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "410 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Verbier 4 Vallées official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Verbier 4 Vallées resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.verbier.ch/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.verbier4vallees.ch/en/Practical-information/Interactive-map",
+          "image": {
+            "src": "https://www.verbier.ch/",
+            "alt": "Verbier 4 Vallées resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Verbier 4 Vallées official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Verbier 4 Vallées resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.verbier.ch/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "chamonix-mont-blanc",
+          "name": "Chamonix Mont-Blanc",
+          "region_id": "fr-french-alps",
+          "coordinates": [
+            45.9237,
+            6.8694
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "150 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Chamonix Mont-Blanc official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Chamonix Mont-Blanc resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.chamonix.com/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.chamonix.com/activities/skiing/ski-areas-and-lifts",
+          "image": {
+            "src": "https://www.chamonix.com/",
+            "alt": "Chamonix Mont-Blanc resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Chamonix Mont-Blanc official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Chamonix Mont-Blanc resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.chamonix.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "val-disere-tignes",
+          "name": "Val d’Isère / Tignes",
+          "region_id": "fr-french-alps",
+          "coordinates": [
+            45.45,
+            6.98
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "300 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Val d’Isère / Tignes official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Val d’Isère / Tignes resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.valdisere.com/en/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.valdisere.com/en/ski-area/ski-map/",
+          "image": {
+            "src": "https://www.valdisere.com/en/",
+            "alt": "Val d’Isère / Tignes resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Val d’Isère / Tignes official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Val d’Isère / Tignes resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.valdisere.com/en/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "cortina-dampezzo",
+          "name": "Cortina d’Ampezzo",
+          "region_id": "it-dolomites",
+          "coordinates": [
+            46.5405,
+            12.1357
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "120 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Cortina d’Ampezzo official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Cortina d’Ampezzo resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.dolomiti.org/en/cortina/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.dolomitisuperski.com/en/Ski-area/Cortina-d-Ampezzo/Ski-map",
+          "image": {
+            "src": "https://www.dolomiti.org/en/cortina/",
+            "alt": "Cortina d’Ampezzo resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Cortina d’Ampezzo official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Cortina d’Ampezzo resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.dolomiti.org/en/cortina/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "val-gardena",
+          "name": "Val Gardena",
+          "region_id": "it-dolomites",
+          "coordinates": [
+            46.56,
+            11.72
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "175 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Val Gardena official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Val Gardena resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.valgardena.it/en/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.valgardena.it/en/winter-holidays-dolomites/skiing/slope-map/",
+          "image": {
+            "src": "https://www.valgardena.it/en/",
+            "alt": "Val Gardena resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Val Gardena official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Val Gardena resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.valgardena.it/en/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "levi",
+          "name": "Levi Ski Resort",
+          "region_id": "fi-lapland",
+          "coordinates": [
+            67.805,
+            24.802
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "43 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Levi Ski Resort official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Levi Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.levi.fi/en/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.levi.fi/en/ski/slope-map/",
+          "image": {
+            "src": "https://www.levi.fi/en/",
+            "alt": "Levi Ski Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Levi Ski Resort official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Levi Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.levi.fi/en/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "ruka",
+          "name": "Ruka Ski Resort",
+          "region_id": "fi-lapland",
+          "coordinates": [
+            66.165,
+            29.15
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "19 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Ruka Ski Resort official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Ruka Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.ruka.fi/en"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.ruka.fi/en/ski-resort/slope-map",
+          "image": {
+            "src": "https://www.ruka.fi/en",
+            "alt": "Ruka Ski Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Ruka Ski Resort official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Ruka Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.ruka.fi/en"
+            }
+          ],
+          "source_status": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "japan",
+      "label": "Japan",
+      "region_ids": [
+        "jp-hokkaido-niseko-rusutsu"
+      ],
+      "resort_ids": [
+        "niseko-united",
+        "rusutsu"
+      ],
+      "markers": [
+        {
+          "id": "niseko-united",
+          "label": "Niseko United",
+          "type": "resort",
+          "region_id": "jp-hokkaido-niseko-rusutsu",
+          "coordinates": [
+            42.8648,
+            140.7043
+          ]
+        },
+        {
+          "id": "rusutsu",
+          "label": "Rusutsu Resort",
+          "type": "resort",
+          "region_id": "jp-hokkaido-niseko-rusutsu",
+          "coordinates": [
+            42.7373,
+            140.8764
+          ]
+        }
+      ],
+      "resort_cards": [
+        {
+          "id": "niseko-united",
+          "name": "Niseko United",
+          "region_id": "jp-hokkaido-niseko-rusutsu",
+          "coordinates": [
+            42.8648,
+            140.7043
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.ikonpass.com/en/destinations/niseko-united"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,191 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Niseko United mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.niseko.ne.jp/en/map/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.niseko.ne.jp/en/map/",
+          "image": {
+            "src": "assets/resort-media/niseko-united.jpg",
+            "alt": "Niseko United resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Niseko United official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.niseko.ne.jp/en/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "rusutsu",
+          "name": "Rusutsu Resort",
+          "region_id": "jp-hokkaido-niseko-rusutsu",
+          "coordinates": [
+            42.7373,
+            140.8764
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.epicpass.com/region/international-passes/japan/rusutsu.aspx"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "1,023 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Rusutsu Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://rusutsu.com/en/ski/trail-map/"
+              }
+            ]
+          },
+          "trail_map_url": "https://rusutsu.com/en/ski/trail-map/",
+          "image": {
+            "src": "assets/resort-media/rusutsu.jpg",
+            "alt": "Rusutsu Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Rusutsu official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://rusutsu.com/en/"
+            }
+          ],
+          "source_status": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "us-west",
+      "label": "US West",
+      "region_ids": [
+        "us-utah-cottonwoods",
+        "us-colorado-summit-county",
+        "us-tahoe-north-south"
+      ],
+      "resort_ids": [
+        "alta",
+        "snowbird",
+        "brighton",
+        "solitude",
+        "breckenridge",
+        "keystone",
+        "copper-mountain",
+        "arapahoe-basin",
+        "palisades-tahoe",
+        "heavenly",
+        "northstar",
+        "kirkwood"
+      ],
+      "markers": [
+        {
+          "id": "alta",
+          "label": "Alta Ski Area",
+          "type": "resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.5888,
+            -111.638
+          ]
+        },
+        {
+          "id": "snowbird",
+          "label": "Snowbird",
+          "type": "resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.5811,
+            -111.6579
+          ]
+        },
+        {
+          "id": "brighton",
+          "label": "Brighton Resort",
+          "type": "resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.598,
+            -111.583
+          ]
+        },
+        {
+          "id": "solitude",
+          "label": "Solitude Mountain Resort",
+          "type": "resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.6206,
+            -111.5919
+          ]
+        },
+        {
+          "id": "breckenridge",
+          "label": "Breckenridge Ski Resort",
+          "type": "resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.4817,
+            -106.0384
+          ]
+        },
+        {
+          "id": "keystone",
+          "label": "Keystone Resort",
+          "type": "resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.6053,
+            -105.9542
+          ]
+        },
+        {
+          "id": "copper-mountain",
+          "label": "Copper Mountain",
+          "type": "resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.5022,
+            -106.1497
+          ]
+        },
+        {
+          "id": "arapahoe-basin",
+          "label": "Arapahoe Basin",
+          "type": "resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.6423,
+            -105.8717
+          ]
+        },
+        {
+          "id": "palisades-tahoe",
+          "label": "Palisades Tahoe",
+          "type": "resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            39.1969,
+            -120.2357
+          ]
+        },
+        {
+          "id": "heavenly",
+          "label": "Heavenly Mountain Resort",
+          "type": "resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            38.9353,
+            -119.9399
+          ]
+        },
+        {
+          "id": "northstar",
+          "label": "Northstar California",
+          "type": "resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            39.2746,
+            -120.1213
+          ]
+        },
+        {
+          "id": "kirkwood",
+          "label": "Kirkwood Mountain Resort",
+          "type": "resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            38.6848,
+            -120.0652
+          ]
+        }
+      ],
+      "resort_cards": [
+        {
+          "id": "alta",
+          "name": "Alta Ski Area",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.5888,
+            -111.638
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.ikonpass.com/en/destinations/alta-ski-area"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,614 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Alta Ski Area mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.alta.com/mountain/maps"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.alta.com/mountain/maps",
+          "image": {
+            "src": "assets/resort-media/alta.jpg",
+            "alt": "Alta Ski Area resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Alta official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.alta.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "snowbird",
+          "name": "Snowbird",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.5811,
+            -111.6579
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.ikonpass.com/en/destinations/snowbird"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,500 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Snowbird mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.snowbird.com/mountain-report/#maps"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.snowbird.com/mountain-report/#maps",
+          "image": {
+            "src": "assets/resort-media/snowbird.webp",
+            "alt": "Snowbird resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Snowbird official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.snowbird.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "brighton",
+          "name": "Brighton Resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.598,
+            -111.583
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.ikonpass.com/en/destinations/brighton-resort"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "1,050 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Brighton Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://brightonresort.com/trail-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://brightonresort.com/trail-map",
+          "image": {
+            "src": "https://cdn.sanity.io/images/8ts88bij/brighton/b988caeaee9431536dd7ff392d37f51b39c33766-2500x1406.jpg?w=1200&fm=jpg&fit=min",
+            "alt": "Brighton Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Brighton official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://brightonresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "solitude",
+          "name": "Solitude Mountain Resort",
+          "region_id": "us-utah-cottonwoods",
+          "coordinates": [
+            40.6206,
+            -111.5919
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-18T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.ikonpass.com/en/destinations/solitude-mountain-resort"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "1,200 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Solitude Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.solitudemountain.com/mountain-and-village/maps-and-directions"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.solitudemountain.com/mountain-and-village/maps-and-directions",
+          "image": {
+            "src": "https://www.solitudemountain.com/-/media/solitude/images/winter/mountain/solitude-winter-mountain.jpg",
+            "alt": "Solitude Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Solitude official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.solitudemountain.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "breckenridge",
+          "name": "Breckenridge Ski Resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.4817,
+            -106.0384
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.breckenridge.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,908 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Breckenridge Ski Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.breckenridge.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.breckenridge.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "https://www.breckenridge.com/-/media/breckenridge/images/hero-images/winter/breckenridge-winter-mountain.jpg",
+            "alt": "Breckenridge Ski Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Breckenridge Ski Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.breckenridge.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "keystone",
+          "name": "Keystone Resort",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.6053,
+            -105.9542
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.keystoneresort.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,148 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Keystone Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.keystoneresort.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.keystoneresort.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "https://www.keystoneresort.com/-/media/keystone/images/hero-images/winter/keystone-winter-mountain.jpg",
+            "alt": "Keystone Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Keystone Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.keystoneresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "copper-mountain",
+          "name": "Copper Mountain",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.5022,
+            -106.1497
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.coppercolorado.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,507 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Copper Mountain mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.coppercolorado.com/the-mountain/trail-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.coppercolorado.com/the-mountain/trail-map",
+          "image": {
+            "src": "https://www.coppercolorado.com/_bluedrop/images/sites/default/files/2024-10/TAMY%20scenics%202.jpg",
+            "alt": "Copper Mountain resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Copper Mountain official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.coppercolorado.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "arapahoe-basin",
+          "name": "Arapahoe Basin",
+          "region_id": "us-colorado-summit-county",
+          "coordinates": [
+            39.6423,
+            -105.8717
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.arapahoebasin.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "1,428 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Arapahoe Basin mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.arapahoebasin.com/the-mountain/trail-maps/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.arapahoebasin.com/the-mountain/trail-maps/",
+          "image": {
+            "src": "https://www.arapahoebasin.com/uploaded/ogimage/website-thumbnail-blue-logo-right.jpg",
+            "alt": "Arapahoe Basin resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Arapahoe Basin official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.arapahoebasin.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "palisades-tahoe",
+          "name": "Palisades Tahoe",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            39.1969,
+            -120.2357
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.palisadestahoe.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "6,000 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Palisades Tahoe mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.palisadestahoe.com/mountain-information/trail-maps"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.palisadestahoe.com/mountain-information/trail-maps",
+          "image": {
+            "src": "assets/resort-media/palisades-tahoe.jpg",
+            "alt": "Palisades Tahoe resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Palisades Tahoe official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.palisadestahoe.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "heavenly",
+          "name": "Heavenly Mountain Resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            38.9353,
+            -119.9399
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.skiheavenly.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "4,800 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Heavenly Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.skiheavenly.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.skiheavenly.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "https://www.skiheavenly.com/-/media/heavenly/images/hero-images/winter/heavenly-winter-mountain.jpg",
+            "alt": "Heavenly Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Heavenly Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.skiheavenly.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "northstar",
+          "name": "Northstar California",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            39.2746,
+            -120.1213
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.northstarcalifornia.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,170 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Northstar California mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.northstarcalifornia.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.northstarcalifornia.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "https://www.northstarcalifornia.com/-/media/northstar/images/hero-images/winter/northstar-winter-mountain.jpg",
+            "alt": "Northstar California resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Northstar California official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.northstarcalifornia.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "kirkwood",
+          "name": "Kirkwood Mountain Resort",
+          "region_id": "us-tahoe-north-south",
+          "coordinates": [
+            38.6848,
+            -120.0652
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.kirkwood.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,300 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Kirkwood Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.kirkwood.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.kirkwood.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "https://www.kirkwood.com/-/media/kirkwood/images/hero-images/winter/kirkwood-winter-mountain.jpg",
+            "alt": "Kirkwood Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Kirkwood Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.kirkwood.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "canada",
+      "label": "Canada",
+      "region_ids": [
+        "ca-whistler-sea-to-sky",
+        "ca-interior-bc-powder-highway",
+        "ca-banff-lake-louise"
+      ],
+      "resort_ids": [
+        "whistler-blackcomb",
+        "cypress-mountain",
+        "revelstoke",
+        "kicking-horse",
+        "panorama",
+        "lake-louise",
+        "sunshine-village"
+      ],
+      "markers": [
+        {
+          "id": "whistler-blackcomb",
+          "label": "Whistler Blackcomb",
+          "type": "resort",
+          "region_id": "ca-whistler-sea-to-sky",
+          "coordinates": [
+            50.1163,
+            -122.9574
+          ]
+        },
+        {
+          "id": "cypress-mountain",
+          "label": "Cypress Mountain",
+          "type": "resort",
+          "region_id": "ca-whistler-sea-to-sky",
+          "coordinates": [
+            49.3956,
+            -123.2044
+          ]
+        },
+        {
+          "id": "revelstoke",
+          "label": "Revelstoke Mountain Resort",
+          "type": "resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.9581,
+            -118.1631
+          ]
+        },
+        {
+          "id": "kicking-horse",
+          "label": "Kicking Horse Mountain Resort",
+          "type": "resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            51.2978,
+            -117.0488
+          ]
+        },
+        {
+          "id": "panorama",
+          "label": "Panorama Mountain Resort",
+          "type": "resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.4594,
+            -116.2386
+          ]
+        },
+        {
+          "id": "lake-louise",
+          "label": "Lake Louise Ski Resort",
+          "type": "resort",
+          "region_id": "ca-banff-lake-louise",
+          "coordinates": [
+            51.4419,
+            -116.1627
+          ]
+        },
+        {
+          "id": "sunshine-village",
+          "label": "Banff Sunshine Village",
+          "type": "resort",
+          "region_id": "ca-banff-lake-louise",
+          "coordinates": [
+            51.1152,
+            -115.7636
+          ]
+        }
+      ],
+      "resort_cards": [
+        {
+          "id": "whistler-blackcomb",
+          "name": "Whistler Blackcomb",
+          "region_id": "ca-whistler-sea-to-sky",
+          "coordinates": [
+            50.1163,
+            -122.9574
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.whistlerblackcomb.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "8,171 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Whistler Blackcomb mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.whistlerblackcomb.com/the-mountain/about-the-mountain/trail-map.aspx"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.whistlerblackcomb.com/the-mountain/about-the-mountain/trail-map.aspx",
+          "image": {
+            "src": "assets/resort-media/whistler-blackcomb.jpg",
+            "alt": "Whistler Blackcomb resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Whistler Blackcomb official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.whistlerblackcomb.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "cypress-mountain",
+          "name": "Cypress Mountain",
+          "region_id": "ca-whistler-sea-to-sky",
+          "coordinates": [
+            49.3956,
+            -123.2044
+          ],
+          "tags": [
+            {
+              "pass_name": "Indy",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Indy pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://cypressmountain.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "600 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Cypress Mountain mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://cypressmountain.com/downhill-conditions-and-cams"
+              }
+            ]
+          },
+          "trail_map_url": "https://cypressmountain.com/downhill-conditions-and-cams",
+          "image": {
+            "src": "https://cdn.sanity.io/images/8ts88bij/cypress/354ffd67a251d62680a509854015faaa56675e2b-2112x1188.jpg?w=1200&fm=jpg&fit=min",
+            "alt": "Cypress Mountain resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Cypress Mountain official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://cypressmountain.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "revelstoke",
+          "name": "Revelstoke Mountain Resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.9581,
+            -118.1631
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.revelstokemountainresort.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,121 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Revelstoke Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.revelstokemountainresort.com/mountain/trail-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.revelstokemountainresort.com/mountain/trail-map",
+          "image": {
+            "src": "assets/resort-media/revelstoke.jpg",
+            "alt": "Revelstoke Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Revelstoke Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.revelstokemountainresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "kicking-horse",
+          "name": "Kicking Horse Mountain Resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            51.2978,
+            -117.0488
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://kickinghorseresort.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,486 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Kicking Horse Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://kickinghorseresort.com/mountain-info/trail-map/"
+              }
+            ]
+          },
+          "trail_map_url": "https://kickinghorseresort.com/mountain-info/trail-map/",
+          "image": {
+            "src": "https://kickinghorseresort.com/wp-content/uploads/2022/10/kicking-horse-winter.jpg",
+            "alt": "Kicking Horse Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Kicking Horse Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://kickinghorseresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "panorama",
+          "name": "Panorama Mountain Resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.4594,
+            -116.2386
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.panoramaresort.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,975 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Panorama Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.panoramaresort.com/mountain/trail-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.panoramaresort.com/mountain/trail-map",
+          "image": {
+            "src": "https://www.panoramaresort.com/assets/Home-Page-Assets/Web.TigeLussier-10_home.png",
+            "alt": "Panorama Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Panorama Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.panoramaresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "lake-louise",
+          "name": "Lake Louise Ski Resort",
+          "region_id": "ca-banff-lake-louise",
+          "coordinates": [
+            51.4419,
+            -116.1627
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation included for prototype filtering; verify current Ikon access and blackout rules before purchase.",
+              "provenance": {
+                "source_type": "official_resort",
+                "source_name": "Ikon Pass destination listing",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+                "source_url": "https://www.ikonpass.com/en/destinations/lake-louise"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "4,200 acres",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Lake Louise Ski Resort mountain stats",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+                "source_url": "https://www.skilouise.com/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.skilouise.com/mountain/trail-map/",
+          "image": {
+            "src": "assets/resort-media/whistler-blackcomb.jpg",
+            "alt": "Lake Louise Ski Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Lake Louise Ski Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+              "source_url": "https://www.skilouise.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "sunshine-village",
+          "name": "Banff Sunshine Village",
+          "region_id": "ca-banff-lake-louise",
+          "coordinates": [
+            51.1152,
+            -115.7636
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation included for prototype filtering; verify current Ikon access and blackout rules before purchase.",
+              "provenance": {
+                "source_type": "official_resort",
+                "source_name": "Ikon Pass destination listing",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+                "source_url": "https://www.ikonpass.com/en/destinations/banff-sunshine"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,358 acres",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Banff Sunshine Village mountain stats",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+                "source_url": "https://www.skibanff.com/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.skibanff.com/explore/trail-maps",
+          "image": {
+            "src": "assets/resort-media/revelstoke.jpg",
+            "alt": "Banff Sunshine Village resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Banff Sunshine Village official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Official resort/source-backed destination record for Banff / Lake Louise map coverage; verify current operations, lift access, and conditions before booking.",
+              "source_url": "https://www.skibanff.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "europe",
+      "label": "Europe",
+      "region_ids": [
+        "at-arlberg-tyrol",
+        "ch-swiss-alps",
+        "fr-french-alps",
+        "it-dolomites",
+        "fi-lapland"
+      ],
+      "resort_ids": [
+        "st-anton-arlberg",
+        "lech-zurs",
+        "stubai-glacier",
+        "zermatt",
+        "verbier",
+        "chamonix-mont-blanc",
+        "val-disere-tignes",
+        "cortina-dampezzo",
+        "val-gardena",
+        "levi",
+        "ruka"
+      ],
+      "markers": [
+        {
+          "id": "st-anton-arlberg",
+          "label": "St. Anton am Arlberg",
+          "type": "resort",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.1292,
+            10.2682
+          ]
+        },
+        {
+          "id": "lech-zurs",
+          "label": "Lech Zürs am Arlberg",
+          "type": "resort",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.2089,
+            10.1417
+          ]
+        },
+        {
+          "id": "stubai-glacier",
+          "label": "Stubai Glacier",
+          "type": "resort",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.011,
+            11.117
+          ]
+        },
+        {
+          "id": "zermatt",
+          "label": "Zermatt Matterhorn",
+          "type": "resort",
+          "region_id": "ch-swiss-alps",
+          "coordinates": [
+            46.0207,
+            7.7491
+          ]
+        },
+        {
+          "id": "verbier",
+          "label": "Verbier 4 Vallées",
+          "type": "resort",
+          "region_id": "ch-swiss-alps",
+          "coordinates": [
+            46.096,
+            7.228
+          ]
+        },
+        {
+          "id": "chamonix-mont-blanc",
+          "label": "Chamonix Mont-Blanc",
+          "type": "resort",
+          "region_id": "fr-french-alps",
+          "coordinates": [
+            45.9237,
+            6.8694
+          ]
+        },
+        {
+          "id": "val-disere-tignes",
+          "label": "Val d’Isère / Tignes",
+          "type": "resort",
+          "region_id": "fr-french-alps",
+          "coordinates": [
+            45.45,
+            6.98
+          ]
+        },
+        {
+          "id": "cortina-dampezzo",
+          "label": "Cortina d’Ampezzo",
+          "type": "resort",
+          "region_id": "it-dolomites",
+          "coordinates": [
+            46.5405,
+            12.1357
+          ]
+        },
+        {
+          "id": "val-gardena",
+          "label": "Val Gardena",
+          "type": "resort",
+          "region_id": "it-dolomites",
+          "coordinates": [
+            46.56,
+            11.72
+          ]
+        },
+        {
+          "id": "levi",
+          "label": "Levi Ski Resort",
+          "type": "resort",
+          "region_id": "fi-lapland",
+          "coordinates": [
+            67.805,
+            24.802
+          ]
+        },
+        {
+          "id": "ruka",
+          "label": "Ruka Ski Resort",
+          "type": "resort",
+          "region_id": "fi-lapland",
+          "coordinates": [
+            66.165,
+            29.15
+          ]
+        }
+      ],
+      "resort_cards": [
+        {
+          "id": "st-anton-arlberg",
+          "name": "St. Anton am Arlberg",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.1292,
+            10.2682
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.stantonamarlberg.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "302 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "St. Anton am Arlberg mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.stantonamarlberg.com/en/winter/interactive-ski-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.stantonamarlberg.com/en/winter/interactive-ski-map",
+          "image": {
+            "src": "assets/resort-media/st-anton-arlberg.jpg",
+            "alt": "St. Anton am Arlberg resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "St. Anton am Arlberg official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.stantonamarlberg.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "lech-zurs",
+          "name": "Lech Zürs am Arlberg",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.2089,
+            10.1417
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.lechzuers.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "302 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Lech Zürs am Arlberg mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.lechzuers.com/en/winter/skiing/ski-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.lechzuers.com/en/winter/skiing/ski-map",
+          "image": {
+            "src": "https://www.lechzuers.com/lechzuers/images/logos/logo.svg",
+            "alt": "Lech Zürs am Arlberg resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Lech Zürs am Arlberg official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.lechzuers.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "stubai-glacier",
+          "name": "Stubai Glacier",
+          "region_id": "at-arlberg-tyrol",
+          "coordinates": [
+            47.011,
+            11.117
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.stubaier-gletscher.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "65 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Stubai Glacier mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.stubaier-gletscher.com/en/stubai-live/open-lifts-slopes/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.stubaier-gletscher.com/en/stubai-live/open-lifts-slopes/",
+          "image": {
+            "src": "https://www.stubaier-gletscher.com/fileadmin/_processed_/f/4/csm_Stubaier_Gletscher_Winter_0f2c9d7d8e.jpg",
+            "alt": "Stubai Glacier resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Stubai Glacier official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.stubaier-gletscher.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "zermatt",
+          "name": "Zermatt Matterhorn",
+          "region_id": "ch-swiss-alps",
+          "coordinates": [
+            46.0207,
+            7.7491
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "360 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Zermatt Matterhorn official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Zermatt Matterhorn resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.zermatt.ch/en"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.zermatt.ch/en/Media/Planning-hikes-tours/Piste-map",
+          "image": {
+            "src": "https://www.zermatt.ch/en",
+            "alt": "Zermatt Matterhorn resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Zermatt Matterhorn official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Zermatt Matterhorn resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.zermatt.ch/en"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "verbier",
+          "name": "Verbier 4 Vallées",
+          "region_id": "ch-swiss-alps",
+          "coordinates": [
+            46.096,
+            7.228
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "410 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Verbier 4 Vallées official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Verbier 4 Vallées resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.verbier.ch/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.verbier4vallees.ch/en/Practical-information/Interactive-map",
+          "image": {
+            "src": "https://www.verbier.ch/",
+            "alt": "Verbier 4 Vallées resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Verbier 4 Vallées official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Verbier 4 Vallées resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.verbier.ch/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "chamonix-mont-blanc",
+          "name": "Chamonix Mont-Blanc",
+          "region_id": "fr-french-alps",
+          "coordinates": [
+            45.9237,
+            6.8694
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "150 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Chamonix Mont-Blanc official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Chamonix Mont-Blanc resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.chamonix.com/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.chamonix.com/activities/skiing/ski-areas-and-lifts",
+          "image": {
+            "src": "https://www.chamonix.com/",
+            "alt": "Chamonix Mont-Blanc resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Chamonix Mont-Blanc official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Chamonix Mont-Blanc resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.chamonix.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "val-disere-tignes",
+          "name": "Val d’Isère / Tignes",
+          "region_id": "fr-french-alps",
+          "coordinates": [
+            45.45,
+            6.98
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "300 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Val d’Isère / Tignes official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Val d’Isère / Tignes resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.valdisere.com/en/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.valdisere.com/en/ski-area/ski-map/",
+          "image": {
+            "src": "https://www.valdisere.com/en/",
+            "alt": "Val d’Isère / Tignes resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Val d’Isère / Tignes official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Val d’Isère / Tignes resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.valdisere.com/en/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "cortina-dampezzo",
+          "name": "Cortina d’Ampezzo",
+          "region_id": "it-dolomites",
+          "coordinates": [
+            46.5405,
+            12.1357
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "120 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Cortina d’Ampezzo official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Cortina d’Ampezzo resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.dolomiti.org/en/cortina/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.dolomitisuperski.com/en/Ski-area/Cortina-d-Ampezzo/Ski-map",
+          "image": {
+            "src": "https://www.dolomiti.org/en/cortina/",
+            "alt": "Cortina d’Ampezzo resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Cortina d’Ampezzo official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Cortina d’Ampezzo resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.dolomiti.org/en/cortina/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "val-gardena",
+          "name": "Val Gardena",
+          "region_id": "it-dolomites",
+          "coordinates": [
+            46.56,
+            11.72
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "175 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Val Gardena official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Val Gardena resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.valgardena.it/en/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.valgardena.it/en/winter-holidays-dolomites/skiing/slope-map/",
+          "image": {
+            "src": "https://www.valgardena.it/en/",
+            "alt": "Val Gardena resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Val Gardena official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Val Gardena resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.valgardena.it/en/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "levi",
+          "name": "Levi Ski Resort",
+          "region_id": "fi-lapland",
+          "coordinates": [
+            67.805,
+            24.802
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "43 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Levi Ski Resort official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Levi Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.levi.fi/en/"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.levi.fi/en/ski/slope-map/",
+          "image": {
+            "src": "https://www.levi.fi/en/",
+            "alt": "Levi Ski Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Levi Ski Resort official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Levi Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.levi.fi/en/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "ruka",
+          "name": "Ruka Ski Resort",
+          "region_id": "fi-lapland",
+          "coordinates": [
+            66.165,
+            29.15
+          ],
+          "tags": [],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "19 km of pistes",
+            "provenance": [
+              {
+                "source_type": "official_resort",
+                "source_name": "Ruka Ski Resort official destination reference",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Ruka Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+                "source_url": "https://www.ruka.fi/en"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.ruka.fi/en/ski-resort/slope-map",
+          "image": {
+            "src": "https://www.ruka.fi/en",
+            "alt": "Ruka Ski Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_resort",
+              "source_name": "Ruka Ski Resort official destination reference",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Ruka Ski Resort resort facts are source-backed planning fields; verify current terrain, lifts, trail maps, and operations before booking.",
+              "source_url": "https://www.ruka.fi/en"
+            }
+          ],
+          "source_status": "source-backed"
+        }
+      ]
+    },
+    {
+      "id": "bc-powder",
+      "label": "BC Powder",
+      "region_ids": [
+        "ca-interior-bc-powder-highway"
+      ],
+      "resort_ids": [
+        "revelstoke",
+        "kicking-horse",
+        "panorama"
+      ],
+      "markers": [
+        {
+          "id": "revelstoke",
+          "label": "Revelstoke Mountain Resort",
+          "type": "resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.9581,
+            -118.1631
+          ]
+        },
+        {
+          "id": "kicking-horse",
+          "label": "Kicking Horse Mountain Resort",
+          "type": "resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            51.2978,
+            -117.0488
+          ]
+        },
+        {
+          "id": "panorama",
+          "label": "Panorama Mountain Resort",
+          "type": "resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.4594,
+            -116.2386
+          ]
+        }
+      ],
+      "resort_cards": [
+        {
+          "id": "revelstoke",
+          "name": "Revelstoke Mountain Resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.9581,
+            -118.1631
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.revelstokemountainresort.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,121 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Revelstoke Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.revelstokemountainresort.com/mountain/trail-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.revelstokemountainresort.com/mountain/trail-map",
+          "image": {
+            "src": "assets/resort-media/revelstoke.jpg",
+            "alt": "Revelstoke Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Revelstoke Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.revelstokemountainresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "kicking-horse",
+          "name": "Kicking Horse Mountain Resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            51.2978,
+            -117.0488
+          ],
+          "tags": [
+            {
+              "pass_name": "Epic",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Epic pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://kickinghorseresort.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "3,486 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Kicking Horse Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://kickinghorseresort.com/mountain-info/trail-map/"
+              }
+            ]
+          },
+          "trail_map_url": "https://kickinghorseresort.com/mountain-info/trail-map/",
+          "image": {
+            "src": "https://kickinghorseresort.com/wp-content/uploads/2022/10/kicking-horse-winter.jpg",
+            "alt": "Kicking Horse Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Kicking Horse Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://kickinghorseresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        },
+        {
+          "id": "panorama",
+          "name": "Panorama Mountain Resort",
+          "region_id": "ca-interior-bc-powder-highway",
+          "coordinates": [
+            50.4594,
+            -116.2386
+          ],
+          "tags": [
+            {
+              "pass_name": "Ikon",
+              "access_summary": "Pass affiliation is source-backed for prototype filtering; verify pass tier, blackout dates, and current partner status before purchase.",
+              "provenance": {
+                "source_type": "official_page",
+                "source_name": "Ikon pass partner page",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Pass access is not exact/live; verify current pass rules.",
+                "source_url": "https://www.panoramaresort.com/"
+              }
+            }
+          ],
+          "skiable_area": {
+            "label": "Total skiable area",
+            "value": "2,975 acres",
+            "provenance": [
+              {
+                "source_type": "official_page",
+                "source_name": "Panorama Mountain Resort mountain statistics / trail map",
+                "confidence": "source_backed_range",
+                "freshness": "recent",
+                "retrieved_at": "2026-05-19T00:00:00.000Z",
+                "display_caveat": "Total skiable area is source-backed resort marketing/statistical acreage or marked piste length; verify before booking.",
+                "source_url": "https://www.panoramaresort.com/mountain/trail-map"
+              }
+            ]
+          },
+          "trail_map_url": "https://www.panoramaresort.com/mountain/trail-map",
+          "image": {
+            "src": "https://www.panoramaresort.com/assets/Home-Page-Assets/Web.TigeLussier-10_home.png",
+            "alt": "Panorama Mountain Resort resort photo",
+            "provenance": []
+          },
+          "provenance": [
+            {
+              "source_type": "official_page",
+              "source_name": "Panorama Mountain Resort official site",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Resort metadata is source-backed but manually curated.",
+              "source_url": "https://www.panoramaresort.com/"
+            }
+          ],
+          "source_status": "source-backed"
+        }
+      ]
+    }
+  ]
+}

@@ -329,5 +329,162 @@
         "source_url": "https://www.banfflakelouise.com/getting-here"
       }
     ]
+  },
+  {
+    "id": "ch-swiss-alps",
+    "country_id": "CH",
+    "name": "Swiss Alps / Valais and Verbier",
+    "description": "Source-backed Swiss Alps resort region with Zermatt and Verbier as non-pass-required planning resorts.",
+    "centroid_lat_lng": [
+      46.15,
+      7.45
+    ],
+    "gateway_airport_codes": [
+      "ZRH",
+      "GVA"
+    ],
+    "resort_ids": [
+      "zermatt",
+      "verbier"
+    ],
+    "lodging_zone_ids": [
+      "swiss-alps-zermatt-verbier-base"
+    ],
+    "transfer_option_ids": [
+      "gva-valais-rail-shuttle"
+    ],
+    "season_notes": [
+      "Rail/shuttle transfers and resort parking rules vary by valley; verify exact schedules and luggage rules."
+    ],
+    "no_car_viability": "easy",
+    "provenance": [
+      {
+        "source_type": "tourism_reference",
+        "source_name": "Switzerland Tourism winter reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.myswitzerland.com/en-us/experiences/winter/"
+      }
+    ]
+  },
+  {
+    "id": "fr-french-alps",
+    "country_id": "FR",
+    "name": "French Alps / Chamonix and Tarentaise",
+    "description": "Source-backed French Alps resort region with Chamonix and Val d\u2019Is\u00e8re/Tignes as non-pass-required planning resorts.",
+    "centroid_lat_lng": [
+      45.7,
+      6.8
+    ],
+    "gateway_airport_codes": [
+      "GVA",
+      "LYS"
+    ],
+    "resort_ids": [
+      "chamonix-mont-blanc",
+      "val-disere-tignes"
+    ],
+    "lodging_zone_ids": [
+      "french-alps-chamonix-tarentaise-base"
+    ],
+    "transfer_option_ids": [
+      "gva-french-alps-shuttle"
+    ],
+    "season_notes": [
+      "Transfers, road timing, and valley choices differ materially between Chamonix and Tarentaise."
+    ],
+    "no_car_viability": "possible",
+    "provenance": [
+      {
+        "source_type": "tourism_reference",
+        "source_name": "France Montagnes winter destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.france-montagnes.com/"
+      }
+    ]
+  },
+  {
+    "id": "it-dolomites",
+    "country_id": "IT",
+    "name": "Italian Dolomites / Cortina and Val Gardena",
+    "description": "Source-backed Dolomites resort region with Cortina d\u2019Ampezzo and Val Gardena as non-pass-required planning resorts.",
+    "centroid_lat_lng": [
+      46.55,
+      11.9
+    ],
+    "gateway_airport_codes": [
+      "VCE",
+      "MXP",
+      "INN"
+    ],
+    "resort_ids": [
+      "cortina-dampezzo",
+      "val-gardena"
+    ],
+    "lodging_zone_ids": [
+      "dolomites-cortina-val-gardena-base"
+    ],
+    "transfer_option_ids": [
+      "vce-dolomites-shuttle-car"
+    ],
+    "season_notes": [
+      "Dolomite valley transfers and resort hopping should be checked against live shuttle, train, and winter-driving conditions."
+    ],
+    "no_car_viability": "partial",
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Dolomiti Superski official destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.dolomitisuperski.com/en"
+      }
+    ]
+  },
+  {
+    "id": "fi-lapland",
+    "country_id": "FI",
+    "name": "Finnish Lapland / Levi and Ruka",
+    "description": "Source-backed Finnish Lapland resort region with Levi and Ruka as non-pass-required planning resorts.",
+    "centroid_lat_lng": [
+      66.9,
+      26.5
+    ],
+    "gateway_airport_codes": [
+      "HEL",
+      "KTT"
+    ],
+    "resort_ids": [
+      "levi",
+      "ruka"
+    ],
+    "lodging_zone_ids": [
+      "lapland-levi-ruka-base"
+    ],
+    "transfer_option_ids": [
+      "hel-ktt-lapland-flight-bus"
+    ],
+    "season_notes": [
+      "Lapland trips require domestic-flight/transfer timing, daylight, and winter-weather planning."
+    ],
+    "no_car_viability": "possible",
+    "provenance": [
+      {
+        "source_type": "tourism_reference",
+        "source_name": "Visit Finland Lapland winter reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.visitfinland.com/en/places-to-go/lapland/"
+      }
+    ]
   }
 ]

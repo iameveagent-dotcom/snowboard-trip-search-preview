@@ -1039,5 +1039,297 @@
       "duration_confidence": "sourced",
       "source_status": "source-backed"
     }
+  },
+  {
+    "id": "gva-valais-rail-shuttle",
+    "from_airport_code": "GVA",
+    "to_region_or_resort_id": "ch-swiss-alps",
+    "mode": "rail_shuttle",
+    "duration": {
+      "low_minutes": 180,
+      "expected_minutes": 240,
+      "high_minutes": 330,
+      "assumptions": [
+        "Planning transfer duration range; verify exact schedules, weather, and luggage rules."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Swiss rail/resort transfer planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Estimated transfer window; live schedules, weather, and connections can materially change travel time.",
+        "source_url": "https://www.sbb.ch/en"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 180,
+        "currency": "CHF"
+      },
+      "expected": {
+        "amount": 280,
+        "currency": "CHF"
+      },
+      "high": {
+        "amount": 460,
+        "currency": "CHF"
+      },
+      "unit": "group",
+      "assumptions": [
+        "Planning transfer cost range for two travelers; not a live checkout quote."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Swiss rail/shuttle planning fixture",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype transfer cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.sbb.ch/en"
+      }
+    },
+    "snow_driving_risk": "low",
+    "car_required_after_arrival": false,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.sbb.ch/en",
+    "provenance": [
+      {
+        "source_type": "operator_schedule",
+        "source_name": "Swiss rail/resort transfer planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.sbb.ch/en"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "gva-french-alps-shuttle",
+    "from_airport_code": "GVA",
+    "to_region_or_resort_id": "fr-french-alps",
+    "mode": "shuttle",
+    "duration": {
+      "low_minutes": 75,
+      "expected_minutes": 180,
+      "high_minutes": 300,
+      "assumptions": [
+        "Planning transfer duration range; verify exact schedules, weather, and luggage rules."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "French Alps airport shuttle planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Estimated transfer window; live schedules, weather, and connections can materially change travel time.",
+        "source_url": "https://www.france-montagnes.com/"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 160,
+        "currency": "EUR"
+      },
+      "expected": {
+        "amount": 260,
+        "currency": "EUR"
+      },
+      "high": {
+        "amount": 440,
+        "currency": "EUR"
+      },
+      "unit": "group",
+      "assumptions": [
+        "Planning transfer cost range for two travelers; not a live checkout quote."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "French Alps shuttle planning fixture",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype transfer cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.france-montagnes.com/"
+      }
+    },
+    "snow_driving_risk": "low",
+    "car_required_after_arrival": false,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.france-montagnes.com/",
+    "provenance": [
+      {
+        "source_type": "tourism_reference",
+        "source_name": "French Alps shuttle planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.france-montagnes.com/"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "partial",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "vce-dolomites-shuttle-car",
+    "from_airport_code": "VCE",
+    "to_region_or_resort_id": "it-dolomites",
+    "mode": "mixed",
+    "duration": {
+      "low_minutes": 150,
+      "expected_minutes": 240,
+      "high_minutes": 360,
+      "assumptions": [
+        "Planning transfer duration range; verify exact schedules, weather, and luggage rules."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Dolomites transfer planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Estimated transfer window; live schedules, weather, and connections can materially change travel time.",
+        "source_url": "https://www.dolomitisuperski.com/en"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 220,
+        "currency": "EUR"
+      },
+      "expected": {
+        "amount": 360,
+        "currency": "EUR"
+      },
+      "high": {
+        "amount": 620,
+        "currency": "EUR"
+      },
+      "unit": "group",
+      "assumptions": [
+        "Planning transfer cost range for two travelers; not a live checkout quote."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Dolomites shuttle/car planning fixture",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype transfer cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.dolomitisuperski.com/en"
+      }
+    },
+    "snow_driving_risk": "medium",
+    "car_required_after_arrival": true,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.dolomitisuperski.com/en",
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Dolomites transfer planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.dolomitisuperski.com/en"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "partial",
+      "booking_complexity": "high",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "hel-ktt-lapland-flight-bus",
+    "from_airport_code": "HEL",
+    "to_region_or_resort_id": "fi-lapland",
+    "mode": "mixed",
+    "duration": {
+      "low_minutes": 150,
+      "expected_minutes": 260,
+      "high_minutes": 420,
+      "assumptions": [
+        "Planning transfer duration range; verify exact schedules, weather, and luggage rules."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Finland domestic flight and Lapland transfer planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Estimated transfer window; live schedules, weather, and connections can materially change travel time.",
+        "source_url": "https://www.finavia.fi/en"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 240,
+        "currency": "EUR"
+      },
+      "expected": {
+        "amount": 420,
+        "currency": "EUR"
+      },
+      "high": {
+        "amount": 720,
+        "currency": "EUR"
+      },
+      "unit": "group",
+      "assumptions": [
+        "Planning transfer cost range for two travelers; not a live checkout quote."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Finland domestic flight/bus planning fixture",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype transfer cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.finavia.fi/en"
+      }
+    },
+    "snow_driving_risk": "low",
+    "car_required_after_arrival": false,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.finavia.fi/en",
+    "provenance": [
+      {
+        "source_type": "airport_reference",
+        "source_name": "Finavia Lapland airport transfer planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.finavia.fi/en"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "partial",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    }
   }
 ]

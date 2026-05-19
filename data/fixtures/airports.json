@@ -271,5 +271,137 @@
       "retrieved_at": "2026-05-19T00:00:00.000Z",
       "display_caveat": "Airport fixture for prototype routing only; not live operations data."
     }
+  },
+  {
+    "code": "GVA",
+    "name": "Geneva Airport",
+    "country_id": "CH",
+    "metro_area": "Geneva / Lake Geneva",
+    "coordinates": [
+      46.2381,
+      6.109
+    ],
+    "user_priority": "europe_gateway",
+    "provenance": [
+      {
+        "source_type": "airport_reference",
+        "source_name": "Geneva Airport official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.gva.ch/en/"
+      }
+    ]
+  },
+  {
+    "code": "LYS",
+    "name": "Lyon-Saint Exup\u00e9ry Airport",
+    "country_id": "FR",
+    "metro_area": "Lyon / French Alps",
+    "coordinates": [
+      45.7256,
+      5.0811
+    ],
+    "user_priority": "europe_gateway",
+    "provenance": [
+      {
+        "source_type": "airport_reference",
+        "source_name": "Lyon Airport official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.lyonaeroports.com/en"
+      }
+    ]
+  },
+  {
+    "code": "VCE",
+    "name": "Venice Marco Polo Airport",
+    "country_id": "IT",
+    "metro_area": "Venice / Dolomites",
+    "coordinates": [
+      45.5053,
+      12.3519
+    ],
+    "user_priority": "europe_gateway",
+    "provenance": [
+      {
+        "source_type": "airport_reference",
+        "source_name": "Venice Airport official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.veneziaairport.it/en/"
+      }
+    ]
+  },
+  {
+    "code": "MXP",
+    "name": "Milan Malpensa Airport",
+    "country_id": "IT",
+    "metro_area": "Milan / Northern Italy",
+    "coordinates": [
+      45.6306,
+      8.7281
+    ],
+    "user_priority": "europe_gateway",
+    "provenance": [
+      {
+        "source_type": "airport_reference",
+        "source_name": "Milan Airports official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.milanomalpensa-airport.com/en"
+      }
+    ]
+  },
+  {
+    "code": "HEL",
+    "name": "Helsinki Airport",
+    "country_id": "FI",
+    "metro_area": "Helsinki / Finland connections",
+    "coordinates": [
+      60.3172,
+      24.9633
+    ],
+    "user_priority": "europe_gateway",
+    "provenance": [
+      {
+        "source_type": "airport_reference",
+        "source_name": "Helsinki Airport official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.finavia.fi/en/airports/helsinki-airport"
+      }
+    ]
+  },
+  {
+    "code": "KTT",
+    "name": "Kittil\u00e4 Airport",
+    "country_id": "FI",
+    "metro_area": "Kittil\u00e4 / Levi",
+    "coordinates": [
+      67.701,
+      24.8468
+    ],
+    "user_priority": "ski_gateway",
+    "provenance": [
+      {
+        "source_type": "airport_reference",
+        "source_name": "Kittil\u00e4 Airport official site",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.finavia.fi/en/airports/kittila-airport"
+      }
+    ]
   }
 ]

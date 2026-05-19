@@ -124,5 +124,133 @@
         "source_url": "https://www.austria.info/"
       }
     ]
+  },
+  {
+    "id": "CH",
+    "name": "Switzerland",
+    "currency": "CHF",
+    "common_gateway_airport_codes": [
+      "ZRH",
+      "GVA"
+    ],
+    "travel_notes": [
+      "Swiss Alps trips can use Zurich or Geneva gateways plus rail/shuttle transfers into resort valleys."
+    ],
+    "train_or_shuttle_notes": [
+      "Rail is a strong no-car planning mode for Zermatt/Valais and other Swiss resort corridors."
+    ],
+    "driving_notes": [
+      "Mountain-pass, tunnel, parking, and winter equipment rules should be checked before self-driving."
+    ],
+    "resort_region_ids": [
+      "ch-swiss-alps"
+    ],
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Switzerland Tourism winter travel reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.myswitzerland.com/en-us/experiences/winter/"
+      }
+    ]
+  },
+  {
+    "id": "FR",
+    "name": "France",
+    "currency": "EUR",
+    "common_gateway_airport_codes": [
+      "GVA",
+      "LYS"
+    ],
+    "travel_notes": [
+      "French Alps trips commonly use Geneva or Lyon gateways for Chamonix and Tarentaise resorts."
+    ],
+    "train_or_shuttle_notes": [
+      "Rail, coach, and resort shuttles can be viable but schedules vary by valley and date."
+    ],
+    "driving_notes": [
+      "Alpine winter equipment rules, tunnel timing, and parking logistics should be verified before self-driving."
+    ],
+    "resort_region_ids": [
+      "fr-french-alps"
+    ],
+    "provenance": [
+      {
+        "source_type": "tourism_reference",
+        "source_name": "France Montagnes winter destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.france-montagnes.com/"
+      }
+    ]
+  },
+  {
+    "id": "IT",
+    "name": "Italy",
+    "currency": "EUR",
+    "common_gateway_airport_codes": [
+      "VCE",
+      "MXP"
+    ],
+    "travel_notes": [
+      "Dolomites trips commonly use Venice, Milan, Verona, or Innsbruck gateways depending on resort valley."
+    ],
+    "train_or_shuttle_notes": [
+      "Rail plus bus/shuttle works for some valleys but often needs schedule planning."
+    ],
+    "driving_notes": [
+      "Dolomite resort hopping may favor a car; verify winter tires/chains and mountain road conditions."
+    ],
+    "resort_region_ids": [
+      "it-dolomites"
+    ],
+    "provenance": [
+      {
+        "source_type": "tourism_reference",
+        "source_name": "Dolomiti Superski destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.dolomitisuperski.com/en"
+      }
+    ]
+  },
+  {
+    "id": "FI",
+    "name": "Finland",
+    "currency": "EUR",
+    "common_gateway_airport_codes": [
+      "HEL",
+      "KTT"
+    ],
+    "travel_notes": [
+      "Finnish Lapland trips often connect through Helsinki to Kittil\u00e4, Rovaniemi, or Kuusamo."
+    ],
+    "train_or_shuttle_notes": [
+      "Domestic flights plus resort buses/taxis are common for Lapland ski trips."
+    ],
+    "driving_notes": [
+      "Winter darkness, snowpack, and long distances make transfer planning important even on lower alpine terrain."
+    ],
+    "resort_region_ids": [
+      "fi-lapland"
+    ],
+    "provenance": [
+      {
+        "source_type": "tourism_reference",
+        "source_name": "Visit Finland Lapland winter travel reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.visitfinland.com/en/places-to-go/lapland/"
+      }
+    ]
   }
 ]

@@ -1,0 +1,3242 @@
+{
+  "public_baselines": [
+    {
+      "id": "fixture-dtw-to-cottonwoods-2p-7n-5d",
+      "label": "Salt Lake City / Cottonwood Canyons",
+      "region_id": "us-utah-cottonwoods",
+      "party_size": 2,
+      "nights": 7,
+      "ski_days": 5,
+      "total_low": {
+        "amount": 4000,
+        "currency": "USD"
+      },
+      "total_expected": {
+        "amount": 5360,
+        "currency": "USD"
+      },
+      "total_high": {
+        "amount": 7120,
+        "currency": "USD"
+      },
+      "required_line_items": [
+        {
+          "category": "flight",
+          "label": "Round-trip flight DTW to SLC",
+          "cost": {
+            "low": {
+              "amount": 600,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 900,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1300,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Manual fare-observation fixture for winter trip comparison."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype Google Flights deep-link observation",
+              "confidence": "fixture_estimate",
+              "freshness": "stale",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+              "source_url": "https://www.google.com/travel/flights"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Google Flights deep-link observation",
+            "confidence": "fixture_estimate",
+            "freshness": "stale",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+            "source_url": "https://www.google.com/travel/flights"
+          }
+        },
+        {
+          "category": "lodging",
+          "label": "7 nights lodging in Salt Lake City / Sandy",
+          "cost": {
+            "low": {
+              "amount": 1260,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 1680,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 2310,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Moderate hotel or condo base shared by two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype lodging fixture: SLC/Sandy",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.visitsaltlake.com/"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype lodging fixture: SLC/Sandy",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.visitsaltlake.com/"
+          },
+          "fixture_source_id": "slc-sandy-midvale"
+        },
+        {
+          "category": "transfer",
+          "label": "SLC rental car and winter driving buffer",
+          "cost": {
+            "low": {
+              "amount": 520,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 520,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 530,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "7-day AWD-capable rental estimate plus parking/fuel buffer."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype SLC rental-car fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype SLC rental-car fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
+          },
+          "fixture_source_id": "slc-winter-rental-car"
+        },
+        {
+          "category": "lift_ticket",
+          "label": "5 days lift tickets for Cottonwood resorts",
+          "cost": {
+            "low": {
+              "amount": 1200,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 1700,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 2300,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-adult day-ticket fixture blended across Cottonwood resorts; pass holders may pay less."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype Cottonwoods lift ticket source set",
+              "confidence": "fixture_estimate",
+              "freshness": "aging",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+              "source_url": "https://www.snowbird.com/tickets-passes/"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Cottonwoods lift ticket source set",
+            "confidence": "fixture_estimate",
+            "freshness": "aging",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+            "source_url": "https://www.snowbird.com/tickets-passes/"
+          },
+          "fixture_source_id": "cottonwoods-day-ticket"
+        },
+        {
+          "category": "food",
+          "label": "7 days food budget",
+          "cost": {
+            "low": {
+              "amount": 420,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 560,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 680,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-person/day food budget from manual resort-dining source observations: breakfast/coffee plus casual lunch and dinner around Snowbird/Salt Lake base areas.",
+              "Excludes alcohol, fine dining, delivery fees, and grocery-heavy self-catering substitutions."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Snowbird official dining pages (The Summit and SeventyOne)",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T15:07:03.000Z",
+              "observed_for_dates": "Prototype winter powder week; resort casual dining pages observed May 2026",
+              "source_url": "https://www.snowbird.com/dining/the-summit/",
+              "display_caveat": "Manual per-person/day range backed by Snowbird official dining pages that publish resort casual dining venues with $$ price range; verify current menus, taxes, tips, groceries, and alcohol before booking."
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Snowbird official dining pages (The Summit and SeventyOne)",
+            "confidence": "source_backed_range",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T15:07:03.000Z",
+            "observed_for_dates": "Prototype winter powder week; resort casual dining pages observed May 2026",
+            "source_url": "https://www.snowbird.com/dining/the-summit/",
+            "display_caveat": "Manual per-person/day range backed by Snowbird official dining pages that publish resort casual dining venues with $$ price range; verify current menus, taxes, tips, groceries, and alcohol before booking."
+          }
+        }
+      ],
+      "optional_line_items": [
+        {
+          "category": "gear_rental",
+          "label": "5 days snowboard rental package",
+          "cost": {
+            "low": {
+              "amount": 400,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 600,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 800,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Snowboard + boots + bindings fixture range."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype Cottonwoods gear rental fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.snowbird.com/"
+            }
+          },
+          "per_person": true,
+          "required": false,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Cottonwoods gear rental fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.snowbird.com/"
+          },
+          "fixture_source_id": "cottonwoods-snowboard-package"
+        }
+      ],
+      "default_transfer_option_id": "slc-winter-rental-car",
+      "recommended_transfer_option_id": "slc-cottonwoods-shuttle",
+      "transfer_options": [
+        {
+          "id": "slc-winter-rental-car",
+          "mode": "rental_car",
+          "is_default": true,
+          "estimated_cost": {
+            "low": {
+              "amount": 520,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 520,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 530,
+              "currency": "USD"
+            },
+            "unit": "vehicle",
+            "assumptions": [
+              "7-day AWD-capable rental estimate plus parking/fuel buffer."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype SLC rental-car fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
+            }
+          },
+          "duration": {
+            "low_minutes": 35,
+            "expected_minutes": 55,
+            "high_minutes": 105,
+            "assumptions": [
+              "Airport pickup plus canyon drive and winter traffic buffer."
+            ],
+            "provenance": {
+              "source_type": "derived_route",
+              "source_name": "OSRM/manual SLC to Cottonwoods route fixture",
+              "confidence": "derived_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times."
+            }
+          },
+          "source_status": "derived",
+          "cost_provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype SLC rental-car fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
+          },
+          "duration_provenance": {
+            "source_type": "derived_route",
+            "source_name": "OSRM/manual SLC to Cottonwoods route fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times."
+          }
+        },
+        {
+          "id": "slc-cottonwoods-shuttle",
+          "mode": "shuttle",
+          "is_default": false,
+          "estimated_cost": {
+            "low": {
+              "amount": 160,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 260,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 420,
+              "currency": "USD"
+            },
+            "unit": "group",
+            "assumptions": [
+              "Round-trip shared shuttle range for two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype SLC shuttle fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.visitsaltlake.com/"
+            }
+          },
+          "duration": {
+            "low_minutes": 60,
+            "expected_minutes": 90,
+            "high_minutes": 150,
+            "assumptions": [
+              "Airport-to-lodging/resort shuttle fixture with canyon weather buffer."
+            ],
+            "provenance": {
+              "source_type": "derived_route",
+              "source_name": "Manual SLC shuttle route fixture",
+              "confidence": "derived_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+              "source_url": "https://www.visitsaltlake.com/"
+            }
+          },
+          "source_status": "derived",
+          "cost_provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype SLC shuttle fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.visitsaltlake.com/"
+          },
+          "duration_provenance": {
+            "source_type": "derived_route",
+            "source_name": "Manual SLC shuttle route fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+            "source_url": "https://www.visitsaltlake.com/"
+          }
+        }
+      ],
+      "confidence_summary": {
+        "lowest_confidence": "fixture_estimate",
+        "stale_fields": [
+          "Round-trip flight DTW to SLC"
+        ],
+        "unknown_fields": [],
+        "caveats": [
+          "Round-trip flight DTW to SLC: Prototype flight fare fixture; verify live fare through source/deep link.",
+          "7 nights lodging in Salt Lake City / Sandy: Prototype fixture cost range, not live inventory or an exact quote.",
+          "SLC rental car and winter driving buffer: Prototype fixture cost range, not live inventory or an exact quote.",
+          "5 days lift tickets for Cottonwood resorts: Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "5 days snowboard rental package: Prototype fixture cost range, not live inventory or an exact quote.",
+          "7 days food budget: Manual per-person/day range backed by Snowbird official dining pages that publish resort casual dining venues with $$ price range; verify current menus, taxes, tips, groceries, and alcohol before booking."
+        ]
+      },
+      "source_links": [
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Google Flights deep-link observation",
+          "confidence": "fixture_estimate",
+          "freshness": "stale",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+          "source_url": "https://www.google.com/travel/flights"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype lodging fixture: SLC/Sandy",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.visitsaltlake.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype SLC rental-car fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Cottonwoods lift ticket source set",
+          "confidence": "fixture_estimate",
+          "freshness": "aging",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "source_url": "https://www.snowbird.com/tickets-passes/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Cottonwoods gear rental fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.snowbird.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Snowbird official dining pages (The Summit and SeventyOne)",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T15:07:03.000Z",
+          "observed_for_dates": "Prototype winter powder week; resort casual dining pages observed May 2026",
+          "source_url": "https://www.snowbird.com/dining/the-summit/",
+          "display_caveat": "Manual per-person/day range backed by Snowbird official dining pages that publish resort casual dining venues with $$ price range; verify current menus, taxes, tips, groceries, and alcohol before booking."
+        }
+      ]
+    },
+    {
+      "id": "fixture-dtw-to-hokkaido-2p-7n-5d",
+      "label": "Hokkaido / Niseko and Rusutsu",
+      "region_id": "jp-hokkaido-niseko-rusutsu",
+      "party_size": 2,
+      "nights": 7,
+      "ski_days": 5,
+      "total_low": {
+        "amount": 5893,
+        "currency": "USD"
+      },
+      "total_expected": {
+        "amount": 8107,
+        "currency": "USD"
+      },
+      "total_high": {
+        "amount": 10980,
+        "currency": "USD"
+      },
+      "required_line_items": [
+        {
+          "category": "flight",
+          "label": "Round-trip flight DTW to CTS via Tokyo",
+          "cost": {
+            "low": {
+              "amount": 2000,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 2600,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 3400,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Manual fare-observation fixture for winter Japan comparison."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype Google Flights deep-link observation",
+              "confidence": "fixture_estimate",
+              "freshness": "stale",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+              "source_url": "https://www.google.com/travel/flights"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Google Flights deep-link observation",
+            "confidence": "fixture_estimate",
+            "freshness": "stale",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+            "source_url": "https://www.google.com/travel/flights"
+          }
+        },
+        {
+          "category": "lodging",
+          "label": "7 nights lodging in Hirafu / Niseko Village",
+          "cost": {
+            "low": {
+              "amount": 2100,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 3033,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 4200,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Shared room or apartment base for two travelers in a resort village."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype lodging fixture: Hirafu/Niseko Village",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.niseko.ne.jp/en/"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype lodging fixture: Hirafu/Niseko Village",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.niseko.ne.jp/en/"
+          },
+          "original_currency": "JPY",
+          "fx_assumption": "150 JPY = 1 USD",
+          "fixture_source_id": "hirafu-niseko-village"
+        },
+        {
+          "category": "transfer",
+          "label": "CTS resort shuttle for two travelers",
+          "cost": {
+            "low": {
+              "amount": 600,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 867,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1200,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Round-trip shared bus/shuttle for two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype CTS resort shuttle fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.niseko.ne.jp/en/access/"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype CTS resort shuttle fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.niseko.ne.jp/en/access/"
+          },
+          "original_currency": "JPY",
+          "fx_assumption": "150 JPY = 1 USD",
+          "fixture_source_id": "cts-resort-shuttle"
+        },
+        {
+          "category": "lift_ticket",
+          "label": "5 days lift tickets for Niseko/Rusutsu",
+          "cost": {
+            "low": {
+              "amount": 633,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 767,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 967,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-adult day-ticket fixture blended across Niseko/Rusutsu; pass holders may pay less."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype Hokkaido lift ticket source set",
+              "confidence": "fixture_estimate",
+              "freshness": "aging",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+              "source_url": "https://www.niseko.ne.jp/en/lift/"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Hokkaido lift ticket source set",
+            "confidence": "fixture_estimate",
+            "freshness": "aging",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+            "source_url": "https://www.niseko.ne.jp/en/lift/"
+          },
+          "original_currency": "JPY",
+          "fx_assumption": "150 JPY = 1 USD",
+          "fixture_source_id": "hokkaido-day-ticket"
+        },
+        {
+          "category": "food",
+          "label": "Meals / casual food budget",
+          "cost": {
+            "low": {
+              "amount": 560,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 840,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1213,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-person/day food budget from manual resort-dining source observations across Hirafu/Niseko casual slope-side dining.",
+              "Excludes alcohol, fine dining omakase/special dinners, and grocery-heavy self-catering substitutions."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Niseko Village and Grand Hirafu official dining pages",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T15:07:03.000Z",
+              "observed_for_dates": "Prototype January powder week; resort casual dining pages observed May 2026",
+              "source_url": "https://www.grand-hirafu.jp/winter/en/restaurant/",
+              "display_caveat": "Manual per-person/day JPY range backed by Niseko/Hirafu official resort dining pages; verify in-season menus, taxes/service charges, convenience-store meals, alcohol, and exchange rates before booking."
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Niseko Village and Grand Hirafu official dining pages",
+            "confidence": "source_backed_range",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T15:07:03.000Z",
+            "observed_for_dates": "Prototype January powder week; resort casual dining pages observed May 2026",
+            "source_url": "https://www.grand-hirafu.jp/winter/en/restaurant/",
+            "display_caveat": "Manual per-person/day JPY range backed by Niseko/Hirafu official resort dining pages; verify in-season menus, taxes/service charges, convenience-store meals, alcohol, and exchange rates before booking."
+          },
+          "original_currency": "JPY",
+          "fx_assumption": "150 JPY = 1 USD"
+        }
+      ],
+      "optional_line_items": [
+        {
+          "category": "gear_rental",
+          "label": "5 days snowboard rental package",
+          "cost": {
+            "low": {
+              "amount": 367,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 500,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 633,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Snowboard + boots + bindings fixture range."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype Hokkaido gear rental fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.niseko.ne.jp/en/"
+            }
+          },
+          "per_person": true,
+          "required": false,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Hokkaido gear rental fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.niseko.ne.jp/en/"
+          },
+          "original_currency": "JPY",
+          "fx_assumption": "150 JPY = 1 USD",
+          "fixture_source_id": "hokkaido-snowboard-package"
+        }
+      ],
+      "default_transfer_option_id": "cts-resort-shuttle",
+      "recommended_transfer_option_id": "cts-niseko-train-bus",
+      "transfer_options": [
+        {
+          "id": "cts-resort-shuttle",
+          "mode": "shuttle",
+          "is_default": true,
+          "estimated_cost": {
+            "low": {
+              "amount": 90000,
+              "currency": "JPY"
+            },
+            "expected": {
+              "amount": 130000,
+              "currency": "JPY"
+            },
+            "high": {
+              "amount": 180000,
+              "currency": "JPY"
+            },
+            "unit": "group",
+            "assumptions": [
+              "Round-trip shared bus/shuttle for two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype CTS resort shuttle fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.niseko.ne.jp/en/access/"
+            }
+          },
+          "duration": {
+            "low_minutes": 150,
+            "expected_minutes": 190,
+            "high_minutes": 260,
+            "assumptions": [
+              "New Chitose to Niseko/Rusutsu winter bus/shuttle fixture."
+            ],
+            "provenance": {
+              "source_type": "derived_route",
+              "source_name": "Manual CTS resort shuttle fixture",
+              "confidence": "derived_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+              "source_url": "https://www.niseko.ne.jp/en/access/"
+            }
+          },
+          "source_status": "derived",
+          "cost_provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype CTS resort shuttle fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.niseko.ne.jp/en/access/"
+          },
+          "duration_provenance": {
+            "source_type": "derived_route",
+            "source_name": "Manual CTS resort shuttle fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+            "source_url": "https://www.niseko.ne.jp/en/access/"
+          }
+        },
+        {
+          "id": "cts-niseko-train-bus",
+          "mode": "mixed",
+          "is_default": false,
+          "estimated_cost": {
+            "low": {
+              "amount": 10000,
+              "currency": "JPY"
+            },
+            "expected": {
+              "amount": 16000,
+              "currency": "JPY"
+            },
+            "high": {
+              "amount": 24000,
+              "currency": "JPY"
+            },
+            "unit": "group",
+            "assumptions": [
+              "Public transport fixture range for two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype CTS train/bus fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.japan.travel/en/"
+            }
+          },
+          "duration": {
+            "low_minutes": 180,
+            "expected_minutes": 240,
+            "high_minutes": 330,
+            "assumptions": [
+              "Train/bus connections vary; fixture uses conservative winter transfer window."
+            ],
+            "provenance": {
+              "source_type": "derived_route",
+              "source_name": "Manual CTS train/bus fixture",
+              "confidence": "derived_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+              "source_url": "https://www.japan.travel/en/"
+            }
+          },
+          "source_status": "derived",
+          "cost_provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype CTS train/bus fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.japan.travel/en/"
+          },
+          "duration_provenance": {
+            "source_type": "derived_route",
+            "source_name": "Manual CTS train/bus fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+            "source_url": "https://www.japan.travel/en/"
+          }
+        },
+        {
+          "id": "cts-hokkaido-rental-car",
+          "mode": "rental_car",
+          "is_default": false,
+          "estimated_cost": {
+            "low": {
+              "amount": 56000,
+              "currency": "JPY"
+            },
+            "expected": {
+              "amount": 82000,
+              "currency": "JPY"
+            },
+            "high": {
+              "amount": 120000,
+              "currency": "JPY"
+            },
+            "unit": "vehicle",
+            "assumptions": [
+              "7-day rental, toll/fuel/winter buffer fixture."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype CTS rental-car fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
+            }
+          },
+          "duration": {
+            "low_minutes": 130,
+            "expected_minutes": 170,
+            "high_minutes": 260,
+            "assumptions": [
+              "Winter self-drive fixture from New Chitose to resort zone."
+            ],
+            "provenance": {
+              "source_type": "derived_route",
+              "source_name": "Manual CTS rental-car route fixture",
+              "confidence": "derived_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-18T00:00:00.000Z",
+              "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+              "source_url": "https://www.snowjapan.com/japan-ski-resorts/hokkaido"
+            }
+          },
+          "source_status": "derived",
+          "cost_provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype CTS rental-car fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
+          },
+          "duration_provenance": {
+            "source_type": "derived_route",
+            "source_name": "Manual CTS rental-car route fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-18T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+            "source_url": "https://www.snowjapan.com/japan-ski-resorts/hokkaido"
+          }
+        }
+      ],
+      "confidence_summary": {
+        "lowest_confidence": "fixture_estimate",
+        "stale_fields": [
+          "Round-trip flight DTW to CTS via Tokyo"
+        ],
+        "unknown_fields": [],
+        "caveats": [
+          "Round-trip flight DTW to CTS via Tokyo: Prototype flight fare fixture; verify live fare through source/deep link.",
+          "7 nights lodging in Hirafu / Niseko Village: Prototype fixture cost range, not live inventory or an exact quote.",
+          "CTS resort shuttle for two travelers: Prototype fixture cost range, not live inventory or an exact quote.",
+          "5 days lift tickets for Niseko/Rusutsu: Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "5 days snowboard rental package: Prototype fixture cost range, not live inventory or an exact quote.",
+          "Meals / casual food budget: Manual per-person/day JPY range backed by Niseko/Hirafu official resort dining pages; verify in-season menus, taxes/service charges, convenience-store meals, alcohol, and exchange rates before booking."
+        ]
+      },
+      "source_links": [
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Google Flights deep-link observation",
+          "confidence": "fixture_estimate",
+          "freshness": "stale",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+          "source_url": "https://www.google.com/travel/flights"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype lodging fixture: Hirafu/Niseko Village",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.niseko.ne.jp/en/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype CTS resort shuttle fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.niseko.ne.jp/en/access/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Hokkaido lift ticket source set",
+          "confidence": "fixture_estimate",
+          "freshness": "aging",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "source_url": "https://www.niseko.ne.jp/en/lift/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Hokkaido gear rental fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.niseko.ne.jp/en/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Niseko Village and Grand Hirafu official dining pages",
+          "confidence": "source_backed_range",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-18T15:07:03.000Z",
+          "observed_for_dates": "Prototype January powder week; resort casual dining pages observed May 2026",
+          "source_url": "https://www.grand-hirafu.jp/winter/en/restaurant/",
+          "display_caveat": "Manual per-person/day JPY range backed by Niseko/Hirafu official resort dining pages; verify in-season menus, taxes/service charges, convenience-store meals, alcohol, and exchange rates before booking."
+        }
+      ]
+    },
+    {
+      "id": "fixture-dtw-to-colorado-summit-2p-7n-5d",
+      "label": "Colorado / Summit County",
+      "region_id": "us-colorado-summit-county",
+      "party_size": 2,
+      "nights": 7,
+      "ski_days": 5,
+      "total_low": {
+        "amount": 4264,
+        "currency": "USD"
+      },
+      "total_expected": {
+        "amount": 6248,
+        "currency": "USD"
+      },
+      "total_high": {
+        "amount": 9236,
+        "currency": "USD"
+      },
+      "required_line_items": [
+        {
+          "category": "flight",
+          "label": "Round-trip flight DTW to DEN",
+          "cost": {
+            "low": {
+              "amount": 520,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 840,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1440,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Manual fare-observation fixture for winter trip comparison."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype Google Flights deep-link observation",
+              "confidence": "fixture_estimate",
+              "freshness": "stale",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+              "source_url": "https://www.google.com/travel/flights"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Google Flights deep-link observation",
+            "confidence": "fixture_estimate",
+            "freshness": "stale",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+            "source_url": "https://www.google.com/travel/flights"
+          }
+        },
+        {
+          "category": "lodging",
+          "label": "7 nights lodging in destination base",
+          "cost": {
+            "low": {
+              "amount": 1470,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 2170,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 3360,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Moderate hotel/condo base shared by two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype lodging fixture: Frisco / Silverthorne / Dillon",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.gobreck.com/"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype lodging fixture: Frisco / Silverthorne / Dillon",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.gobreck.com/"
+          },
+          "fixture_source_id": "summit-county-frisco-silverthorne"
+        },
+        {
+          "category": "transfer",
+          "label": "DIA to Summit County shared shuttle for two travelers",
+          "cost": {
+            "low": {
+              "amount": 236,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 376,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 516,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Epic Mountain Express DIA-Breck/Keystone/Frisco/Silverthorne/Copper door-to-door shared shuttle lists $59–$129 per guest through 04/30/2026; two travelers round-trip = 4 one-way guest seats ($236–$516), midpoint expected $376."
+            ],
+            "provenance": {
+              "source_type": "operator_published_rate",
+              "source_name": "Epic Mountain Express DIA to Breck/Keystone/Frisco/Silverthorne/Copper rates",
+              "confidence": "source_backed_range",
+              "freshness": "rates through 2026-04-30",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Published shuttle range, not a live checkout quote; exact fare depends on date, pickup/dropoff, availability, fees, and Epic Mountain Rewards eligibility.",
+              "source_url": "https://www.epicmountainexpress.com/rates"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "operator_published_rate",
+            "source_name": "Epic Mountain Express DIA to Breck/Keystone/Frisco/Silverthorne/Copper rates",
+            "confidence": "source_backed_range",
+            "freshness": "rates through 2026-04-30",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Published shuttle range, not a live checkout quote; exact fare depends on date, pickup/dropoff, availability, fees, and Epic Mountain Rewards eligibility.",
+            "source_url": "https://www.epicmountainexpress.com/rates"
+          },
+          "fixture_source_id": "den-summit-shared-shuttle"
+        },
+        {
+          "category": "lift_ticket",
+          "label": "5 days lift tickets for selected resorts",
+          "cost": {
+            "low": {
+              "amount": 1450,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 2050,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 2800,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-adult day-ticket fixture blended across the destination; pass holders may pay less."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype us-colorado-summit-county lift ticket source set",
+              "confidence": "fixture_estimate",
+              "freshness": "aging",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+              "source_url": "https://www.breckenridge.com/"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype us-colorado-summit-county lift ticket source set",
+            "confidence": "fixture_estimate",
+            "freshness": "aging",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+            "source_url": "https://www.breckenridge.com/"
+          },
+          "fixture_source_id": "colorado-summit-day-ticket"
+        },
+        {
+          "category": "food",
+          "label": "7 days food budget",
+          "cost": {
+            "low": {
+              "amount": 588,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 812,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1120,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-person/day food budget planning fixture."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype destination food budget fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+              "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype destination food budget fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+            "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+          }
+        }
+      ],
+      "optional_line_items": [
+        {
+          "category": "gear_rental",
+          "label": "5 days snowboard rental package",
+          "cost": {
+            "low": {
+              "amount": 360,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 680,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 930,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Snowboard + boots + bindings fixture range."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype us-colorado-summit-county gear rental fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.breckenridge.com/"
+            }
+          },
+          "per_person": true,
+          "required": false,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype us-colorado-summit-county gear rental fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.breckenridge.com/"
+          },
+          "fixture_source_id": "colorado-summit-snowboard-package"
+        }
+      ],
+      "default_transfer_option_id": "den-summit-shared-shuttle",
+      "recommended_transfer_option_id": "den-summit-shared-shuttle",
+      "transfer_options": [
+        {
+          "id": "den-summit-shared-shuttle",
+          "mode": "shuttle",
+          "is_default": true,
+          "estimated_cost": {
+            "low": {
+              "amount": 236,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 376,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 516,
+              "currency": "USD"
+            },
+            "unit": "group",
+            "assumptions": [
+              "Epic Mountain Express DIA-Breck/Keystone/Frisco/Silverthorne/Copper door-to-door shared shuttle lists $59–$129 per guest through 04/30/2026; two travelers round-trip = 4 one-way guest seats ($236–$516), midpoint expected $376."
+            ],
+            "provenance": {
+              "source_type": "operator_published_rate",
+              "source_name": "Epic Mountain Express DIA to Breck/Keystone/Frisco/Silverthorne/Copper rates",
+              "confidence": "source_backed_range",
+              "freshness": "rates through 2026-04-30",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Published shuttle range, not a live checkout quote; exact fare depends on date, pickup/dropoff, availability, fees, and Epic Mountain Rewards eligibility.",
+              "source_url": "https://www.epicmountainexpress.com/rates"
+            }
+          },
+          "duration": {
+            "low_minutes": 90,
+            "expected_minutes": 180,
+            "high_minutes": 360,
+            "assumptions": [
+              "DIA to Breckenridge/Keystone/Frisco/Silverthorne/Copper scheduled shuttle corridor; winter I-70 buffer remains material."
+            ],
+            "provenance": {
+              "source_type": "operator_schedule",
+              "source_name": "Epic Mountain Express DIA to Summit County shuttle corridor",
+              "confidence": "source_backed_range",
+              "freshness": "rates through 2026-04-30",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Duration remains a planning range; I-70 weather and traffic can materially change transfer time.",
+              "source_url": "https://www.epicmountainexpress.com/rates"
+            }
+          },
+          "source_status": "source-backed",
+          "cost_provenance": {
+            "source_type": "operator_published_rate",
+            "source_name": "Epic Mountain Express DIA to Breck/Keystone/Frisco/Silverthorne/Copper rates",
+            "confidence": "source_backed_range",
+            "freshness": "rates through 2026-04-30",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Published shuttle range, not a live checkout quote; exact fare depends on date, pickup/dropoff, availability, fees, and Epic Mountain Rewards eligibility.",
+            "source_url": "https://www.epicmountainexpress.com/rates"
+          },
+          "duration_provenance": {
+            "source_type": "operator_schedule",
+            "source_name": "Epic Mountain Express DIA to Summit County shuttle corridor",
+            "confidence": "source_backed_range",
+            "freshness": "rates through 2026-04-30",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Duration remains a planning range; I-70 weather and traffic can materially change transfer time.",
+            "source_url": "https://www.epicmountainexpress.com/rates"
+          }
+        },
+        {
+          "id": "den-summit-4wd-rental-car",
+          "mode": "rental_car",
+          "is_default": false,
+          "estimated_cost": {
+            "low": {
+              "amount": 620,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 760,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 980,
+              "currency": "USD"
+            },
+            "unit": "vehicle",
+            "assumptions": [
+              "7-day AWD/4WD-capable vehicle planning allowance plus fuel/parking/winter logistics buffer; cost is for the vehicle and can be split across up to five travelers when everyone fits with gear."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Summit County AWD/4WD rental vehicle planning range with CDOT traction-law context",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Planning range, not a live checkout quote; verify exact dates, vehicle class, AWD/4WD guarantee, tires/chains, insurance, parking, and fees before booking.",
+              "source_url": "https://www.codot.gov/travel/winter-driving/tractionlaw"
+            }
+          },
+          "duration": {
+            "low_minutes": 90,
+            "expected_minutes": 180,
+            "high_minutes": 360,
+            "assumptions": [
+              "DIA to Summit County self-drive on I-70; winter traffic and traction-law conditions can materially change timing."
+            ],
+            "provenance": {
+              "source_type": "official_winter_driving_reference",
+              "source_name": "Colorado Department of Transportation passenger vehicle traction law",
+              "confidence": "source_backed_range",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Route duration is a planning range; CDOT traction-law requirements make AWD/4WD with winter-capable tires or equivalent equipment a real assumption, not a generic economy-car rental.",
+              "source_url": "https://www.codot.gov/travel/winter-driving/tractionlaw"
+            }
+          },
+          "source_status": "source-backed",
+          "cost_provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Summit County AWD/4WD rental vehicle planning range with CDOT traction-law context",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Planning range, not a live checkout quote; verify exact dates, vehicle class, AWD/4WD guarantee, tires/chains, insurance, parking, and fees before booking.",
+            "source_url": "https://www.codot.gov/travel/winter-driving/tractionlaw"
+          },
+          "duration_provenance": {
+            "source_type": "official_winter_driving_reference",
+            "source_name": "Colorado Department of Transportation passenger vehicle traction law",
+            "confidence": "source_backed_range",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Route duration is a planning range; CDOT traction-law requirements make AWD/4WD with winter-capable tires or equivalent equipment a real assumption, not a generic economy-car rental.",
+            "source_url": "https://www.codot.gov/travel/winter-driving/tractionlaw"
+          }
+        }
+      ],
+      "confidence_summary": {
+        "lowest_confidence": "fixture_estimate",
+        "stale_fields": [
+          "Round-trip flight DTW to DEN"
+        ],
+        "unknown_fields": [],
+        "caveats": [
+          "Round-trip flight DTW to DEN: Prototype flight fare fixture; verify live fare through source/deep link.",
+          "7 nights lodging in destination base: Prototype fixture cost range, not live inventory or an exact quote.",
+          "DIA to Summit County shared shuttle for two travelers: Published shuttle range, not a live checkout quote; exact fare depends on date, pickup/dropoff, availability, fees, and Epic Mountain Rewards eligibility.",
+          "5 days lift tickets for selected resorts: Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "5 days snowboard rental package: Prototype fixture cost range, not live inventory or an exact quote.",
+          "7 days food budget: Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions."
+        ]
+      },
+      "source_links": [
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Google Flights deep-link observation",
+          "confidence": "fixture_estimate",
+          "freshness": "stale",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+          "source_url": "https://www.google.com/travel/flights"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype lodging fixture: Frisco / Silverthorne / Dillon",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.gobreck.com/"
+        },
+        {
+          "source_type": "operator_published_rate",
+          "source_name": "Epic Mountain Express DIA to Breck/Keystone/Frisco/Silverthorne/Copper rates",
+          "confidence": "source_backed_range",
+          "freshness": "rates through 2026-04-30",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Published shuttle range, not a live checkout quote; exact fare depends on date, pickup/dropoff, availability, fees, and Epic Mountain Rewards eligibility.",
+          "source_url": "https://www.epicmountainexpress.com/rates"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype us-colorado-summit-county lift ticket source set",
+          "confidence": "fixture_estimate",
+          "freshness": "aging",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "source_url": "https://www.breckenridge.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype us-colorado-summit-county gear rental fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.breckenridge.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype destination food budget fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+          "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+        }
+      ]
+    },
+    {
+      "id": "fixture-dtw-to-tahoe-2p-7n-5d",
+      "label": "Tahoe / North and South Lake",
+      "region_id": "us-tahoe-north-south",
+      "party_size": 2,
+      "nights": 7,
+      "ski_days": 5,
+      "total_low": {
+        "amount": 2574,
+        "currency": "USD"
+      },
+      "total_expected": {
+        "amount": 3866,
+        "currency": "USD"
+      },
+      "total_high": {
+        "amount": 6390,
+        "currency": "USD"
+      },
+      "required_line_items": [
+        {
+          "category": "flight",
+          "label": "Round-trip flight DTW to RNO/SMF",
+          "cost": {
+            "low": {
+              "amount": 480,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 720,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1240,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Practical fare range after user feedback; sale checks still replace this flight line."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "User-anchored DTW to RNO/SMF fare fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+              "source_url": "https://www.google.com/travel/flights"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "User-anchored DTW to RNO/SMF fare fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+            "source_url": "https://www.google.com/travel/flights"
+          }
+        },
+        {
+          "category": "lodging",
+          "label": "7 nights lodging in destination base",
+          "cost": {
+            "low": {
+              "amount": 840,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 1330,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 2240,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Prototype lodging planning range; verify exact dates, occupancy, taxes, and live inventory before treating it as accurate."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "User-anchored Tahoe lodging fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "User-anchored prototype planning range; verify exact dates and live prices before booking.",
+              "source_url": "https://visitlaketahoe.com/"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "User-anchored Tahoe lodging fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "User-anchored prototype planning range; verify exact dates and live prices before booking.",
+            "source_url": "https://visitlaketahoe.com/"
+          },
+          "fixture_source_id": "tahoe-south-north-base"
+        },
+        {
+          "category": "transfer",
+          "label": "Airport transfer / winter logistics buffer",
+          "cost": {
+            "low": {
+              "amount": 260,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 420,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 700,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "7-day practical rental/transfer allowance; not a luxury SUV worst-case."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "User-anchored Tahoe car/transfer fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "User-anchored prototype planning range; verify exact dates and live prices before booking.",
+              "source_url": "https://www.visitrenotahoe.com/"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "User-anchored Tahoe car/transfer fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "User-anchored prototype planning range; verify exact dates and live prices before booking.",
+            "source_url": "https://www.visitrenotahoe.com/"
+          },
+          "fixture_source_id": "rno-tahoe-rental-car"
+        },
+        {
+          "category": "lift_ticket",
+          "label": "5 days lift/pass budget for Tahoe resorts",
+          "cost": {
+            "low": {
+              "amount": 350,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 500,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 950,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-person/day effective lift access budget; avoids assuming full walk-up tickets for every ski day."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "User-anchored Tahoe pass/day-ticket budget",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Assumes existing pass, buddy tickets, or discounted multi-day access; verify exact resort/pass rules.",
+              "source_url": "https://www.palisadestahoe.com/"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "User-anchored Tahoe pass/day-ticket budget",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Assumes existing pass, buddy tickets, or discounted multi-day access; verify exact resort/pass rules.",
+            "source_url": "https://www.palisadestahoe.com/"
+          }
+        },
+        {
+          "category": "food",
+          "label": "7 days food budget",
+          "cost": {
+            "low": {
+              "amount": 644,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 896,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1260,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-person/day food budget planning fixture."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype destination food budget fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+              "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype destination food budget fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+            "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+          }
+        }
+      ],
+      "optional_line_items": [
+        {
+          "category": "gear_rental",
+          "label": "Own gear / no snowboard rental by default",
+          "cost": {
+            "low": {
+              "amount": 0,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 0,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 250,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "No rental cost by default because this fixture assumes the traveler brings their own gear."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "User-anchored Tahoe own-gear assumption",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Default assumes own gear; add rentals only if needed.",
+              "source_url": "https://visitlaketahoe.com/"
+            }
+          },
+          "per_person": true,
+          "required": false,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "User-anchored Tahoe own-gear assumption",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Default assumes own gear; add rentals only if needed.",
+            "source_url": "https://visitlaketahoe.com/"
+          }
+        }
+      ],
+      "default_transfer_option_id": "rno-tahoe-rental-car",
+      "recommended_transfer_option_id": "rno-tahoe-rental-car",
+      "transfer_options": [
+        {
+          "id": "rno-tahoe-rental-car",
+          "mode": "rental_car",
+          "is_default": true,
+          "estimated_cost": {
+            "low": {
+              "amount": 260,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 420,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 700,
+              "currency": "USD"
+            },
+            "unit": "vehicle",
+            "assumptions": [
+              "7-day practical rental/transfer allowance; not a luxury SUV worst-case."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "User-anchored Tahoe car/transfer fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "User-anchored prototype planning range; verify exact dates and live prices before booking.",
+              "source_url": "https://www.visitrenotahoe.com/"
+            }
+          },
+          "duration": {
+            "low_minutes": 90,
+            "expected_minutes": 180,
+            "high_minutes": 360,
+            "assumptions": [
+              "Winter transfer buffer fixture."
+            ],
+            "provenance": {
+              "source_type": "derived_route",
+              "source_name": "Manual RNO to us-tahoe-north-south route fixture",
+              "confidence": "derived_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+              "source_url": "https://www.visitrenotahoe.com/"
+            }
+          },
+          "source_status": "planning-fixture",
+          "cost_provenance": {
+            "source_type": "manual_observation",
+            "source_name": "User-anchored Tahoe car/transfer fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "User-anchored prototype planning range; verify exact dates and live prices before booking.",
+            "source_url": "https://www.visitrenotahoe.com/"
+          },
+          "duration_provenance": {
+            "source_type": "derived_route",
+            "source_name": "Manual RNO to us-tahoe-north-south route fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+            "source_url": "https://www.visitrenotahoe.com/"
+          }
+        }
+      ],
+      "confidence_summary": {
+        "lowest_confidence": "fixture_estimate",
+        "stale_fields": [],
+        "unknown_fields": [],
+        "caveats": [
+          "Round-trip flight DTW to RNO/SMF: Prototype flight fare fixture; verify live fare through source/deep link.",
+          "7 nights lodging in destination base: User-anchored prototype planning range; verify exact dates and live prices before booking.",
+          "Airport transfer / winter logistics buffer: User-anchored prototype planning range; verify exact dates and live prices before booking.",
+          "5 days lift/pass budget for Tahoe resorts: Assumes existing pass, buddy tickets, or discounted multi-day access; verify exact resort/pass rules.",
+          "Own gear / no snowboard rental by default: Default assumes own gear; add rentals only if needed.",
+          "7 days food budget: Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions."
+        ]
+      },
+      "source_links": [
+        {
+          "source_type": "manual_observation",
+          "source_name": "User-anchored DTW to RNO/SMF fare fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+          "source_url": "https://www.google.com/travel/flights"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "User-anchored Tahoe lodging fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "User-anchored prototype planning range; verify exact dates and live prices before booking.",
+          "source_url": "https://visitlaketahoe.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "User-anchored Tahoe car/transfer fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "User-anchored prototype planning range; verify exact dates and live prices before booking.",
+          "source_url": "https://www.visitrenotahoe.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "User-anchored Tahoe pass/day-ticket budget",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Assumes existing pass, buddy tickets, or discounted multi-day access; verify exact resort/pass rules.",
+          "source_url": "https://www.palisadestahoe.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "User-anchored Tahoe own-gear assumption",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Default assumes own gear; add rentals only if needed.",
+          "source_url": "https://visitlaketahoe.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype destination food budget fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+          "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+        }
+      ]
+    },
+    {
+      "id": "fixture-dtw-to-whistler-2p-7n-5d",
+      "label": "Whistler / Sea-to-Sky",
+      "region_id": "ca-whistler-sea-to-sky",
+      "party_size": 2,
+      "nights": 7,
+      "ski_days": 5,
+      "total_low": {
+        "amount": 5870,
+        "currency": "USD"
+      },
+      "total_expected": {
+        "amount": 8632,
+        "currency": "USD"
+      },
+      "total_high": {
+        "amount": 12920,
+        "currency": "USD"
+      },
+      "required_line_items": [
+        {
+          "category": "flight",
+          "label": "Round-trip flight DTW to YVR",
+          "cost": {
+            "low": {
+              "amount": 860,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 1360,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 2100,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Manual fare-observation fixture for winter trip comparison."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype Google Flights deep-link observation",
+              "confidence": "fixture_estimate",
+              "freshness": "stale",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+              "source_url": "https://www.google.com/travel/flights"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Google Flights deep-link observation",
+            "confidence": "fixture_estimate",
+            "freshness": "stale",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+            "source_url": "https://www.google.com/travel/flights"
+          }
+        },
+        {
+          "category": "lodging",
+          "label": "7 nights lodging in destination base",
+          "cost": {
+            "low": {
+              "amount": 2520,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 3640,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 5600,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Moderate hotel/condo base shared by two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype lodging fixture: Whistler Village / Creekside",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.whistler.com/"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype lodging fixture: Whistler Village / Creekside",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.whistler.com/"
+          },
+          "fixture_source_id": "whistler-village-creekside"
+        },
+        {
+          "category": "transfer",
+          "label": "Airport transfer / winter logistics buffer",
+          "cost": {
+            "low": {
+              "amount": 170,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 240,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 380,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Round-trip transfer or rental-car buffer for two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype transfer fixture: ca-whistler-sea-to-sky",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.whistler.com/getting-here/"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype transfer fixture: ca-whistler-sea-to-sky",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.whistler.com/getting-here/"
+          },
+          "fixture_source_id": "yvr-whistler-shuttle"
+        },
+        {
+          "category": "lift_ticket",
+          "label": "5 days lift tickets for selected resorts",
+          "cost": {
+            "low": {
+              "amount": 1550,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 2300,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 3300,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-adult day-ticket fixture blended across the destination; pass holders may pay less."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype ca-whistler-sea-to-sky lift ticket source set",
+              "confidence": "fixture_estimate",
+              "freshness": "aging",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+              "source_url": "https://www.whistlerblackcomb.com/"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype ca-whistler-sea-to-sky lift ticket source set",
+            "confidence": "fixture_estimate",
+            "freshness": "aging",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+            "source_url": "https://www.whistlerblackcomb.com/"
+          },
+          "fixture_source_id": "whistler-day-ticket"
+        },
+        {
+          "category": "food",
+          "label": "7 days food budget",
+          "cost": {
+            "low": {
+              "amount": 770,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 1092,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1540,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-person/day food budget planning fixture."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype destination food budget fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+              "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype destination food budget fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+            "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+          }
+        }
+      ],
+      "optional_line_items": [
+        {
+          "category": "gear_rental",
+          "label": "5 days snowboard rental package",
+          "cost": {
+            "low": {
+              "amount": 380,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 760,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1100,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Snowboard + boots + bindings fixture range."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype ca-whistler-sea-to-sky gear rental fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.whistlerblackcomb.com/"
+            }
+          },
+          "per_person": true,
+          "required": false,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype ca-whistler-sea-to-sky gear rental fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.whistlerblackcomb.com/"
+          },
+          "fixture_source_id": "whistler-snowboard-package"
+        }
+      ],
+      "default_transfer_option_id": "yvr-whistler-shuttle",
+      "recommended_transfer_option_id": "yvr-whistler-shuttle",
+      "transfer_options": [
+        {
+          "id": "yvr-whistler-shuttle",
+          "mode": "shuttle",
+          "is_default": true,
+          "estimated_cost": {
+            "low": {
+              "amount": 170,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 240,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 380,
+              "currency": "USD"
+            },
+            "unit": "group",
+            "assumptions": [
+              "Round-trip transfer or rental-car buffer for two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype transfer fixture: ca-whistler-sea-to-sky",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.whistler.com/getting-here/"
+            }
+          },
+          "duration": {
+            "low_minutes": 90,
+            "expected_minutes": 180,
+            "high_minutes": 360,
+            "assumptions": [
+              "Winter transfer buffer fixture."
+            ],
+            "provenance": {
+              "source_type": "derived_route",
+              "source_name": "Manual YVR to ca-whistler-sea-to-sky route fixture",
+              "confidence": "derived_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+              "source_url": "https://www.whistler.com/getting-here/"
+            }
+          },
+          "source_status": "planning-fixture",
+          "cost_provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype transfer fixture: ca-whistler-sea-to-sky",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.whistler.com/getting-here/"
+          },
+          "duration_provenance": {
+            "source_type": "derived_route",
+            "source_name": "Manual YVR to ca-whistler-sea-to-sky route fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+            "source_url": "https://www.whistler.com/getting-here/"
+          }
+        }
+      ],
+      "confidence_summary": {
+        "lowest_confidence": "fixture_estimate",
+        "stale_fields": [
+          "Round-trip flight DTW to YVR"
+        ],
+        "unknown_fields": [],
+        "caveats": [
+          "Round-trip flight DTW to YVR: Prototype flight fare fixture; verify live fare through source/deep link.",
+          "7 nights lodging in destination base: Prototype fixture cost range, not live inventory or an exact quote.",
+          "Airport transfer / winter logistics buffer: Prototype fixture cost range, not live inventory or an exact quote.",
+          "5 days lift tickets for selected resorts: Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "5 days snowboard rental package: Prototype fixture cost range, not live inventory or an exact quote.",
+          "7 days food budget: Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions."
+        ]
+      },
+      "source_links": [
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Google Flights deep-link observation",
+          "confidence": "fixture_estimate",
+          "freshness": "stale",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+          "source_url": "https://www.google.com/travel/flights"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype lodging fixture: Whistler Village / Creekside",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.whistler.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype transfer fixture: ca-whistler-sea-to-sky",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.whistler.com/getting-here/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype ca-whistler-sea-to-sky lift ticket source set",
+          "confidence": "fixture_estimate",
+          "freshness": "aging",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "source_url": "https://www.whistlerblackcomb.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype ca-whistler-sea-to-sky gear rental fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.whistlerblackcomb.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype destination food budget fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+          "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+        }
+      ]
+    },
+    {
+      "id": "fixture-dtw-to-arlberg-2p-7n-5d",
+      "label": "Austria / Arlberg-Tyrol",
+      "region_id": "at-arlberg-tyrol",
+      "party_size": 2,
+      "nights": 7,
+      "ski_days": 5,
+      "total_low": {
+        "amount": 4832,
+        "currency": "USD"
+      },
+      "total_expected": {
+        "amount": 7362,
+        "currency": "USD"
+      },
+      "total_high": {
+        "amount": 11290,
+        "currency": "USD"
+      },
+      "required_line_items": [
+        {
+          "category": "flight",
+          "label": "Round-trip flight DTW to ZRH/INN",
+          "cost": {
+            "low": {
+              "amount": 1300,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 1960,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 2900,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Manual fare-observation fixture for winter trip comparison."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype Google Flights deep-link observation",
+              "confidence": "fixture_estimate",
+              "freshness": "stale",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+              "source_url": "https://www.google.com/travel/flights"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Google Flights deep-link observation",
+            "confidence": "fixture_estimate",
+            "freshness": "stale",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+            "source_url": "https://www.google.com/travel/flights"
+          }
+        },
+        {
+          "category": "lodging",
+          "label": "7 nights lodging in destination base",
+          "cost": {
+            "low": {
+              "amount": 1820,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 2940,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 4900,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Moderate hotel/condo base shared by two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype lodging fixture: St. Anton / Arlberg village",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.skiarlberg.at/en"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype lodging fixture: St. Anton / Arlberg village",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.skiarlberg.at/en"
+          },
+          "fixture_source_id": "st-anton-arlberg-village"
+        },
+        {
+          "category": "transfer",
+          "label": "Airport transfer / winter logistics buffer",
+          "cost": {
+            "low": {
+              "amount": 240,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 360,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 560,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Round-trip transfer or rental-car buffer for two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype transfer fixture: at-arlberg-tyrol",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.skiarlberg.at/en/region/getting-there"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype transfer fixture: at-arlberg-tyrol",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.skiarlberg.at/en/region/getting-there"
+          },
+          "fixture_source_id": "zrh-arlberg-rail-shuttle"
+        },
+        {
+          "category": "lift_ticket",
+          "label": "5 days lift tickets for selected resorts",
+          "cost": {
+            "low": {
+              "amount": 800,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 1150,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1600,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-adult day-ticket fixture blended across the destination; pass holders may pay less."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype at-arlberg-tyrol lift ticket source set",
+              "confidence": "fixture_estimate",
+              "freshness": "aging",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+              "source_url": "https://www.skiarlberg.at/en"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype at-arlberg-tyrol lift ticket source set",
+            "confidence": "fixture_estimate",
+            "freshness": "aging",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+            "source_url": "https://www.skiarlberg.at/en"
+          },
+          "fixture_source_id": "arlberg-day-ticket"
+        },
+        {
+          "category": "food",
+          "label": "7 days food budget",
+          "cost": {
+            "low": {
+              "amount": 672,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 952,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1330,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-person/day food budget planning fixture."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype destination food budget fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+              "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype destination food budget fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+            "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+          }
+        }
+      ],
+      "optional_line_items": [
+        {
+          "category": "gear_rental",
+          "label": "5 days snowboard rental package",
+          "cost": {
+            "low": {
+              "amount": 350,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 550,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 750,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Snowboard + boots + bindings fixture range."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype at-arlberg-tyrol gear rental fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.skiarlberg.at/en"
+            }
+          },
+          "per_person": true,
+          "required": false,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype at-arlberg-tyrol gear rental fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.skiarlberg.at/en"
+          },
+          "fixture_source_id": "arlberg-snowboard-package"
+        }
+      ],
+      "default_transfer_option_id": "zrh-arlberg-rail-shuttle",
+      "recommended_transfer_option_id": "zrh-arlberg-rail-shuttle",
+      "transfer_options": [
+        {
+          "id": "zrh-arlberg-rail-shuttle",
+          "mode": "rail_shuttle",
+          "is_default": true,
+          "estimated_cost": {
+            "low": {
+              "amount": 240,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 360,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 560,
+              "currency": "USD"
+            },
+            "unit": "group",
+            "assumptions": [
+              "Round-trip transfer or rental-car buffer for two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype transfer fixture: at-arlberg-tyrol",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.skiarlberg.at/en/region/getting-there"
+            }
+          },
+          "duration": {
+            "low_minutes": 90,
+            "expected_minutes": 180,
+            "high_minutes": 360,
+            "assumptions": [
+              "Winter transfer buffer fixture."
+            ],
+            "provenance": {
+              "source_type": "derived_route",
+              "source_name": "Manual ZRH to at-arlberg-tyrol route fixture",
+              "confidence": "derived_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+              "source_url": "https://www.skiarlberg.at/en/region/getting-there"
+            }
+          },
+          "source_status": "planning-fixture",
+          "cost_provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype transfer fixture: at-arlberg-tyrol",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.skiarlberg.at/en/region/getting-there"
+          },
+          "duration_provenance": {
+            "source_type": "derived_route",
+            "source_name": "Manual ZRH to at-arlberg-tyrol route fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+            "source_url": "https://www.skiarlberg.at/en/region/getting-there"
+          }
+        }
+      ],
+      "confidence_summary": {
+        "lowest_confidence": "fixture_estimate",
+        "stale_fields": [
+          "Round-trip flight DTW to ZRH/INN"
+        ],
+        "unknown_fields": [],
+        "caveats": [
+          "Round-trip flight DTW to ZRH/INN: Prototype flight fare fixture; verify live fare through source/deep link.",
+          "7 nights lodging in destination base: Prototype fixture cost range, not live inventory or an exact quote.",
+          "Airport transfer / winter logistics buffer: Prototype fixture cost range, not live inventory or an exact quote.",
+          "5 days lift tickets for selected resorts: Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "5 days snowboard rental package: Prototype fixture cost range, not live inventory or an exact quote.",
+          "7 days food budget: Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions."
+        ]
+      },
+      "source_links": [
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Google Flights deep-link observation",
+          "confidence": "fixture_estimate",
+          "freshness": "stale",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+          "source_url": "https://www.google.com/travel/flights"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype lodging fixture: St. Anton / Arlberg village",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.skiarlberg.at/en"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype transfer fixture: at-arlberg-tyrol",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.skiarlberg.at/en/region/getting-there"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype at-arlberg-tyrol lift ticket source set",
+          "confidence": "fixture_estimate",
+          "freshness": "aging",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "source_url": "https://www.skiarlberg.at/en"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype at-arlberg-tyrol gear rental fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.skiarlberg.at/en"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype destination food budget fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+          "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+        }
+      ]
+    },
+    {
+      "id": "fixture-dtw-to-interior-bc-2p-7n-5d",
+      "label": "Interior BC / Powder Highway",
+      "region_id": "ca-interior-bc-powder-highway",
+      "party_size": 2,
+      "nights": 7,
+      "ski_days": 5,
+      "total_low": {
+        "amount": 4586,
+        "currency": "USD"
+      },
+      "total_expected": {
+        "amount": 6928,
+        "currency": "USD"
+      },
+      "total_high": {
+        "amount": 10302,
+        "currency": "USD"
+      },
+      "required_line_items": [
+        {
+          "category": "flight",
+          "label": "Round-trip flight DTW to YYC/YLW",
+          "cost": {
+            "low": {
+              "amount": 840,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 1440,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 2300,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Manual fare-observation fixture for winter trip comparison."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype Google Flights deep-link observation",
+              "confidence": "fixture_estimate",
+              "freshness": "stale",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+              "source_url": "https://www.google.com/travel/flights"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype Google Flights deep-link observation",
+            "confidence": "fixture_estimate",
+            "freshness": "stale",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+            "source_url": "https://www.google.com/travel/flights"
+          }
+        },
+        {
+          "category": "lodging",
+          "label": "7 nights lodging in destination base",
+          "cost": {
+            "low": {
+              "amount": 1260,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 2030,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 3220,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Moderate hotel/condo base shared by two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype lodging fixture: Revelstoke / Golden road-trip base",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.powderhighway.com/"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype lodging fixture: Revelstoke / Golden road-trip base",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.powderhighway.com/"
+          },
+          "fixture_source_id": "revelstoke-golden-base"
+        },
+        {
+          "category": "transfer",
+          "label": "Airport transfer / winter logistics buffer",
+          "cost": {
+            "low": {
+              "amount": 720,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 940,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1250,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Round-trip transfer or rental-car buffer for two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype transfer fixture: ca-interior-bc-powder-highway",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.powderhighway.com/"
+            }
+          },
+          "per_person": false,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype transfer fixture: ca-interior-bc-powder-highway",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.powderhighway.com/"
+          },
+          "fixture_source_id": "yyc-interior-bc-rental-car"
+        },
+        {
+          "category": "lift_ticket",
+          "label": "5 days lift tickets for selected resorts",
+          "cost": {
+            "low": {
+              "amount": 1150,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 1650,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 2300,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-adult day-ticket fixture blended across the destination; pass holders may pay less."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype ca-interior-bc-powder-highway lift ticket source set",
+              "confidence": "fixture_estimate",
+              "freshness": "aging",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+              "source_url": "https://www.powderhighway.com/"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype ca-interior-bc-powder-highway lift ticket source set",
+            "confidence": "fixture_estimate",
+            "freshness": "aging",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+            "source_url": "https://www.powderhighway.com/"
+          },
+          "fixture_source_id": "interior-bc-day-ticket"
+        },
+        {
+          "category": "food",
+          "label": "7 days food budget",
+          "cost": {
+            "low": {
+              "amount": 616,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 868,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1232,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Per-person/day food budget planning fixture."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype destination food budget fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+              "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+            }
+          },
+          "per_person": true,
+          "required": true,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype destination food budget fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+            "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+          }
+        }
+      ],
+      "optional_line_items": [
+        {
+          "category": "gear_rental",
+          "label": "5 days snowboard rental package",
+          "cost": {
+            "low": {
+              "amount": 350,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 550,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 760,
+              "currency": "USD"
+            },
+            "unit": "trip",
+            "assumptions": [
+              "Snowboard + boots + bindings fixture range."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype ca-interior-bc-powder-highway gear rental fixture",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.powderhighway.com/"
+            }
+          },
+          "per_person": true,
+          "required": false,
+          "provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype ca-interior-bc-powder-highway gear rental fixture",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.powderhighway.com/"
+          },
+          "fixture_source_id": "interior-bc-snowboard-package"
+        }
+      ],
+      "default_transfer_option_id": "yyc-interior-bc-rental-car",
+      "recommended_transfer_option_id": "yyc-interior-bc-rental-car",
+      "transfer_options": [
+        {
+          "id": "yyc-interior-bc-rental-car",
+          "mode": "rental_car",
+          "is_default": true,
+          "estimated_cost": {
+            "low": {
+              "amount": 720,
+              "currency": "USD"
+            },
+            "expected": {
+              "amount": 940,
+              "currency": "USD"
+            },
+            "high": {
+              "amount": 1250,
+              "currency": "USD"
+            },
+            "unit": "vehicle",
+            "assumptions": [
+              "Round-trip transfer or rental-car buffer for two travelers."
+            ],
+            "provenance": {
+              "source_type": "manual_observation",
+              "source_name": "Prototype transfer fixture: ca-interior-bc-powder-highway",
+              "confidence": "fixture_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+              "source_url": "https://www.powderhighway.com/"
+            }
+          },
+          "duration": {
+            "low_minutes": 90,
+            "expected_minutes": 180,
+            "high_minutes": 360,
+            "assumptions": [
+              "Winter transfer buffer fixture."
+            ],
+            "provenance": {
+              "source_type": "derived_route",
+              "source_name": "Manual YYC to ca-interior-bc-powder-highway route fixture",
+              "confidence": "derived_estimate",
+              "freshness": "recent",
+              "retrieved_at": "2026-05-19T00:00:00.000Z",
+              "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+              "source_url": "https://www.powderhighway.com/"
+            }
+          },
+          "source_status": "planning-fixture",
+          "cost_provenance": {
+            "source_type": "manual_observation",
+            "source_name": "Prototype transfer fixture: ca-interior-bc-powder-highway",
+            "confidence": "fixture_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+            "source_url": "https://www.powderhighway.com/"
+          },
+          "duration_provenance": {
+            "source_type": "derived_route",
+            "source_name": "Manual YYC to ca-interior-bc-powder-highway route fixture",
+            "confidence": "derived_estimate",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+            "source_url": "https://www.powderhighway.com/"
+          }
+        }
+      ],
+      "confidence_summary": {
+        "lowest_confidence": "fixture_estimate",
+        "stale_fields": [
+          "Round-trip flight DTW to YYC/YLW"
+        ],
+        "unknown_fields": [],
+        "caveats": [
+          "Round-trip flight DTW to YYC/YLW: Prototype flight fare fixture; verify live fare through source/deep link.",
+          "7 nights lodging in destination base: Prototype fixture cost range, not live inventory or an exact quote.",
+          "Airport transfer / winter logistics buffer: Prototype fixture cost range, not live inventory or an exact quote.",
+          "5 days lift tickets for selected resorts: Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "5 days snowboard rental package: Prototype fixture cost range, not live inventory or an exact quote.",
+          "7 days food budget: Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions."
+        ]
+      },
+      "source_links": [
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype Google Flights deep-link observation",
+          "confidence": "fixture_estimate",
+          "freshness": "stale",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype flight fare fixture; verify live fare through source/deep link.",
+          "source_url": "https://www.google.com/travel/flights"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype lodging fixture: Revelstoke / Golden road-trip base",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.powderhighway.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype transfer fixture: ca-interior-bc-powder-highway",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.powderhighway.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype ca-interior-bc-powder-highway lift ticket source set",
+          "confidence": "fixture_estimate",
+          "freshness": "aging",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+          "source_url": "https://www.powderhighway.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype ca-interior-bc-powder-highway gear rental fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+          "source_url": "https://www.powderhighway.com/"
+        },
+        {
+          "source_type": "manual_observation",
+          "source_name": "Prototype destination food budget fixture",
+          "confidence": "fixture_estimate",
+          "freshness": "recent",
+          "retrieved_at": "2026-05-19T00:00:00.000Z",
+          "display_caveat": "Manual per-person/day food range; excludes alcohol, fine dining, delivery, and grocery substitutions.",
+          "source_url": "https://www.google.com/search?q=ski+resort+dining+prices"
+        }
+      ]
+    }
+  ]
+}

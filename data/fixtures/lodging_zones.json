@@ -627,5 +627,337 @@
       "duration_confidence": "estimate",
       "source_status": "planning-estimate"
     }
+  },
+  {
+    "id": "banff-town-shuttle-base",
+    "region_id": "ca-banff-lake-louise",
+    "name": "Banff town shuttle base",
+    "coordinates": [
+      51.1784,
+      -115.5708
+    ],
+    "distance_to_resorts": [
+      {
+        "resort_id": "lake-louise",
+        "shuttle_minutes": {
+          "low_minutes": 45,
+          "expected_minutes": 60,
+          "high_minutes": 90,
+          "assumptions": [
+            "Local resort shuttles/transfers vary by operator and dates; use Banff town as the no-car lodging base."
+          ],
+          "provenance": {
+            "source_type": "tourism_reference",
+            "source_name": "Banff & Lake Louise Tourism getting here",
+            "confidence": "source_backed_range",
+            "freshness": "recent",
+            "retrieved_at": "2026-05-19T00:00:00.000Z",
+            "display_caveat": "Local timing is a planning range; verify exact hotel/resort shuttle schedules.",
+            "source_url": "https://www.banfflakelouise.com/getting-here"
+          }
+        }
+      }
+    ],
+    "nightly_range": {
+      "low": {
+        "amount": 260,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 420,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 700,
+        "currency": "USD"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Moderate Banff hotel/condo planning range for two travelers; not live inventory."
+      ],
+      "provenance": {
+        "source_type": "tourism_reference",
+        "source_name": "Banff lodging/travel reference",
+        "confidence": "planning_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Verify live rates, taxes, and cancellation rules before using for booking.",
+        "source_url": "https://www.banfflakelouise.com"
+      }
+    },
+    "car_required": false,
+    "lodging_deep_links": [
+      {
+        "provider": "Google Hotels",
+        "url": "https://www.google.com/travel/hotels/Banff"
+      }
+    ],
+    "provenance": [
+      {
+        "source_type": "tourism_reference",
+        "source_name": "Banff & Lake Louise Tourism getting here",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Banff is modeled as a no-car lodging base because airport shuttle/transfer access is source-backed.",
+        "source_url": "https://www.banfflakelouise.com/getting-here"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "sourced",
+      "source_status": "source-backed"
+    }
+  },
+  {
+    "id": "swiss-alps-zermatt-verbier-base",
+    "region_id": "ch-swiss-alps",
+    "name": "Zermatt / Verbier village bases",
+    "coordinates": [
+      46.1,
+      7.35
+    ],
+    "nightly_range": {
+      "low": {
+        "amount": 260,
+        "currency": "CHF"
+      },
+      "expected": {
+        "amount": 420,
+        "currency": "CHF"
+      },
+      "high": {
+        "amount": 700,
+        "currency": "CHF"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Planning range for lodging-zone comparison, not a live hotel quote."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Swiss Alps lodging planning fixture",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype lodging-zone planning range for Swiss Alps; verify live hotels/apartments and taxes.",
+        "source_url": "https://www.myswitzerland.com/en-us/experiences/winter/"
+      }
+    },
+    "distance_to_resorts": "Village/base lodging for Zermatt or Verbier; exact transfer depends on selected valley.",
+    "car_required": false,
+    "nightlife_food_notes": "High-cost alpine resort villages with strong restaurant access.",
+    "lodging_deep_links": [
+      "https://www.zermatt.ch/en",
+      "https://www.verbier.ch/"
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "high",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    },
+    "provenance": [
+      {
+        "source_type": "tourism_reference",
+        "source_name": "Swiss Alps lodging planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.myswitzerland.com/en-us/experiences/winter/"
+      }
+    ]
+  },
+  {
+    "id": "french-alps-chamonix-tarentaise-base",
+    "region_id": "fr-french-alps",
+    "name": "Chamonix / Val d\u2019Is\u00e8re-Tignes bases",
+    "coordinates": [
+      45.92,
+      6.87
+    ],
+    "nightly_range": {
+      "low": {
+        "amount": 210,
+        "currency": "EUR"
+      },
+      "expected": {
+        "amount": 360,
+        "currency": "EUR"
+      },
+      "high": {
+        "amount": 650,
+        "currency": "EUR"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Planning range for lodging-zone comparison, not a live hotel quote."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "French Alps lodging planning fixture",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype lodging-zone planning range for French Alps; verify live hotels/apartments and resort taxes.",
+        "source_url": "https://www.france-montagnes.com/"
+      }
+    },
+    "distance_to_resorts": "Base-town lodging for Chamonix or Tarentaise resort stays.",
+    "car_required": false,
+    "nightlife_food_notes": "Large alpine resort towns with restaurants, buses, and shuttle/taxi options.",
+    "lodging_deep_links": [
+      "https://www.chamonix.com/",
+      "https://www.valdisere.com/en/"
+    ],
+    "friction": {
+      "no_car_viability": "partial",
+      "booking_complexity": "high",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    },
+    "provenance": [
+      {
+        "source_type": "tourism_reference",
+        "source_name": "France Montagnes lodging planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.france-montagnes.com/"
+      }
+    ]
+  },
+  {
+    "id": "dolomites-cortina-val-gardena-base",
+    "region_id": "it-dolomites",
+    "name": "Cortina / Val Gardena valley bases",
+    "coordinates": [
+      46.54,
+      12.14
+    ],
+    "nightly_range": {
+      "low": {
+        "amount": 180,
+        "currency": "EUR"
+      },
+      "expected": {
+        "amount": 310,
+        "currency": "EUR"
+      },
+      "high": {
+        "amount": 560,
+        "currency": "EUR"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Planning range for lodging-zone comparison, not a live hotel quote."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Dolomites lodging planning fixture",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype lodging-zone planning range for Dolomites; verify live hotels/apartments, resort taxes, and parking.",
+        "source_url": "https://www.dolomitisuperski.com/en"
+      }
+    },
+    "distance_to_resorts": "Valley/base-town lodging for Cortina or Val Gardena.",
+    "car_required": true,
+    "nightlife_food_notes": "Dolomite villages; valley choice matters for transfer and resort-hopping plans.",
+    "lodging_deep_links": [
+      "https://www.dolomiti.org/en/cortina/",
+      "https://www.valgardena.it/en/"
+    ],
+    "friction": {
+      "no_car_viability": "partial",
+      "booking_complexity": "high",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    },
+    "provenance": [
+      {
+        "source_type": "official_resort",
+        "source_name": "Dolomiti Superski lodging planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.dolomitisuperski.com/en"
+      }
+    ]
+  },
+  {
+    "id": "lapland-levi-ruka-base",
+    "region_id": "fi-lapland",
+    "name": "Levi / Ruka village bases",
+    "coordinates": [
+      66.7,
+      26.0
+    ],
+    "nightly_range": {
+      "low": {
+        "amount": 130,
+        "currency": "EUR"
+      },
+      "expected": {
+        "amount": 230,
+        "currency": "EUR"
+      },
+      "high": {
+        "amount": 420,
+        "currency": "EUR"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Planning range for lodging-zone comparison, not a live hotel quote."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Finnish Lapland lodging planning fixture",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype lodging-zone planning range for Finnish Lapland; verify live cabin/hotel inventory and holiday pricing.",
+        "source_url": "https://www.visitfinland.com/en/places-to-go/lapland/"
+      }
+    },
+    "distance_to_resorts": "Village/cabin bases for Levi or Ruka; airport transfer depends on resort choice.",
+    "car_required": false,
+    "nightlife_food_notes": "Resort villages/cabins with winter activity logistics.",
+    "lodging_deep_links": [
+      "https://www.levi.fi/en/",
+      "https://www.ruka.fi/en"
+    ],
+    "friction": {
+      "no_car_viability": "partial",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    },
+    "provenance": [
+      {
+        "source_type": "tourism_reference",
+        "source_name": "Visit Finland Lapland lodging planning reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Source-backed planning record; verify current operations, access, and conditions before booking.",
+        "source_url": "https://www.visitfinland.com/en/places-to-go/lapland/"
+      }
+    ]
   }
 ]
