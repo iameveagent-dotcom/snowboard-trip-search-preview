@@ -165,18 +165,21 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
   <div class="app">
     <header class="top">
       <div class="brand"><div class="logo"></div>Snowboard Trip Map</div>
-      <nav class="nav" aria-label="Map region filters">
+      <nav class="nav" aria-label="Region presets">
         <a class="pill" data-control-kind="navigation" href="../../">Main screen</a>
         <a class="pill" data-control-kind="navigation" href="../003-country-guide-atlas/">Discover</a>
         <a class="pill" data-control-kind="navigation" href="../001-dashboard-command-center/">Price</a>
-        <button class="pill active" data-control-kind="state-mutation" aria-pressed="true" data-map-control="region" data-map-focus="all" data-route-id="current" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="DTW,GRR,SLC,CTS,us-utah-cottonwoods,jp-hokkaido-niseko,jp-hokkaido-rusutsu,slc-sandy,slc-downtown,niseko-hirafu" onclick="selectRegion(this)">All layers</button>
         <button class="pill" data-control-kind="state-mutation" aria-pressed="false" data-map-control="region" data-map-focus="japan" data-route-id="cts-niseko" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="DTW,CTS,jp-hokkaido-niseko,jp-hokkaido-rusutsu,niseko-hirafu" onclick="selectRegion(this)">Japan</button>
         <button class="pill" data-control-kind="state-mutation" aria-pressed="false" data-map-control="region" data-map-focus="us-west" data-route-id="global-us-west" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="DTW,GRR,SLC,RNO,DEN,us-utah-cottonwoods,us-california-tahoe,us-colorado-rockies,slc-sandy,slc-downtown" onclick="selectRegion(this)">US West</button>
         <button class="pill" data-control-kind="state-mutation" aria-pressed="false" data-map-control="region" data-map-focus="canada" data-route-id="global-canada" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="GRR,YYC,YVR,ca-banff-lake-louise,ca-lake-louise,banff-town,ca-bc-whistler,ca-bc-revelstoke,ca-bc-kootenays,ca-bc-okanagan,ca-quebec-laurentians,ca-ontario-blue" onclick="selectRegion(this)">Canada</button>
         <button class="pill" data-control-kind="state-mutation" aria-pressed="false" data-map-control="region" data-map-focus="europe" data-route-id="global-europe" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="INN,ZRH,at-arlberg-tyrol,eu-swiss-alps,eu-french-alps,eu-dolomites,eu-andorra-pyrenees" onclick="selectRegion(this)">Europe</button>
         <button class="pill" data-control-kind="state-mutation" aria-pressed="false" data-map-control="region" data-map-focus="bc-powder" data-route-id="global-bc-powder" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="YVR,ca-bc-whistler,ca-bc-revelstoke,ca-bc-kootenays,ca-bc-okanagan" onclick="selectRegion(this)">BC Powder</button>
-        <button class="btn primary" data-control-kind="modal" aria-haspopup="dialog" aria-controls="invite-snapshot-modal" onclick="openInviteSnapshot()">Invite friends</button>
+        <a class="btn" data-control-kind="navigation" href="../001-dashboard-command-center/" data-use-route-in-price>Use selected route in Price</a>
       </nav>
+      <div class="nav" aria-label="Layer visibility">
+        <button class="pill active" data-control-kind="state-mutation" aria-pressed="true" data-map-control="region" data-map-focus="all" data-route-id="current" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="DTW,GRR,SLC,CTS,us-utah-cottonwoods,jp-hokkaido-niseko,jp-hokkaido-rusutsu,slc-sandy,slc-downtown,niseko-hirafu" onclick="selectRegion(this)" aria-label="Show all layers">All layers</button>
+        <button class="btn primary" data-control-kind="modal" aria-haspopup="dialog" aria-controls="invite-snapshot-modal" onclick="openInviteSnapshot()">Invite friends</button>
+      </div>
     </header>
     <section class="product-architecture" data-product-architecture aria-label="Unified snowboard trip planning architecture"><div class="product-architecture__eyebrow">Planner architecture · one trip plan moves left to right</div><div class="product-architecture__steps"><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="discover" href="../003-country-guide-atlas/"><strong><span class="product-architecture__num">1</span>Discover</strong><span>Countries, regions, resort fit</span></a><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="map" href="../002-map-first-explorer/" aria-current="page"><strong><span class="product-architecture__num">2</span>Map</strong><span>Airports, stays, transfers</span></a><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="price" href="../001-dashboard-command-center/"><strong><span class="product-architecture__num">3</span>Price</strong><span>Inputs, full-cost, pass decision</span></a><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="share" href="../../snapshots/share-hokkaido-readonly-v0.html"><strong><span class="product-architecture__num">4</span>Share</strong><span>Read-only trip snapshot</span></a></div></section>
     <main class="split">
@@ -1979,10 +1982,20 @@ ${document.querySelector('[data-share-snapshot-summary]')?.textContent || ''}`;
       const destinationName = card.querySelector('strong')?.textContent || 'Pass destination';
       writeMapStatus(`${destinationName} selected from pass destination inventory; nearest modeled route and map layers are highlighted.`);
     }
+    function initialMapControlFromRoute(){
+      const params = new URLSearchParams(location.search);
+      const requested = (params.get('region') || params.get('country') || '').toLowerCase();
+      const focusByRoute = {japan:'japan', canada:'canada', austria:'europe', switzerland:'europe', france:'europe', italy:'europe', finland:'europe', europe:'europe', usa:'us-west', 'us-west':'us-west', 'bc-powder':'bc-powder'};
+      const focus = focusByRoute[requested];
+      if(focus){
+        return document.querySelector(`[data-map-control="region"][data-map-focus="${focus}"]`) || document.querySelector(`[data-map-focus="${focus}"]`);
+      }
+      return document.querySelector('.option.selected') || document.querySelector('[data-map-control]');
+    }
     document.addEventListener('DOMContentLoaded',()=>{
       applyPassDestinationFilter('all');
       hydrateVisibleMapControls();
-      applyMapState(document.querySelector('.option.selected') || document.querySelector('[data-map-control]'));
+      applyMapState(initialMapControlFromRoute());
     });
   </script>
 </body>

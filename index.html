@@ -24,7 +24,7 @@
   <main class="wrap">
     <header class="top">
       <div class="brand"><div class="logo"></div><span>Snowboard Trip Search</span></div>
-      <a class="pill" href="sketches/001-dashboard-command-center/">Start deciding</a>
+      <a class="pill" href="sketches/003-country-guide-atlas/">Start with destinations</a>
     </header>
     <section class="product-architecture" data-product-architecture aria-label="Unified snowboard trip planning architecture"><div class="product-architecture__eyebrow">Planner architecture · one trip plan moves left to right</div><div class="product-architecture__steps"><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="discover" href="sketches/003-country-guide-atlas/"><strong><span class="product-architecture__num">1</span>Discover</strong><span>Countries, regions, resort fit</span></a><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="map" href="sketches/002-map-first-explorer/"><strong><span class="product-architecture__num">2</span>Map</strong><span>Airports, stays, transfers</span></a><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="price" href="sketches/001-dashboard-command-center/"><strong><span class="product-architecture__num">3</span>Price</strong><span>Inputs, full-cost, pass decision</span></a><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="share" href="snapshots/share-hokkaido-readonly-v0.html"><strong><span class="product-architecture__num">4</span>Share</strong><span>Read-only trip snapshot</span></a></div></section>
 
@@ -34,9 +34,10 @@
         <h1>Plan the snowboard trip your group can actually book.</h1>
         <p>Compare destinations, estimate full trip cost, evaluate flight sales, weigh Epic vs Ikon pass choices, and share trip snapshots with friends.</p>
         <div class="actions">
-          <a class="btn primary" href="sketches/003-country-guide-atlas/">Open Country Atlas</a>
-          <a class="btn" href="sketches/001-dashboard-command-center/">Open Deal Dashboard</a>
-          <a class="btn" href="sketches/002-map-first-explorer/">Open Map Explorer</a>
+          <a class="btn primary" href="sketches/003-country-guide-atlas/">Start with destinations</a>
+          <a class="btn" href="sketches/002-map-first-explorer/">Compare map & logistics</a>
+          <a class="btn" href="sketches/001-dashboard-command-center/">Price the trip</a>
+          <a class="btn" href="snapshots/share-hokkaido-readonly-v0.html">Share trip snapshot</a>
         </div>
         <div class="grid">
           <a class="panel mini feature-link" href="sketches/001-dashboard-command-center/?focus=cost#estimate"><b>Total cost</b><span>Flights, lodging, lifts, transfers, optional rentals, food</span></a>
@@ -47,19 +48,24 @@
 
       <div class="cards">
         <a class="panel card" href="sketches/003-country-guide-atlas/">
-          <div class="meta"><span class="tag good">Primary flow</span><span class="tag">fixture-backed estimates</span></div>
-          <h2>Country Atlas</h2>
-          <p>Country and region discovery now feeds the same map, pricing, and sharing architecture instead of acting as a separate prototype.</p>
-        </a>
-        <a class="panel card" href="sketches/001-dashboard-command-center/">
-          <div class="meta"><span class="tag good">Flight-sale decision</span><span class="tag">data-driven controls</span></div>
-          <h2>Deal Dashboard</h2>
-          <p>Enter an observed fare and switch fixture profiles to see whether the sale is worth it after lodging, lifts, transfers, optional rentals, food, and season-pass choices.</p>
+          <div class="meta"><span class="tag good">Step 1 · Discover</span><span class="tag">country and resort fit</span></div>
+          <h2>Discover Destinations</h2>
+          <p>Pick countries and resort regions first so the map, pricing, and share snapshot start from the same trip intent.</p>
         </a>
         <a class="panel card" href="sketches/002-map-first-explorer/">
-          <div class="meta"><span class="tag">Comparison mode</span><span class="tag">map-first</span></div>
-          <h2>Map Explorer</h2>
-          <p>Spatial comparison prototype for airports, resort clusters, and region tradeoffs.</p>
+          <div class="meta"><span class="tag good">Step 2 · Map</span><span class="tag">airports and transfers</span></div>
+          <h2>Map &amp; Logistics</h2>
+          <p>Compare airports, resort clusters, lodging zones, and transfer tradeoffs before pricing.</p>
+        </a>
+        <a class="panel card" href="sketches/001-dashboard-command-center/">
+          <div class="meta"><span class="tag good">Step 3 · Price</span><span class="tag">fare and pass decision</span></div>
+          <h2>Price the Trip</h2>
+          <p>Enter an observed fare and traveler count to decide whether the complete trip is worth booking.</p>
+        </a>
+        <a class="panel card" href="snapshots/share-hokkaido-readonly-v0.html">
+          <div class="meta"><span class="tag good">Step 4 · Share</span><span class="tag">read-only group packet</span></div>
+          <h2>Share Trip Snapshot</h2>
+          <p>Send friends the same selected dates, route, pricing, pass recommendation, optional add-ons, and source checks.</p>
         </a>
       </div>
     </section>
