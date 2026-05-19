@@ -1390,6 +1390,18 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
           <p class="small">Rental car or canyon shuttle to Snowbird / Alta / Brighton / Solitude.</p>
           <div class="meta"><span class="tag">Rental car</span><span class="tag">42 min</span><span class="tag">Winter driving buffer</span></div><div class="friction-grid"><span><b>No-car viability</b>Partial</span><span><b>Booking complexity</b>Medium</span><span><b>Weather risk</b>Medium</span><span><b>Schedule risk</b>Medium</span><span><b>Duration confidence</b>Derived</span><span><b>Source status</b>Planning estimate</span></div>
         </article>
+        <article class="route-card" data-control-kind="state-mutation" data-friction-type="transfer" data-no-car-viability="partial" data-booking-complexity="medium" data-weather-risk="high" data-schedule-risk="medium" data-duration-confidence="overview" data-source-status="regional-overview" data-map-control="route" data-map-focus="us-west" data-route-id="rno-tahoe" data-active-layers="airport,resort-region,transfer-route" data-active-markers="RNO,us-california-tahoe" role="button" tabindex="0" onclick="selectRoute(this)" onkeydown="handleRouteKey(event,this)" data-layer="transfer-route" data-from="RNO" data-to="us-california-tahoe">
+          <span class="tag">California / Tahoe</span>
+          <strong>RNO → Tahoe / California</strong>
+          <p class="small">Regional Tahoe gateway context for Palisades Tahoe, Heavenly, Kirkwood, and nearby Sierra options.</p>
+          <div class="meta"><span class="tag">Reno gateway</span><span class="tag">Sierra weather buffer</span><span class="tag">Route context</span></div><div class="friction-grid"><span><b>No-car viability</b>Partial</span><span><b>Booking complexity</b>Medium</span><span><b>Weather risk</b>High</span><span><b>Schedule risk</b>Medium</span><span><b>Duration confidence</b>Overview</span><span><b>Source status</b>Regional context</span></div>
+        </article>
+        <article class="route-card" data-control-kind="state-mutation" data-friction-type="transfer" data-no-car-viability="partial" data-booking-complexity="medium" data-weather-risk="high" data-schedule-risk="high" data-duration-confidence="overview" data-source-status="regional-overview" data-map-control="route" data-map-focus="us-west" data-route-id="den-colorado-rockies" data-active-layers="airport,resort-region,transfer-route" data-active-markers="DEN,us-colorado-rockies" role="button" tabindex="0" onclick="selectRoute(this)" onkeydown="handleRouteKey(event,this)" data-layer="transfer-route" data-from="DEN" data-to="us-colorado-rockies">
+          <span class="tag">Colorado Rockies</span>
+          <strong>DEN → Colorado Rockies</strong>
+          <p class="small">Regional Colorado gateway context for Breckenridge, Vail/Beaver Creek, Copper, Winter Park, and A-Basin.</p>
+          <div class="meta"><span class="tag">Denver gateway</span><span class="tag">I-70 buffer</span><span class="tag">Route context</span></div><div class="friction-grid"><span><b>No-car viability</b>Partial</span><span><b>Booking complexity</b>Medium</span><span><b>Weather risk</b>High</span><span><b>Schedule risk</b>High</span><span><b>Duration confidence</b>Overview</span><span><b>Source status</b>Regional context</span></div>
+        </article>
         <article class="route-card" data-control-kind="state-mutation" data-friction-type="transfer" data-no-car-viability="yes" data-booking-complexity="medium" data-weather-risk="medium" data-schedule-risk="medium" data-duration-confidence="derived" data-source-status="planning-estimate" data-map-control="route" data-map-focus="japan" data-route-id="cts-niseko" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="DTW,CTS,jp-hokkaido-niseko,jp-hokkaido-rusutsu,niseko-hirafu" role="button" tabindex="0" onclick="selectRoute(this)" onkeydown="handleRouteKey(event,this)" data-layer="transfer-route" data-from="CTS" data-to="jp-hokkaido-niseko">
           <span class="tag">No-car viable</span>
           <strong>CTS → Niseko</strong>
@@ -1423,6 +1435,8 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
 
         <h2>Lodging zones shown</h2>
         <article class="zone-card" data-friction-type="lodging" data-no-car-viability="partial" data-booking-complexity="low" data-weather-risk="medium" data-schedule-risk="medium" data-duration-confidence="derived" data-source-status="planning-estimate" data-layer="lodging-zone"><strong>Salt Lake City / Sandy</strong><p class="small">Value base near Cottonwood canyon approaches.</p><div class="meta"><span class="tag">Lower cost</span><span class="tag">Car helpful</span></div><div class="friction-grid"><span><b>No-car viability</b>Partial</span><span><b>Booking complexity</b>Low</span><span><b>Weather risk</b>Medium</span><span><b>Schedule risk</b>Medium</span><span><b>Duration confidence</b>Derived</span><span><b>Source status</b>Planning estimate</span></div></article>
+        <article class="zone-card" data-friction-type="lodging" data-no-car-viability="partial" data-booking-complexity="medium" data-weather-risk="high" data-schedule-risk="medium" data-duration-confidence="overview" data-source-status="regional-overview" data-layer="lodging-zone"><strong>Tahoe / Truckee / South Lake</strong><p class="small">California/Tahoe base areas for Palisades Tahoe, Heavenly, Kirkwood, and Mammoth-style Sierra comparisons.</p><div class="meta"><span class="tag">Tahoe base</span><span class="tag">Car helpful</span></div><div class="friction-grid"><span><b>No-car viability</b>Partial</span><span><b>Booking complexity</b>Medium</span><span><b>Weather risk</b>High</span><span><b>Schedule risk</b>Medium</span><span><b>Duration confidence</b>Overview</span><span><b>Source status</b>Regional context</span></div></article>
+        <article class="zone-card" data-friction-type="lodging" data-no-car-viability="partial" data-booking-complexity="medium" data-weather-risk="high" data-schedule-risk="high" data-duration-confidence="overview" data-source-status="regional-overview" data-layer="lodging-zone"><strong>Colorado / Summit County / Frisco-Dillon</strong><p class="small">Colorado Rockies base context for Breckenridge, Copper, Keystone, A-Basin, Vail/Beaver Creek, and Winter Park comparisons.</p><div class="meta"><span class="tag">Colorado base</span><span class="tag">I-70 buffer</span></div><div class="friction-grid"><span><b>No-car viability</b>Partial</span><span><b>Booking complexity</b>Medium</span><span><b>Weather risk</b>High</span><span><b>Schedule risk</b>High</span><span><b>Duration confidence</b>Overview</span><span><b>Source status</b>Regional context</span></div></article>
         <article class="zone-card" data-friction-type="lodging" data-no-car-viability="yes" data-booking-complexity="medium" data-weather-risk="medium" data-schedule-risk="low" data-duration-confidence="derived" data-source-status="planning-estimate" data-layer="lodging-zone"><strong>Niseko Hirafu village</strong><p class="small">Higher lodging cost but best no-car convenience.</p><div class="meta"><span class="tag">Walkable</span><span class="tag">Shuttle friendly</span></div><div class="friction-grid"><span><b>No-car viability</b>Yes</span><span><b>Booking complexity</b>Medium</span><span><b>Weather risk</b>Medium</span><span><b>Schedule risk</b>Low</span><span><b>Duration confidence</b>Derived</span><span><b>Source status</b>Planning estimate</span></div></article>
           <article class="zone-card" data-friction-type="lodging" data-no-car-viability="yes" data-booking-complexity="medium" data-weather-risk="medium" data-schedule-risk="medium" data-duration-confidence="sourced" data-source-status="source-backed" data-layer="lodging-zone"><strong>Banff town shuttle base</strong><p class="small">Banff town is a sourced lodging/transfer base tied to Banff &amp; Lake Louise Tourism access guidance and Brewster Express airport-shuttle routing.</p><div class="meta"><span class="tag">Source-backed lodging context</span><span class="tag">No-car viable</span></div><div class="friction-grid"><span><b>No-car viability</b>Yes</span><span><b>Booking complexity</b>Medium</span><span><b>Weather risk</b>Medium</span><span><b>Schedule risk</b>Medium</span><span><b>Duration confidence</b>Sourced</span><span><b>Source status</b>Source-backed context</span></div></article>
       </aside>
@@ -1443,6 +1457,8 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
   <script>
     const routeDetails = {
       'slc-cottonwoods': {title:'SLC → Cottonwoods', copy:'Rental car or canyon shuttle to Snowbird / Alta / Brighton / Solitude.', meta:['Rental car','42 min','Winter driving buffer']},
+      'rno-tahoe': {title:'RNO → Tahoe / California', copy:'Reno is the compact gateway for Palisades Tahoe, Heavenly, Kirkwood, and other Sierra options; winter storm timing can dominate the drive.', meta:['Rental car/shuttle','Tahoe gateway','Weather buffer']},
+      'den-colorado-rockies': {title:'DEN → Colorado Rockies', copy:'Denver anchors the Colorado Rockies pass cluster including Breckenridge, Vail/Beaver Creek, Copper, Winter Park, and A-Basin; I-70 weather/traffic is the main friction.', meta:['Rental car/shuttle','Colorado gateway','I-70 buffer']},
       'cts-niseko': {title:'CTS → Niseko', copy:'Resort liner shuttle to Hirafu lodging zones; easiest if staying village-centered.', meta:['Shuttle','2h 30m','Book ahead']},
       'cts-niseko-train-bus': {title:'CTS → Niseko train + shuttle', copy:'Train plus local shuttle is no-car viable but connection-heavy; use only if schedules line up.', meta:['Train + shuttle','4h 00m','Limited schedule']},
       'cts-rusutsu': {title:'CTS → Rusutsu', copy:'Bus or private transfer; good powder upside but less flexible without car.', meta:['Bus','2h 00m','Limited schedule']},
@@ -1461,6 +1477,8 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'cts-rusutsu': ['dtw-cts','cts-rusutsu'],
       'dtw-cts': ['dtw-cts','cts-niseko'],
       'slc-cottonwoods': ['dtw-slc','slc-cottonwoods'],
+      'rno-tahoe': [],
+      'den-colorado-rockies': [],
       'dtw-slc': ['dtw-slc','slc-cottonwoods'],
       'global-us-west': [],
       'yyc-banff': ['grr-yyc','yyc-banff'],
@@ -1475,6 +1493,8 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'cts-niseko-train-bus': {focus:'japan', profile:'japan', itinerary:'hokkaido-cts', markers:['DTW','CTS','jp-hokkaido-niseko','jp-hokkaido-rusutsu','niseko-hirafu'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'dtw-cts': {focus:'japan', profile:'japan', itinerary:'hokkaido-cts', markers:['DTW','CTS','jp-hokkaido-niseko','jp-hokkaido-rusutsu','niseko-hirafu'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'slc-cottonwoods': {focus:'us-west', profile:'us-west', itinerary:'utah-slc', markers:['DTW','GRR','SLC','us-utah-cottonwoods','slc-sandy','slc-downtown'], layers:['airport','resort-region','lodging-zone','transfer-route']},
+      'rno-tahoe': {focus:'us-west', profile:'us-west', itinerary:'utah-slc', markers:['RNO','us-california-tahoe'], layers:['airport','resort-region','transfer-route']},
+      'den-colorado-rockies': {focus:'us-west', profile:'us-west', itinerary:'utah-slc', markers:['DEN','us-colorado-rockies'], layers:['airport','resort-region','transfer-route']},
       'dtw-slc': {focus:'us-west', profile:'us-west', itinerary:'utah-slc', markers:['DTW','GRR','SLC','us-utah-cottonwoods','slc-sandy','slc-downtown'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'global-us-west': {focus:'us-west', profile:'us-west', itinerary:'utah-slc', markers:['DTW','GRR','SLC','RNO','DEN','us-utah-cottonwoods','us-california-tahoe','us-colorado-rockies','slc-sandy','slc-downtown'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'yyc-banff': {focus:'canada', profile:'canada', itinerary:'banff-yyc', markers:['GRR','YYC','ca-banff-lake-louise','ca-lake-louise','banff-town'], layers:['airport','resort-region','lodging-zone','transfer-route']},
@@ -1498,8 +1518,8 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'transfer-route':'Transfer route layer'
     };
     const markerRouteMap = {
-      DTW:'dtw-cts', GRR:'grr-yyc', SLC:'dtw-slc', RNO:'global-us-west', DEN:'global-us-west', CTS:'dtw-cts', YYC:'grr-yyc',
-      'us-utah-cottonwoods':'slc-cottonwoods', 'us-california-tahoe':'global-us-west', 'us-colorado-rockies':'global-us-west', 'jp-hokkaido-niseko':'cts-niseko', 'jp-hokkaido-rusutsu':'cts-rusutsu',
+      DTW:'dtw-cts', GRR:'grr-yyc', SLC:'dtw-slc', RNO:'rno-tahoe', DEN:'den-colorado-rockies', CTS:'dtw-cts', YYC:'grr-yyc',
+      'us-utah-cottonwoods':'slc-cottonwoods', 'us-california-tahoe':'rno-tahoe', 'us-colorado-rockies':'den-colorado-rockies', 'jp-hokkaido-niseko':'cts-niseko', 'jp-hokkaido-rusutsu':'cts-rusutsu',
       'ca-banff-lake-louise':'yyc-banff', 'ca-lake-louise':'yyc-lake-louise',
       'INN':'global-europe', 'ZRH':'global-europe', 'at-arlberg-tyrol':'global-europe', 'YVR':'global-bc-powder', 'ca-interior-bc-powder-highway':'global-bc-powder',
       'slc-sandy':'slc-cottonwoods', 'slc-downtown':'slc-cottonwoods', 'niseko-hirafu':'cts-niseko', 'banff-town':'yyc-banff'
@@ -1512,6 +1532,8 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'dtw-cts': ['DTW','CTS'],
       'grr-yyc': ['GRR','YYC'],
       'slc-cottonwoods': ['SLC','us-utah-cottonwoods'],
+      'rno-tahoe': ['RNO','us-california-tahoe'],
+      'den-colorado-rockies': ['DEN','us-colorado-rockies'],
       'cts-niseko': ['CTS','jp-hokkaido-niseko','niseko-hirafu'],
       'cts-rusutsu': ['CTS','jp-hokkaido-rusutsu'],
       'yyc-banff': ['YYC','ca-banff-lake-louise','banff-town'],
