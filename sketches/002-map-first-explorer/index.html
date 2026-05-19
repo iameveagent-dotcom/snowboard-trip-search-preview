@@ -159,7 +159,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
 .product-architecture__step strong{display:flex;gap:7px;align-items:center;color:var(--text);font-size:13px}.product-architecture__step span{font-size:11px;color:var(--muted);line-height:1.35}.product-architecture__step[aria-current="page"]{border-color:rgba(157,231,255,.5);background:rgba(157,231,255,.095);box-shadow:0 0 0 2px rgba(157,231,255,.06)}
 .product-architecture__num{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:999px;background:rgba(113,112,255,.32);color:#fff;font-size:11px}
 @media(max-width:760px){.product-architecture{margin:10px 14px 0}.product-architecture__steps{grid-template-columns:1fr}.product-architecture__step{padding:9px 10px}}
-.pass-destination-card[hidden],.resort-media-card[hidden]{display:none!important}.m-rno{left:43%;top:52%}.m-den{left:63%;top:36%}.m-tahoe{left:56%;top:56%}.m-colorado{left:68%;top:42%}</style>
+[hidden],.pass-destination-card[hidden],.resort-media-card[hidden]{display:none!important}.route-line[data-selected="false"]{display:none!important;opacity:0!important;filter:none!important}.m-rno{left:43%;top:52%}.m-den{left:63%;top:36%}.m-tahoe{left:56%;top:56%}.m-colorado{left:68%;top:42%}</style>
 </head>
 <body>
   <div class="app">
@@ -1512,13 +1512,10 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'dtw-cts': ['DTW','CTS'],
       'grr-yyc': ['GRR','YYC'],
       'slc-cottonwoods': ['SLC','us-utah-cottonwoods'],
-      'global-us-west': ['SLC','RNO','DEN','us-utah-cottonwoods','us-california-tahoe','us-colorado-rockies'],
       'cts-niseko': ['CTS','jp-hokkaido-niseko','niseko-hirafu'],
       'cts-rusutsu': ['CTS','jp-hokkaido-rusutsu'],
       'yyc-banff': ['YYC','ca-banff-lake-louise','banff-town'],
-      'yyc-lake-louise': ['YYC','ca-lake-louise'],
-      'global-europe': ['INN','ZRH','at-arlberg-tyrol'],
-      'global-bc-powder': ['YVR','ca-interior-bc-powder-highway']
+      'yyc-lake-louise': ['YYC','ca-lake-louise']
     };
     let realMapInstance = null;
     let realMapLayers = null;
@@ -1617,6 +1614,30 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
         zone.dataset.selected = isSelected ? 'true' : 'false';
       });
     }
+    function zoneMatchesFocus(zone, focus){
+      if(!focus || focus === 'all') return true;
+      const text = zone.textContent || '';
+      if(focus === 'japan') return /Niseko|Rusutsu|Hirafu/i.test(text);
+      if(focus === 'us-west') return /Salt Lake|Sandy|Cottonwood|Tahoe|California|Colorado/i.test(text);
+      if(focus === 'canada' || focus === 'bc-powder') return /Banff|Lake Louise|Whistler|Revelstoke|British Columbia|BC/i.test(text);
+      if(focus === 'europe') return /Arlberg|Tyrol|St\. Anton|Zermatt|Innsbruck|Zurich|Europe/i.test(text);
+      return false;
+    }
+    function applyRegionScopedPanes(focus){
+      const isAll = !focus || focus === 'all';
+      document.querySelectorAll('.panel > .option[data-map-focus]').forEach((option)=>{
+        option.hidden = !isAll && !cardMatchesMapFocus(option, focus);
+      });
+      document.querySelectorAll('.side .route-card[data-map-focus]').forEach((card)=>{
+        card.hidden = !isAll && !cardMatchesMapFocus(card, focus);
+      });
+      document.querySelectorAll('[data-trip-option][data-map-focus]').forEach((row)=>{
+        row.hidden = !isAll && !cardMatchesMapFocus(row, focus);
+      });
+      document.querySelectorAll('.side .zone-card').forEach((zone)=>{
+        zone.hidden = !zoneMatchesFocus(zone, focus);
+      });
+    }
     function updateRouteDetail(routeId, sourceEl){
       const detail = routeDetails[routeId] || {
         title: sourceEl?.dataset.detailTitle || routeId,
@@ -1671,6 +1692,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       applyLayerVisibility();
       syncSelectedControls(state);
       syncRightRailState(state);
+      applyRegionScopedPanes(state.focus);
       updateRouteDetail(state.routeId, routeSource || el);
       const routeName = routeDetails[state.routeId]?.title || routeSource?.dataset.detailTitle || state.routeId;
       document.querySelectorAll('[data-map-status]').forEach((status)=>{
