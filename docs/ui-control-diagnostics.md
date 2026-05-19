@@ -58,6 +58,7 @@ Scope: customer-visible static prototype flow: Landing → Discover/Country Atla
 - `Add to shortlist` only mutated an invisible JS variable. Added a persistent visible aria-live status and a central `addToShortlist` handler.
 - Price share button label was implementation-oriented (`Create share snapshot`). Changed to user-facing `Share with friends` and added an `Open read-only snapshot` link in the result status.
 - Dashboard rental source had an empty URL in one profile. Replaced with a concrete Snowbird rental source link.
+- Hokkaido traveler-count scaling undercounted 4-traveler totals because the resort shuttle transfer adjustment was not scaling with party size. Added explicit transfer scaling for that shuttle so 4 travelers returns Baseline `$16,214` and Sale `$14,054`.
 
 ## Verification commands
 
