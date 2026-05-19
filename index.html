@@ -9,7 +9,15 @@
     :root{--bg:#08090a;--border:rgba(255,255,255,.1);--text:#f7f8f8;--muted:#9aa1ad;--soft:#d0d6e0;--accent:#7170ff;--accent2:#9de7ff;--good:#10b981}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 20% 0%,rgba(113,112,255,.26),transparent 34%),radial-gradient(circle at 80% 16%,rgba(157,231,255,.16),transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:0 auto;padding:32px 22px 44px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:64px}.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.04em}.logo{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#fff);box-shadow:0 0 45px rgba(113,112,255,.42)}.pill,.btn{border:1px solid var(--border);border-radius:999px;padding:10px 14px;background:rgba(255,255,255,.045);color:var(--soft);font-size:13px}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:stretch}.panel{border:1px solid var(--border);border-radius:26px;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03));box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 30px 90px rgba(0,0,0,.32)}.intro{padding:34px}.eyebrow{display:inline-flex;border:1px solid rgba(157,231,255,.25);background:rgba(157,231,255,.08);border-radius:999px;padding:6px 10px;color:#d9f7ff;font-size:12px}.intro h1{font-size:58px;line-height:.95;letter-spacing:-.07em;margin:18px 0 18px}.intro p{color:var(--muted);font-size:17px;line-height:1.6;max-width:690px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px}.btn.primary{background:linear-gradient(135deg,#5e6ad2,#828fff);color:#fff;border-color:rgba(255,255,255,.18)}.cards{display:grid;gap:14px}.card{padding:22px;display:grid;gap:12px}.card h2{margin:0;font-size:23px;letter-spacing:-.04em}.card p{margin:0;color:var(--muted);line-height:1.55}.meta{display:flex;gap:8px;flex-wrap:wrap}.tag{font-size:11px;border:1px solid var(--border);background:rgba(255,255,255,.04);padding:5px 8px;border-radius:999px;color:var(--soft)}.tag.good{border-color:rgba(16,185,129,.3);background:rgba(16,185,129,.09);color:#c8ffe4}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.mini{padding:18px}.mini b{font-size:22px}.mini span{display:block;color:var(--muted);font-size:12px;margin-top:6px}.feature-link{transition:.18s ease;cursor:pointer}.feature-link:hover{transform:translateY(-2px);border-color:rgba(157,231,255,.34);background:linear-gradient(180deg,rgba(157,231,255,.09),rgba(255,255,255,.035))}.feature-link:focus-visible{outline:3px solid rgba(157,231,255,.5);outline-offset:3px}.foot{margin-top:28px;color:var(--muted);font-size:13px}.mono{font-family:'JetBrains Mono',ui-monospace,monospace}@media(max-width:860px){.top{margin-bottom:34px}.hero{grid-template-columns:1fr}.intro h1{font-size:42px}.grid{grid-template-columns:1fr}.wrap{padding:24px 16px 34px}}
   /* mobile-overflow-fix */
     html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px){.wrap{padding:18px 16px 30px}.top{align-items:flex-start;margin-bottom:28px;gap:14px}.brand{font-size:16px;line-height:1.15}.top .pill{flex:0 1 auto;max-width:48%;text-align:center}.intro{padding:26px 34px 26px 28px}.intro h1{font-size:42px;line-height:1.02;letter-spacing:-.055em}.intro p{font-size:17px}.actions{display:grid;grid-template-columns:1fr;align-items:stretch}.btn{width:100%}.grid{grid-template-columns:1fr}.mini,.card{padding:18px}.hero{gap:16px}}
-
+  
+/* unified-product-architecture */
+.product-architecture{max-width:1180px;margin:14px auto 0;padding:12px 16px;border:1px solid rgba(157,231,255,.2);border-radius:18px;background:linear-gradient(135deg,rgba(113,112,255,.12),rgba(157,231,255,.055));display:grid;gap:10px}
+.product-architecture__eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#d9f7ff;font-family:'JetBrains Mono',ui-monospace,monospace}
+.product-architecture__steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.product-architecture__step{display:grid;gap:3px;padding:10px;border:1px solid rgba(255,255,255,.09);border-radius:14px;background:rgba(255,255,255,.035);color:var(--soft);text-decoration:none}
+.product-architecture__step strong{display:flex;gap:7px;align-items:center;color:var(--text);font-size:13px}.product-architecture__step span{font-size:11px;color:var(--muted);line-height:1.35}.product-architecture__step[aria-current="page"]{border-color:rgba(157,231,255,.5);background:rgba(157,231,255,.095);box-shadow:0 0 0 2px rgba(157,231,255,.06)}
+.product-architecture__num{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:999px;background:rgba(113,112,255,.32);color:#fff;font-size:11px}
+@media(max-width:760px){.product-architecture{margin:10px 14px 0}.product-architecture__steps{grid-template-columns:1fr}.product-architecture__step{padding:9px 10px}}
 </style>
 </head>
 <body>
@@ -18,6 +26,7 @@
       <div class="brand"><div class="logo"></div><span>Snowboard Trip Search</span></div>
       <a class="pill" href="sketches/001-dashboard-command-center/">Start deciding</a>
     </header>
+    <section class="product-architecture" data-product-architecture aria-label="Unified snowboard trip planning architecture"><div class="product-architecture__eyebrow">Planner architecture · one trip plan moves left to right</div><div class="product-architecture__steps"><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="discover" href="sketches/003-country-guide-atlas/"><strong><span class="product-architecture__num">1</span>Discover</strong><span>Countries, regions, resort fit</span></a><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="map" href="sketches/002-map-first-explorer/"><strong><span class="product-architecture__num">2</span>Map</strong><span>Airports, stays, transfers</span></a><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="price" href="sketches/001-dashboard-command-center/"><strong><span class="product-architecture__num">3</span>Price</strong><span>Inputs, full-cost, pass decision</span></a><a class="product-architecture__step" data-control-kind="navigation" data-architecture-step="share" href="snapshots/share-hokkaido-readonly-v0.html"><strong><span class="product-architecture__num">4</span>Share</strong><span>Read-only trip snapshot</span></a></div></section>
 
     <section class="hero">
       <div class="panel intro">
@@ -30,8 +39,8 @@
           <a class="btn" href="sketches/002-map-first-explorer/">Open Map Explorer</a>
         </div>
         <div class="grid">
-          <a class="panel mini feature-link" href="sketches/001-dashboard-command-center/"><b>Total cost</b><span>Flights, lodging, lifts, transfers, rentals, food</span></a>
-          <a class="panel mini feature-link" href="sketches/001-dashboard-command-center/"><b>Passes</b><span>Epic / Ikon guidance by trip pattern</span></a>
+          <a class="panel mini feature-link" href="sketches/001-dashboard-command-center/?focus=cost#estimate"><b>Total cost</b><span>Flights, lodging, lifts, transfers, optional rentals, food</span></a>
+          <a class="panel mini feature-link" href="sketches/001-dashboard-command-center/?focus=passes#pass-decision"><b>Passes</b><span>Epic / Ikon guidance by trip pattern</span></a>
           <a class="panel mini feature-link" href="snapshots/share-hokkaido-readonly-v0.html"><b>Share</b><span>Read-only trip snapshots for friends</span></a>
         </div>
       </div>
@@ -40,12 +49,12 @@
         <a class="panel card" href="sketches/003-country-guide-atlas/">
           <div class="meta"><span class="tag good">Primary flow</span><span class="tag">fixture-backed estimates</span></div>
           <h2>Country Atlas</h2>
-          <p>Japan and USA routes are wired to default estimate profiles with source confidence, caveats, and share snapshot state.</p>
+          <p>Country and region discovery now feeds the same map, pricing, and sharing architecture instead of acting as a separate prototype.</p>
         </a>
         <a class="panel card" href="sketches/001-dashboard-command-center/">
           <div class="meta"><span class="tag good">Flight-sale decision</span><span class="tag">data-driven controls</span></div>
           <h2>Deal Dashboard</h2>
-          <p>Enter an observed fare and switch fixture profiles to see whether the sale is worth it after lodging, lifts, transfers, rentals, food, and season-pass choices.</p>
+          <p>Enter an observed fare and switch fixture profiles to see whether the sale is worth it after lodging, lifts, transfers, optional rentals, food, and season-pass choices.</p>
         </a>
         <a class="panel card" href="sketches/002-map-first-explorer/">
           <div class="meta"><span class="tag">Comparison mode</span><span class="tag">map-first</span></div>

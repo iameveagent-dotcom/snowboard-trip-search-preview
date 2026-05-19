@@ -81,5 +81,204 @@
         "source_url": "https://www.snowjapan.com/japan-ski-resorts/hokkaido"
       }
     ]
+  },
+  {
+    "id": "us-colorado-summit-county",
+    "country_id": "US",
+    "name": "Colorado / Summit County",
+    "description": "Fixture-backed snowboard trip region for Colorado / Summit County.",
+    "centroid_lat_lng": [
+      39.48,
+      -106.05
+    ],
+    "gateway_airport_codes": [
+      "DEN"
+    ],
+    "resort_ids": [
+      "breckenridge",
+      "keystone",
+      "copper-mountain",
+      "arapahoe-basin"
+    ],
+    "lodging_zone_ids": [
+      "summit-county-frisco-silverthorne"
+    ],
+    "transfer_option_ids": [
+      "den-summit-rental-car"
+    ],
+    "season_notes": [
+      "Verify exact dates, weather, pass access, and lodging before booking."
+    ],
+    "no_car_viability": "partial",
+    "provenance": [
+      {
+        "source_type": "editorial_reference",
+        "source_name": "Colorado / Summit County destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype region summary; verify current resort, road, and transit conditions.",
+        "source_url": "https://www.coloradoski.com/"
+      }
+    ]
+  },
+  {
+    "id": "us-tahoe-north-south",
+    "country_id": "US",
+    "name": "Tahoe / North and South Lake",
+    "description": "Fixture-backed snowboard trip region for Tahoe / North and South Lake.",
+    "centroid_lat_lng": [
+      39.0968,
+      -120.0324
+    ],
+    "gateway_airport_codes": [
+      "RNO",
+      "SMF"
+    ],
+    "resort_ids": [
+      "palisades-tahoe",
+      "heavenly",
+      "northstar",
+      "kirkwood"
+    ],
+    "lodging_zone_ids": [
+      "tahoe-south-north-base"
+    ],
+    "transfer_option_ids": [
+      "rno-tahoe-rental-car"
+    ],
+    "season_notes": [
+      "Verify exact dates, weather, pass access, and lodging before booking."
+    ],
+    "no_car_viability": "partial",
+    "provenance": [
+      {
+        "source_type": "editorial_reference",
+        "source_name": "Tahoe / North and South Lake destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype region summary; verify current resort, road, and transit conditions.",
+        "source_url": "https://visitlaketahoe.com/"
+      }
+    ]
+  },
+  {
+    "id": "ca-whistler-sea-to-sky",
+    "country_id": "CA",
+    "name": "Whistler / Sea-to-Sky",
+    "description": "Fixture-backed snowboard trip region for Whistler / Sea-to-Sky.",
+    "centroid_lat_lng": [
+      50.1163,
+      -122.9574
+    ],
+    "gateway_airport_codes": [
+      "YVR"
+    ],
+    "resort_ids": [
+      "whistler-blackcomb",
+      "cypress-mountain"
+    ],
+    "lodging_zone_ids": [
+      "whistler-village-creekside"
+    ],
+    "transfer_option_ids": [
+      "yvr-whistler-shuttle"
+    ],
+    "season_notes": [
+      "Verify exact dates, weather, pass access, and lodging before booking."
+    ],
+    "no_car_viability": "easy",
+    "provenance": [
+      {
+        "source_type": "editorial_reference",
+        "source_name": "Whistler / Sea-to-Sky destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype region summary; verify current resort, road, and transit conditions.",
+        "source_url": "https://www.whistler.com/"
+      }
+    ]
+  },
+  {
+    "id": "at-arlberg-tyrol",
+    "country_id": "AT",
+    "name": "Austria / Arlberg-Tyrol",
+    "description": "Fixture-backed snowboard trip region for Austria / Arlberg-Tyrol.",
+    "centroid_lat_lng": [
+      47.128,
+      10.267
+    ],
+    "gateway_airport_codes": [
+      "ZRH",
+      "INN"
+    ],
+    "resort_ids": [
+      "st-anton-arlberg",
+      "lech-zurs",
+      "stubai-glacier"
+    ],
+    "lodging_zone_ids": [
+      "st-anton-arlberg-village"
+    ],
+    "transfer_option_ids": [
+      "zrh-arlberg-rail-shuttle"
+    ],
+    "season_notes": [
+      "Verify exact dates, weather, pass access, and lodging before booking."
+    ],
+    "no_car_viability": "easy",
+    "provenance": [
+      {
+        "source_type": "editorial_reference",
+        "source_name": "Austria / Arlberg-Tyrol destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype region summary; verify current resort, road, and transit conditions.",
+        "source_url": "https://www.skiarlberg.at/en"
+      }
+    ]
+  },
+  {
+    "id": "ca-interior-bc-powder-highway",
+    "country_id": "CA",
+    "name": "Interior BC / Powder Highway",
+    "description": "Fixture-backed snowboard trip region for Interior BC / Powder Highway.",
+    "centroid_lat_lng": [
+      51.0,
+      -117.0
+    ],
+    "gateway_airport_codes": [
+      "YYC",
+      "YLW"
+    ],
+    "resort_ids": [
+      "revelstoke",
+      "kicking-horse",
+      "panorama"
+    ],
+    "lodging_zone_ids": [
+      "revelstoke-golden-base"
+    ],
+    "transfer_option_ids": [
+      "yyc-interior-bc-rental-car"
+    ],
+    "season_notes": [
+      "Verify exact dates, weather, pass access, and lodging before booking."
+    ],
+    "no_car_viability": "partial",
+    "provenance": [
+      {
+        "source_type": "editorial_reference",
+        "source_name": "Interior BC / Powder Highway destination reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype region summary; verify current resort, road, and transit conditions.",
+        "source_url": "https://www.powderhighway.com/"
+      }
+    ]
   }
 ]

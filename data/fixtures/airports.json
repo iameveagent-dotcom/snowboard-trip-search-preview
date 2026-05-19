@@ -127,5 +127,149 @@
       "retrieved_at": "2026-05-18T00:00:00.000Z",
       "display_caveat": "Airport fixture for prototype routing only; not live operations data."
     }
+  },
+  {
+    "code": "DEN",
+    "name": "Denver International Airport",
+    "metro_area": "Denver",
+    "country_id": "US",
+    "coordinates": [
+      39.8561,
+      -104.6737
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "RNO",
+    "name": "Reno-Tahoe International Airport",
+    "metro_area": "Reno / Lake Tahoe",
+    "country_id": "US",
+    "coordinates": [
+      39.4991,
+      -119.7681
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "SMF",
+    "name": "Sacramento International Airport",
+    "metro_area": "Sacramento / Tahoe",
+    "country_id": "US",
+    "coordinates": [
+      38.6954,
+      -121.5908
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "YVR",
+    "name": "Vancouver International Airport",
+    "metro_area": "Vancouver / Whistler",
+    "country_id": "CA",
+    "coordinates": [
+      49.1967,
+      -123.1815
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "ZRH",
+    "name": "Zurich Airport",
+    "metro_area": "Zurich / Arlberg",
+    "country_id": "CH",
+    "coordinates": [
+      47.4581,
+      8.5555
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "INN",
+    "name": "Innsbruck Airport",
+    "metro_area": "Innsbruck / Tyrol",
+    "country_id": "AT",
+    "coordinates": [
+      47.2602,
+      11.3439
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "YYC",
+    "name": "Calgary International Airport",
+    "metro_area": "Calgary / Canadian Rockies",
+    "country_id": "CA",
+    "coordinates": [
+      51.1188,
+      -114.009
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
+  },
+  {
+    "code": "YLW",
+    "name": "Kelowna International Airport",
+    "metro_area": "Kelowna / Interior BC",
+    "country_id": "CA",
+    "coordinates": [
+      49.9561,
+      -119.3778
+    ],
+    "provenance": {
+      "source_type": "fixture",
+      "source_name": "Prototype airport fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Airport fixture for prototype routing only; not live operations data."
+    }
   }
 ]

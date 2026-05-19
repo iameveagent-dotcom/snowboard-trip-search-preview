@@ -94,7 +94,15 @@
         "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
         "source_url": "https://www.visitsaltlake.com/"
       }
-    ]
+    ],
+    "friction": {
+      "no_car_viability": "partial",
+      "booking_complexity": "low",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
   },
   {
     "id": "cottonwood-base-areas",
@@ -163,7 +171,15 @@
         "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
         "source_url": "https://www.visitsaltlake.com/"
       }
-    ]
+    ],
+    "friction": {
+      "no_car_viability": "partial",
+      "booking_complexity": "medium",
+      "weather_risk": "high",
+      "schedule_risk": "low",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
   },
   {
     "id": "hirafu-niseko-village",
@@ -239,7 +255,15 @@
         "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
         "source_url": "https://www.niseko.ne.jp/en/"
       }
-    ]
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "low",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
   },
   {
     "id": "sapporo-ski-base",
@@ -309,6 +333,299 @@
         "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
         "source_url": "https://www.snowjapan.com/japan-ski-resorts/hokkaido"
       }
-    ]
+    ],
+    "friction": {
+      "no_car_viability": "partial",
+      "booking_complexity": "low",
+      "weather_risk": "medium",
+      "schedule_risk": "high",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "summit-county-frisco-silverthorne",
+    "region_id": "us-colorado-summit-county",
+    "name": "Frisco / Silverthorne / Dillon",
+    "coordinates": [
+      39.59,
+      -106.1
+    ],
+    "distance_to_resorts": [],
+    "nightly_range": {
+      "low": {
+        "amount": 210,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 310,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 480,
+        "currency": "USD"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Moderate hotel/condo base shared by two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Frisco / Silverthorne / Dillon",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.gobreck.com/"
+      }
+    },
+    "car_required": true,
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Frisco / Silverthorne / Dillon",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.gobreck.com/"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "no",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "low",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "tahoe-south-north-base",
+    "region_id": "us-tahoe-north-south",
+    "name": "South/North Lake Tahoe lodging base",
+    "coordinates": [
+      39.09,
+      -120.03
+    ],
+    "distance_to_resorts": [],
+    "nightly_range": {
+      "low": {
+        "amount": 120,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 190,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 320,
+        "currency": "USD"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Prototype lodging planning range; verify exact dates, occupancy, taxes, and live inventory before treating it as accurate."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "User-anchored Tahoe lodging fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "User-anchored prototype planning range; verify exact dates and live prices before booking.",
+        "source_url": "https://visitlaketahoe.com/"
+      }
+    },
+    "car_required": true,
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: South/North Lake Tahoe lodging base",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://visitlaketahoe.com/"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "no",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "low",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "whistler-village-creekside",
+    "region_id": "ca-whistler-sea-to-sky",
+    "name": "Whistler Village / Creekside",
+    "coordinates": [
+      50.1163,
+      -122.9574
+    ],
+    "distance_to_resorts": [],
+    "nightly_range": {
+      "low": {
+        "amount": 360,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 520,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 800,
+        "currency": "USD"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Moderate hotel/condo base shared by two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Whistler Village / Creekside",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.whistler.com/"
+      }
+    },
+    "car_required": false,
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Whistler Village / Creekside",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.whistler.com/"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "low",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "st-anton-arlberg-village",
+    "region_id": "at-arlberg-tyrol",
+    "name": "St. Anton / Arlberg village",
+    "coordinates": [
+      47.1292,
+      10.2682
+    ],
+    "distance_to_resorts": [],
+    "nightly_range": {
+      "low": {
+        "amount": 260,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 420,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 700,
+        "currency": "USD"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Moderate hotel/condo base shared by two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: St. Anton / Arlberg village",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.skiarlberg.at/en"
+      }
+    },
+    "car_required": false,
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: St. Anton / Arlberg village",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.skiarlberg.at/en"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "low",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "revelstoke-golden-base",
+    "region_id": "ca-interior-bc-powder-highway",
+    "name": "Revelstoke / Golden road-trip base",
+    "coordinates": [
+      51.0,
+      -117.0
+    ],
+    "distance_to_resorts": [],
+    "nightly_range": {
+      "low": {
+        "amount": 180,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 290,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 460,
+        "currency": "USD"
+      },
+      "unit": "night",
+      "assumptions": [
+        "Moderate hotel/condo base shared by two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Revelstoke / Golden road-trip base",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.powderhighway.com/"
+      }
+    },
+    "car_required": true,
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype lodging fixture: Revelstoke / Golden road-trip base",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.powderhighway.com/"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "no",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "low",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    }
   }
 ]

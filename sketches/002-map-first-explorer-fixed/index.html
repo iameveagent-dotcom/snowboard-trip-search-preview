@@ -8,7 +8,7 @@
   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <title>Snowboard Trip — Map Explorer</title>
   <style>
-    :root{--bg:#08090a;--panel:#0f1011;--surface:rgba(255,255,255,.045);--surface2:rgba(255,255,255,.075);--border:rgba(255,255,255,.1);--text:#f7f8f8;--muted:#8a8f98;--soft:#d0d6e0;--accent:#7170ff;--accent2:#9de7ff;--good:#10b981;--warn:#f5b86b;--bad:#fb7185;--airport:#9de7ff;--region:#a78bfa;--lodging:#f5b86b;--route:#10b981}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,rgba(113,112,255,.22),transparent 34%),radial-gradient(circle at 80% 20%,rgba(157,231,255,.12),transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;font-feature-settings:'cv01','ss03'}button,input,select{font:inherit}a{color:inherit}.app{min-height:100vh}.top{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid var(--border);background:rgba(8,9,10,.72);backdrop-filter:blur(20px);position:sticky;top:0;z-index:10}.brand{display:flex;gap:12px;align-items:center;font-weight:590;letter-spacing:-.4px}.logo{width:28px;height:28px;border-radius:9px;background:linear-gradient(135deg,var(--accent),#fff);box-shadow:0 0 40px rgba(113,112,255,.4)}.nav{display:flex;gap:8px;flex-wrap:wrap}.pill,.btn{border:1px solid var(--border);background:rgba(255,255,255,.035);color:var(--soft);border-radius:999px;padding:8px 12px;font-size:13px}.pill.active,.btn.primary{background:linear-gradient(135deg,#5e6ad2,#828fff);color:white;border-color:rgba(255,255,255,.14)}.grid{display:grid;gap:16px}.card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.026));border:1px solid var(--border);border-radius:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 20px 70px rgba(0,0,0,.25)}.small{font-size:12px;color:var(--muted)}.mono{font-family:'JetBrains Mono',ui-monospace,monospace}.metric{font-size:24px;letter-spacing:-.6px;font-weight:590}.muted{color:var(--muted)}.tag{font-size:11px;border:1px solid var(--border);background:rgba(255,255,255,.045);padding:4px 8px;border-radius:999px;color:var(--soft);display:inline-flex;gap:6px;align-items:center}.dot{width:8px;height:8px;border-radius:99px;background:var(--soft);display:inline-block}.split{display:grid;grid-template-columns:390px minmax(620px,1fr) 360px;min-height:calc(100vh - 64px)}.panel{padding:22px;border-right:1px solid var(--border);background:rgba(15,16,17,.82);overflow:auto}.panel h1{font-size:34px;letter-spacing:-.8px;line-height:1;margin:12px 0 10px}.control-card{padding:14px;margin-top:18px}.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.option{padding:13px;margin:10px 0;border-radius:14px;border:1px solid var(--border);background:rgba(255,255,255,.035);cursor:pointer;text-align:left;width:100%;color:var(--text)}.option.selected{border-color:var(--accent);background:rgba(113,112,255,.13)}.mapbig{position:relative;overflow:hidden;min-height:calc(100vh - 64px);background:radial-gradient(circle at 62% 42%,rgba(113,112,255,.28),transparent 14%),radial-gradient(circle at 42% 70%,rgba(16,185,129,.1),transparent 18%),linear-gradient(135deg,#09111f,#111827 45%,#0b1020)}.mapbig:before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:58px 58px}.map-title{position:absolute;left:26px;top:22px;z-index:2;max-width:460px}.map-title h2{margin:8px 0 4px;font-size:23px;letter-spacing:-.4px}.legend{position:absolute;left:26px;bottom:24px;z-index:3;display:flex;gap:8px;flex-wrap:wrap;max-width:620px}.legend .airport .dot{background:var(--airport)}.legend .region .dot{background:var(--region)}.legend .lodging .dot{background:var(--lodging)}.legend .transfer .dot{background:var(--route)}.marker{position:absolute;z-index:2;padding:8px 10px;border:1px solid var(--border);border-radius:999px;background:rgba(8,9,10,.84);backdrop-filter:blur(8px);font-size:12px;box-shadow:0 14px 40px rgba(0,0,0,.3)}.marker:before{content:'';width:9px;height:9px;border-radius:99px;display:inline-block;margin-right:7px;background:var(--soft);box-shadow:0 0 18px currentColor}.airport:before{background:var(--airport)}.region:before{background:var(--region)}.lodging:before{background:var(--lodging)}.m-dtw{left:10%;top:31%}.m-grr{left:8%;top:38%}.m-slc{left:46%;top:44%}.m-cts{left:74%;top:14%}.m-yyc{left:39%;top:21%}.m-cottonwoods{left:53%;top:52%}.m-niseko{left:80%;top:35%}.m-rusutsu{left:76%;top:46%}.m-banff{left:48%;top:30%}.m-louise{left:58%;top:11%}.m-sandy{left:48%;top:60%}.m-hirafu{left:80%;top:57%}.m-banff-town{left:46%;top:39%}.m-slc-downtown{left:42%;top:54%}.m-inn{left:68%;top:20%}.m-zrh{left:63%;top:13%}.m-arlberg{left:72%;top:28%}.m-yvr{left:32%;top:16%}.m-bc-powder{left:40%;top:24%}.route-line{position:absolute;height:3px;background:linear-gradient(90deg,rgba(157,231,255,.15),var(--route),var(--accent2));transform-origin:left;border-radius:99px;opacity:.85;box-shadow:0 0 18px rgba(16,185,129,.25)}.route-label{position:absolute;z-index:2;padding:5px 8px;border:1px solid rgba(16,185,129,.35);border-radius:999px;background:rgba(4,30,24,.78);font-size:11px;color:#c7fff1}.line-dtw-slc{left:13%;top:34%;width:380px;transform:rotate(17deg)}.line-dtw-cts{left:13%;top:34%;width:600px;transform:rotate(-6deg)}.line-grr-yyc{left:11%;top:39%;width:295px;transform:rotate(-22deg)}.line-slc-cotton{left:49%;top:48%;width:120px;transform:rotate(25deg)}.line-cts-niseko{left:76%;top:28%;width:100px;transform:rotate(25deg)}.line-yyc-banff{left:41%;top:24%;width:115px;transform:rotate(20deg)}.line-yyc-louise{left:42%;top:23%;width:155px;transform:rotate(-18deg)}.line-yyc-lake-louise{left:41%;top:24%;width:185px;transform:rotate(-18deg)}.line-sample{display:inline-block;width:28px;height:3px;border-radius:99px;background:var(--route)}.line-sample.solid{background:var(--accent2)}.line-sample.dashed{background:repeating-linear-gradient(90deg,var(--route) 0 8px,transparent 8px 13px)}.line-sample.dotted{background:repeating-linear-gradient(90deg,var(--accent2) 0 3px,transparent 3px 8px)}.line-sample.dashdot{background:repeating-linear-gradient(90deg,var(--warn) 0 8px,transparent 8px 11px,var(--warn) 11px 14px,transparent 14px 18px)}.line-sample.pending{background:repeating-linear-gradient(90deg,rgba(245,184,107,.8) 0 5px,transparent 5px 10px)}.label-slc{left:36%;top:38%}.label-cts{left:58%;top:24%}.label-yyc{left:26%;top:24%}.label-cotton{left:53%;top:48%}.label-niseko{left:69%;top:39%}.label-banff{left:45%;top:18%}.side{padding:22px;border-left:1px solid var(--border);background:rgba(15,16,17,.78);overflow:auto}.side h2{margin:0 0 10px;font-size:20px;letter-spacing:-.3px}.route-card,.zone-card{padding:13px;margin:10px 0;border-radius:14px;border:1px solid var(--border);background:rgba(255,255,255,.035)}.route-card strong{display:block;margin:4px 0}.route-card .meta,.zone-card .meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.friction-model{margin:12px 0 14px;padding:12px;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:rgba(255,255,255,.028)}.friction-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:10px}.friction-grid span{display:flex;flex-direction:column;gap:2px;padding:7px;border:1px solid rgba(255,255,255,.08);border-radius:10px;background:rgba(255,255,255,.03)}.friction-grid b{font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:500}.decision-summary{margin:0 0 16px;padding:14px;border:1px solid rgba(157,231,255,.22);border-radius:18px;background:linear-gradient(180deg,rgba(157,231,255,.08),rgba(255,255,255,.025));overflow:auto}.decision-summary h2{margin:0 0 6px}.decision-summary table{width:100%;border-collapse:separate;border-spacing:0 8px;font-size:12px;min-width:760px}.decision-summary th{color:var(--muted);font-weight:500;text-align:left;padding:0 8px 2px}.decision-summary td{vertical-align:top;padding:10px 8px;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}.decision-summary td:first-child{border-left:1px solid rgba(255,255,255,.08);border-radius:12px 0 0 12px}.decision-summary td:last-child{border-right:1px solid rgba(255,255,255,.08);border-radius:0 12px 12px 0}.decision-summary .links{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}.decision-summary a{color:#bfeeff;text-decoration:none;border-bottom:1px solid rgba(191,238,255,.35)}.invite-modal{position:fixed;inset:0;z-index:30;display:grid;place-items:center;padding:22px;background:rgba(0,0,0,.58);backdrop-filter:blur(10px)}.invite-modal[hidden]{display:none}.invite-modal .card{max-width:520px;padding:20px}.invite-modal code{display:block;margin:12px 0;padding:10px;border-radius:12px;background:rgba(255,255,255,.06);overflow:auto}.source-note{margin-top:16px;padding:12px;border-radius:14px;border:1px dashed rgba(255,255,255,.16);background:rgba(255,255,255,.025)}.source-note table{width:100%;border-collapse:collapse;margin-top:10px;font-size:11px}.source-note th,.source-note td{border-top:1px solid rgba(255,255,255,.1);padding:6px;text-align:left;vertical-align:top}.source-note th{color:var(--soft);font-weight:600}@media(max-width:1400px){.split{grid-template-columns:360px 1fr}.side{grid-column:1/-1;border-left:0;border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:14px}.side h2,.source-note,.decision-summary{grid-column:1/-1}.mapbig{min-height:620px}}@media(max-width:820px){.top{height:auto;min-height:64px;align-items:flex-start;gap:12px;padding:14px 18px;flex-direction:column}.split{grid-template-columns:1fr}.panel,.side{border:0;border-top:1px solid var(--border);display:block}.mapbig{min-height:680px;order:1}.panel{order:0}.side{order:2}.marker{font-size:11px;padding:7px 8px}.legend{left:14px;right:14px}.map-title{left:16px;right:16px}.side{grid-column:auto}}
+    :root{--bg:#08090a;--panel:#0f1011;--surface:rgba(255,255,255,.045);--surface2:rgba(255,255,255,.075);--border:rgba(255,255,255,.1);--text:#f7f8f8;--muted:#8a8f98;--soft:#d0d6e0;--accent:#7170ff;--accent2:#9de7ff;--good:#10b981;--warn:#f5b86b;--bad:#fb7185;--airport:#9de7ff;--region:#a78bfa;--lodging:#f5b86b;--route:#10b981}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,rgba(113,112,255,.22),transparent 34%),radial-gradient(circle at 80% 20%,rgba(157,231,255,.12),transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;font-feature-settings:'cv01','ss03'}button,input,select{font:inherit}a{color:inherit}.app{min-height:100vh}.top{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid var(--border);background:rgba(8,9,10,.72);backdrop-filter:blur(20px);position:sticky;top:0;z-index:10}.brand{display:flex;gap:12px;align-items:center;font-weight:590;letter-spacing:-.4px}.logo{width:28px;height:28px;border-radius:9px;background:linear-gradient(135deg,var(--accent),#fff);box-shadow:0 0 40px rgba(113,112,255,.4)}.nav{display:flex;gap:8px;flex-wrap:wrap}.pill,.btn{border:1px solid var(--border);background:rgba(255,255,255,.035);color:var(--soft);border-radius:999px;padding:8px 12px;font-size:13px}.pill.active,.btn.primary{background:linear-gradient(135deg,#5e6ad2,#828fff);color:white;border-color:rgba(255,255,255,.14)}.grid{display:grid;gap:16px}.card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.026));border:1px solid var(--border);border-radius:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 20px 70px rgba(0,0,0,.25)}.small{font-size:12px;color:var(--muted)}.mono{font-family:'JetBrains Mono',ui-monospace,monospace}.metric{font-size:24px;letter-spacing:-.6px;font-weight:590}.muted{color:var(--muted)}.tag{font-size:11px;border:1px solid var(--border);background:rgba(255,255,255,.045);padding:4px 8px;border-radius:999px;color:var(--soft);display:inline-flex;gap:6px;align-items:center}.dot{width:8px;height:8px;border-radius:99px;background:var(--soft);display:inline-block}.split{display:grid;grid-template-columns:390px minmax(620px,1fr) 360px;min-height:calc(100vh - 64px)}.panel{padding:22px;border-right:1px solid var(--border);background:rgba(15,16,17,.82);overflow:auto}.panel h1{font-size:34px;letter-spacing:-.8px;line-height:1;margin:12px 0 10px}.control-card{padding:14px;margin-top:18px}.filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.option{padding:13px;margin:10px 0;border-radius:14px;border:1px solid var(--border);background:rgba(255,255,255,.035);cursor:pointer;text-align:left;width:100%;color:var(--text)}.option.selected{border-color:var(--accent);background:rgba(113,112,255,.13)}.mapbig{position:relative;overflow:hidden;min-height:calc(100vh - 64px);background:radial-gradient(circle at 62% 42%,rgba(113,112,255,.28),transparent 14%),radial-gradient(circle at 42% 70%,rgba(16,185,129,.1),transparent 18%),linear-gradient(135deg,#09111f,#111827 45%,#0b1020)}.mapbig:before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:58px 58px}.map-title{position:absolute;left:26px;top:22px;z-index:2;max-width:460px}.map-title h2{margin:8px 0 4px;font-size:23px;letter-spacing:-.4px}.legend{position:absolute;left:26px;bottom:24px;z-index:3;display:flex;gap:8px;flex-wrap:wrap;max-width:620px}.legend .airport .dot{background:var(--airport)}.legend .region .dot{background:var(--region)}.legend .lodging .dot{background:var(--lodging)}.legend .transfer .dot{background:var(--route)}.marker{position:absolute;z-index:2;padding:8px 10px;border:1px solid var(--border);border-radius:999px;background:rgba(8,9,10,.84);backdrop-filter:blur(8px);font-size:12px;box-shadow:0 14px 40px rgba(0,0,0,.3)}.marker:before{content:'';width:9px;height:9px;border-radius:99px;display:inline-block;margin-right:7px;background:var(--soft);box-shadow:0 0 18px currentColor}.airport:before{background:var(--airport)}.region:before{background:var(--region)}.lodging:before{background:var(--lodging)}.m-dtw{left:10%;top:31%}.m-grr{left:8%;top:38%}.m-slc{left:46%;top:44%}.m-cts{left:74%;top:14%}.m-yyc{left:39%;top:21%}.m-cottonwoods{left:53%;top:52%}.m-niseko{left:80%;top:35%}.m-rusutsu{left:76%;top:46%}.m-banff{left:48%;top:30%}.m-louise{left:58%;top:11%}.m-sandy{left:48%;top:60%}.m-hirafu{left:80%;top:57%}.m-banff-town{left:46%;top:39%}.m-slc-downtown{left:42%;top:54%}.route-line{position:absolute;height:3px;background:linear-gradient(90deg,rgba(157,231,255,.15),var(--route),var(--accent2));transform-origin:left;border-radius:99px;opacity:.85;box-shadow:0 0 18px rgba(16,185,129,.25)}.route-label{position:absolute;z-index:2;padding:5px 8px;border:1px solid rgba(16,185,129,.35);border-radius:999px;background:rgba(4,30,24,.78);font-size:11px;color:#c7fff1}.line-dtw-slc{left:13%;top:34%;width:380px;transform:rotate(17deg)}.line-dtw-cts{left:13%;top:34%;width:600px;transform:rotate(-6deg)}.line-grr-yyc{left:11%;top:39%;width:295px;transform:rotate(-22deg)}.line-slc-cotton{left:49%;top:48%;width:120px;transform:rotate(25deg)}.line-cts-niseko{left:76%;top:28%;width:100px;transform:rotate(25deg)}.line-yyc-banff{left:41%;top:24%;width:115px;transform:rotate(20deg)}.line-yyc-louise{left:42%;top:23%;width:155px;transform:rotate(-18deg)}.line-yyc-lake-louise{left:41%;top:24%;width:185px;transform:rotate(-18deg)}.line-sample{display:inline-block;width:28px;height:3px;border-radius:99px;background:var(--route)}.line-sample.solid{background:var(--accent2)}.line-sample.dashed{background:repeating-linear-gradient(90deg,var(--route) 0 8px,transparent 8px 13px)}.line-sample.dotted{background:repeating-linear-gradient(90deg,var(--accent2) 0 3px,transparent 3px 8px)}.line-sample.dashdot{background:repeating-linear-gradient(90deg,var(--warn) 0 8px,transparent 8px 11px,var(--warn) 11px 14px,transparent 14px 18px)}.line-sample.pending{background:repeating-linear-gradient(90deg,rgba(245,184,107,.8) 0 5px,transparent 5px 10px)}.label-slc{left:36%;top:38%}.label-cts{left:58%;top:24%}.label-yyc{left:26%;top:24%}.label-cotton{left:53%;top:48%}.label-niseko{left:69%;top:39%}.label-banff{left:45%;top:18%}.side{padding:22px;border-left:1px solid var(--border);background:rgba(15,16,17,.78);overflow:auto}.side h2{margin:0 0 10px;font-size:20px;letter-spacing:-.3px}.route-card,.zone-card{padding:13px;margin:10px 0;border-radius:14px;border:1px solid var(--border);background:rgba(255,255,255,.035)}.route-card strong{display:block;margin:4px 0}.route-card .meta,.zone-card .meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.friction-model{margin:12px 0 14px;padding:12px;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:rgba(255,255,255,.028)}.friction-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:10px}.friction-grid span{display:flex;flex-direction:column;gap:2px;padding:7px;border:1px solid rgba(255,255,255,.08);border-radius:10px;background:rgba(255,255,255,.03)}.friction-grid b{font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:500}.decision-summary{margin:0 0 16px;padding:14px;border:1px solid rgba(157,231,255,.22);border-radius:18px;background:linear-gradient(180deg,rgba(157,231,255,.08),rgba(255,255,255,.025));overflow:auto}.decision-summary h2{margin:0 0 6px}.decision-summary table{width:100%;border-collapse:separate;border-spacing:0 8px;font-size:12px;min-width:760px}.decision-summary th{color:var(--muted);font-weight:500;text-align:left;padding:0 8px 2px}.decision-summary td{vertical-align:top;padding:10px 8px;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}.decision-summary td:first-child{border-left:1px solid rgba(255,255,255,.08);border-radius:12px 0 0 12px}.decision-summary td:last-child{border-right:1px solid rgba(255,255,255,.08);border-radius:0 12px 12px 0}.decision-summary .links{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}.decision-summary a{color:#bfeeff;text-decoration:none;border-bottom:1px solid rgba(191,238,255,.35)}.invite-modal{position:fixed;inset:0;z-index:30;display:grid;place-items:center;padding:22px;background:rgba(0,0,0,.58);backdrop-filter:blur(10px)}.invite-modal[hidden]{display:none}.invite-modal .card{max-width:520px;padding:20px}.invite-modal code{display:block;margin:12px 0;padding:10px;border-radius:12px;background:rgba(255,255,255,.06);overflow:auto}.source-note{margin-top:16px;padding:12px;border-radius:14px;border:1px dashed rgba(255,255,255,.16);background:rgba(255,255,255,.025)}.source-note table{width:100%;border-collapse:collapse;margin-top:10px;font-size:11px}.source-note th,.source-note td{border-top:1px solid rgba(255,255,255,.1);padding:6px;text-align:left;vertical-align:top}.source-note th{color:var(--soft);font-weight:600}@media(max-width:1400px){.split{grid-template-columns:360px 1fr}.side{grid-column:1/-1;border-left:0;border-top:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:14px}.side h2,.source-note,.decision-summary{grid-column:1/-1}.mapbig{min-height:620px}}@media(max-width:820px){.top{height:auto;min-height:64px;align-items:flex-start;gap:12px;padding:14px 18px;flex-direction:column}.split{grid-template-columns:1fr}.panel,.side{border:0;border-top:1px solid var(--border);display:block}.mapbig{min-height:680px;order:1}.panel{order:0}.side{order:2}.marker{font-size:11px;padding:7px 8px}.legend{left:14px;right:14px}.map-title{left:16px;right:16px}.side{grid-column:auto}}
 
   /* interactive-map-state */
   .map-status{position:absolute;left:26px;top:118px;z-index:3;max-width:460px;padding:10px 12px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:rgba(8,9,10,.72);backdrop-filter:blur(10px)}
@@ -71,7 +71,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
     .map-status{top:214px;left:12px;right:12px;max-width:none;max-height:none;overflow:visible;font-size:11px;line-height:1.35}
     .schematic-note{display:none}
     .real-map-context{margin:318px 14px 118px}
-    .real-map-viewport{height:240px;overflow:hidden}
+    .real-map-viewport{height:210px;overflow:hidden}
     .real-map-caption{font-size:11px;line-height:1.3}
     .route-label{display:none!important}
     .route-style-legend{display:none}
@@ -125,17 +125,15 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
     .mapbig{min-height:830px}
     .map-status{top:206px}
     .real-map-context{margin-top:304px;margin-bottom:112px}
-    .real-map-viewport{height:230px}
+    .real-map-viewport{height:196px}
     .legend{bottom:12px}
     .m-cts{top:52%;right:5%;left:auto}.m-niseko{top:63%;right:5%;left:auto}.m-hirafu{top:72%;right:5%;left:auto}.m-rusutsu{top:80%;right:5%;left:auto}
     .m-dtw{top:59%;left:4%}.m-grr{top:66%;left:4%}.m-slc{top:70%;left:38%}.m-cottonwoods{top:61%;left:56%}.m-sandy{top:76%;left:56%}.m-slc-downtown{top:82%;left:38%}
-    .m-yyc{top:50%;left:32%}.m-banff{top:58%;left:45%}.m-banff-town{top:66%;left:46%}.m-louise{top:43%;right:5%;left:auto}.m-inn{top:28%;left:42%}.m-zrh{top:20%;left:34%}.m-arlberg{top:36%;left:52%}.m-yvr{top:18%;left:28%}.m-bc-powder{top:28%;left:48%}
+    .m-yyc{top:50%;left:32%}.m-banff{top:58%;left:45%}.m-banff-town{top:66%;left:46%}.m-louise{top:43%;right:5%;left:auto}
   }
 
   /* pass-destination-browser */
   .pass-destination-browser{margin-top:16px;padding:14px}.pass-destination-browser h2{font-size:18px;margin:8px 0 6px}.pass-search{width:100%;margin:10px 0;padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.05);color:var(--text)}.pass-destination-list{display:grid;gap:8px;max-height:360px;overflow:auto;margin-top:10px;padding-right:4px}.pass-destination-card{padding:10px;border:1px solid rgba(255,255,255,.09);border-radius:13px;background:rgba(255,255,255,.03)}.pass-destination-card[hidden]{display:none}.pass-destination-card strong{display:block;margin-bottom:4px}.pass-destination-card .meta{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}.pass-destination-browser .pill.active{background:linear-gradient(135deg,#5e6ad2,#828fff);color:#fff}
-
-.resort-media-gallery{margin-top:16px;padding:14px}.resort-media-gallery h2{font-size:18px;margin:8px 0 6px}.resort-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}.resort-media-card{overflow:hidden;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:rgba(255,255,255,.035)}.resort-media-card img{width:100%;height:120px;object-fit:cover;display:block;background:#101419}.resort-media-card__body{padding:10px;display:grid;gap:7px}.resort-media-stat{display:flex;justify-content:space-between;gap:8px;padding:7px 8px;border:1px solid rgba(255,255,255,.08);border-radius:10px;background:rgba(0,0,0,.16)}.resort-media-stat span{color:var(--muted);font-size:11px}.resort-media-stat b{color:#e8fbff;font-size:12px;text-align:right}@media(max-width:640px){.resort-media-grid{grid-template-columns:1fr}.resort-media-card img{height:150px}}
 
   /* map-layout-rebuild: keep real geography and schematic comparison from fighting for the same pixels */
   .mapbig{display:grid;align-content:start;gap:16px;padding:22px 26px 28px;overflow:visible;min-height:auto;background:linear-gradient(135deg,#09111f,#111827 45%,#0b1020)}
@@ -149,7 +147,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
   .schematic-stage:before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:58px 58px;pointer-events:none}
   .schematic-stage-label{position:absolute;left:18px;top:16px;z-index:4;display:grid;gap:3px;max-width:380px;padding:9px 11px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:rgba(8,9,10,.72);backdrop-filter:blur(10px)}
   @media(max-width:640px){.mapbig{order:2;min-height:auto;padding:14px;gap:14px;contain:none}.map-title{padding:10px 11px 12px}.map-status{max-height:none;overflow:visible;font-size:11px;line-height:1.35}.real-map-context{margin:0}.real-map-viewport{height:230px}.schematic-stage{min-height:540px}.schematic-stage-label{left:12px;right:12px;max-width:none;font-size:11px}}
-  @media(max-width:420px){.mapbig{min-height:auto}.real-map-context{margin:0}.real-map-viewport{height:230px}.schematic-stage{min-height:540px}}
+  @media(max-width:420px){.mapbig{min-height:auto}.real-map-context{margin:0}.real-map-viewport{height:210px}.schematic-stage{min-height:520px}}
 
 /* unified-product-architecture */
 .product-architecture{max-width:1180px;margin:14px auto 0;padding:12px 16px;border:1px solid rgba(157,231,255,.2);border-radius:18px;background:linear-gradient(135deg,rgba(113,112,255,.12),rgba(157,231,255,.055));display:grid;gap:10px}
@@ -172,9 +170,6 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
         <button class="pill active" data-control-kind="state-mutation" aria-pressed="true" data-map-control="region" data-map-focus="all" data-route-id="current" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="DTW,GRR,SLC,CTS,us-utah-cottonwoods,jp-hokkaido-niseko,jp-hokkaido-rusutsu,slc-sandy,slc-downtown,niseko-hirafu" onclick="selectRegion(this)">All layers</button>
         <button class="pill" data-control-kind="state-mutation" aria-pressed="false" data-map-control="region" data-map-focus="japan" data-route-id="cts-niseko" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="DTW,CTS,jp-hokkaido-niseko,jp-hokkaido-rusutsu,niseko-hirafu" onclick="selectRegion(this)">Japan</button>
         <button class="pill" data-control-kind="state-mutation" aria-pressed="false" data-map-control="region" data-map-focus="us-west" data-route-id="slc-cottonwoods" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="DTW,GRR,SLC,us-utah-cottonwoods,slc-sandy,slc-downtown" onclick="selectRegion(this)">US West</button>
-        <button class="pill" data-control-kind="state-mutation" aria-pressed="false" data-map-control="region" data-map-focus="canada" data-route-id="yyc-banff" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="GRR,YYC,ca-banff-lake-louise,ca-lake-louise,banff-town" onclick="selectRegion(this)">Canada</button>
-        <button class="pill" data-control-kind="state-mutation" aria-pressed="false" data-map-control="region" data-map-focus="europe" data-route-id="global-europe" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="INN,ZRH,at-arlberg-tyrol" onclick="selectRegion(this)">Europe</button>
-        <button class="pill" data-control-kind="state-mutation" aria-pressed="false" data-map-control="region" data-map-focus="bc-powder" data-route-id="global-bc-powder" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="YVR,ca-interior-bc-powder-highway" onclick="selectRegion(this)">BC Powder</button>
         <button class="btn primary" data-control-kind="modal" aria-haspopup="dialog" aria-controls="invite-snapshot-modal" onclick="openInviteSnapshot()">Invite friends</button>
       </nav>
     </header>
@@ -207,93 +202,6 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
           <p class="small">Brewster Express schedules and Banff &amp; Lake Louise Tourism access guidance now back the YYC → Banff/Lake Louise route context.</p>
           <div class="metric">Source-backed route context</div>
         </button>
-        <section class="resort-media-gallery card" data-resort-media-gallery aria-label="Resort trail maps, total skiable area, and photos">
-          <div class="small mono">RESORT MEDIA</div>
-          <h2>Trail maps, total skiable area, and pictures</h2>
-          <p class="small">Featured resorts now carry official trail-map links, source-backed skiable-area stats, and resort imagery so the map view is more than airport routing.</p>
-          <div class="resort-media-grid">
-          <article class="resort-media-card" data-resort-id="niseko-united">
-            <img src="../../assets/resort-media/niseko-united.jpg" alt="Niseko United resort photo" loading="lazy" referrerpolicy="no-referrer">
-            <div class="resort-media-card__body">
-              <strong>Niseko United</strong>
-              <p class="small">powder · international · night skiing</p>
-              <div class="resort-media-stat"><span>Total skiable area</span><b>2,191 acres</b></div>
-              <div class="meta"><span class="tag">Ikon</span></div>
-              <a class="btn" data-control-kind="navigation" href="https://www.niseko.ne.jp/en/map/" target="_blank" rel="noopener">Trail map</a>
-            </div>
-          </article>
-          <article class="resort-media-card" data-resort-id="rusutsu">
-            <img src="../../assets/resort-media/rusutsu.jpg" alt="Rusutsu Resort resort photo" loading="lazy" referrerpolicy="no-referrer">
-            <div class="resort-media-card__body">
-              <strong>Rusutsu Resort</strong>
-              <p class="small">powder · trees · resort hotel</p>
-              <div class="resort-media-stat"><span>Total skiable area</span><b>1,023 acres</b></div>
-              <div class="meta"><span class="tag">Epic</span></div>
-              <a class="btn" data-control-kind="navigation" href="https://rusutsu.com/en/ski/trail-map/" target="_blank" rel="noopener">Trail map</a>
-            </div>
-          </article>
-          <article class="resort-media-card" data-resort-id="alta">
-            <img src="../../assets/resort-media/alta.jpg" alt="Alta Ski Area resort photo" loading="lazy" referrerpolicy="no-referrer">
-            <div class="resort-media-card__body">
-              <strong>Alta Ski Area</strong>
-              <p class="small">powder · advanced · ski-only</p>
-              <div class="resort-media-stat"><span>Total skiable area</span><b>2,614 acres</b></div>
-              <div class="meta"><span class="tag">Ikon</span></div>
-              <a class="btn" data-control-kind="navigation" href="https://www.alta.com/mountain/maps" target="_blank" rel="noopener">Trail map</a>
-            </div>
-          </article>
-          <article class="resort-media-card" data-resort-id="snowbird">
-            <img src="../../assets/resort-media/snowbird.webp" alt="Snowbird resort photo" loading="lazy" referrerpolicy="no-referrer">
-            <div class="resort-media-card__body">
-              <strong>Snowbird</strong>
-              <p class="small">steep · powder · advanced</p>
-              <div class="resort-media-stat"><span>Total skiable area</span><b>2,500 acres</b></div>
-              <div class="meta"><span class="tag">Ikon</span></div>
-              <a class="btn" data-control-kind="navigation" href="https://www.snowbird.com/mountain-report/#maps" target="_blank" rel="noopener">Trail map</a>
-            </div>
-          </article>
-          <article class="resort-media-card" data-resort-id="palisades-tahoe">
-            <img src="../../assets/resort-media/palisades-tahoe.jpg" alt="Palisades Tahoe resort photo" loading="lazy" referrerpolicy="no-referrer">
-            <div class="resort-media-card__body">
-              <strong>Palisades Tahoe</strong>
-              <p class="small">snowboard · powder · destination</p>
-              <div class="resort-media-stat"><span>Total skiable area</span><b>6,000 acres</b></div>
-              <div class="meta"><span class="tag">Ikon</span></div>
-              <a class="btn" data-control-kind="navigation" href="https://www.palisadestahoe.com/mountain-information/trail-maps" target="_blank" rel="noopener">Trail map</a>
-            </div>
-          </article>
-          <article class="resort-media-card" data-resort-id="whistler-blackcomb">
-            <img src="../../assets/resort-media/whistler-blackcomb.jpg" alt="Whistler Blackcomb resort photo" loading="lazy" referrerpolicy="no-referrer">
-            <div class="resort-media-card__body">
-              <strong>Whistler Blackcomb</strong>
-              <p class="small">snowboard · powder · destination</p>
-              <div class="resort-media-stat"><span>Total skiable area</span><b>8,171 acres</b></div>
-              <div class="meta"><span class="tag">Epic</span></div>
-              <a class="btn" data-control-kind="navigation" href="https://www.whistlerblackcomb.com/the-mountain/about-the-mountain/trail-map.aspx" target="_blank" rel="noopener">Trail map</a>
-            </div>
-          </article>
-          <article class="resort-media-card" data-resort-id="st-anton-arlberg">
-            <img src="../../assets/resort-media/st-anton-arlberg.jpg" alt="St. Anton am Arlberg resort photo" loading="lazy" referrerpolicy="no-referrer">
-            <div class="resort-media-card__body">
-              <strong>St. Anton am Arlberg</strong>
-              <p class="small">snowboard · powder · destination</p>
-              <div class="resort-media-stat"><span>Total skiable area</span><b>302 km of pistes</b></div>
-              <div class="meta"><span class="tag">Ikon</span></div>
-              <a class="btn" data-control-kind="navigation" href="https://www.stantonamarlberg.com/en/winter/interactive-ski-map" target="_blank" rel="noopener">Trail map</a>
-            </div>
-          </article>
-          <article class="resort-media-card" data-resort-id="revelstoke">
-            <img src="../../assets/resort-media/revelstoke.jpg" alt="Revelstoke Mountain Resort resort photo" loading="lazy" referrerpolicy="no-referrer">
-            <div class="resort-media-card__body">
-              <strong>Revelstoke Mountain Resort</strong>
-              <p class="small">snowboard · powder · destination</p>
-              <div class="resort-media-stat"><span>Total skiable area</span><b>3,121 acres</b></div>
-              <div class="meta"><span class="tag">Ikon</span></div>
-              <a class="btn" data-control-kind="navigation" href="https://www.revelstokemountainresort.com/mountain/trail-map" target="_blank" rel="noopener">Trail map</a>
-            </div>
-          </article>
-          </div>
-        </section>
         <section class="pass-destination-browser card" data-pass-destination-browser aria-label="Epic and Ikon destination filters">
           <div class="small mono">PASS DESTINATION INVENTORY</div>
           <h2>Filter researched Epic and Ikon destinations</h2>
@@ -1273,11 +1181,6 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
         <div class="marker region m-cottonwoods" data-short-label="Cottonwoods" data-layer="resort-region" data-region-id="us-utah-cottonwoods" data-marker-id="us-utah-cottonwoods" data-map-region="us-west" data-lat="40.5726" data-lng="-111.6565">Cottonwoods resort region</div>
         <div class="marker region m-niseko" data-short-label="Niseko" data-layer="resort-region" data-region-id="jp-hokkaido-niseko" data-marker-id="jp-hokkaido-niseko" data-map-region="japan" data-selected="true" data-lat="42.8048" data-lng="140.6874">Niseko / Rusutsu resort region</div>
         <div class="marker region m-rusutsu" data-short-label="Rusutsu" data-layer="resort-region" data-region-id="jp-hokkaido-rusutsu" data-marker-id="jp-hokkaido-rusutsu" data-map-region="japan" data-lat="42.7354" data-lng="140.8757">Rusutsu side trip</div>
-        <div class="marker airport m-inn" data-short-label="INN" data-layer="airport" data-airport-code="INN" data-marker-id="INN" data-map-region="europe" data-lat="47.2602" data-lng="11.3440">INN Innsbruck gateway</div>
-        <div class="marker airport m-zrh" data-short-label="ZRH" data-layer="airport" data-airport-code="ZRH" data-marker-id="ZRH" data-map-region="europe" data-lat="47.4581" data-lng="8.5555">ZRH Zurich gateway</div>
-        <div class="marker region m-arlberg" data-short-label="Arlberg" data-layer="resort-region" data-region-id="at-arlberg-tyrol" data-marker-id="at-arlberg-tyrol" data-map-region="europe" data-lat="47.1292" data-lng="10.2682">Arlberg / Tyrol resort region</div>
-        <div class="marker airport m-yvr" data-short-label="YVR" data-layer="airport" data-airport-code="YVR" data-marker-id="YVR" data-map-region="bc-powder" data-lat="49.1967" data-lng="-123.1815">YVR Vancouver gateway</div>
-        <div class="marker region m-bc-powder" data-short-label="BC Powder" data-layer="resort-region" data-region-id="ca-interior-bc-powder-highway" data-marker-id="ca-interior-bc-powder-highway" data-map-region="bc-powder" data-lat="50.9981" data-lng="-118.1957">Interior BC Powder Highway resorts</div>
         <div class="marker region m-banff" data-short-label="Banff" data-layer="resort-region" data-region-id="ca-banff-lake-louise" data-marker-id="ca-banff-lake-louise" data-map-region="canada" data-lat="51.1784" data-lng="-115.5708">Banff / Lake Louise</div>
         <div class="marker region m-louise" data-short-label="Lake Louise" data-layer="resort-region" data-region-id="ca-lake-louise" data-marker-id="ca-lake-louise" data-map-region="canada" data-lat="51.4254" data-lng="-116.1773">Lake Louise ski area</div>
 
@@ -1446,9 +1349,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'yyc-lake-louise': {title:'YYC → Lake Louise', copy:'Brewster Express winter schedule backs this Calgary Airport to Lake Louise shuttle path via Banff.', meta:['Shuttle','3h 45m','Source-backed route']},
       'dtw-slc': {title:'DTW → SLC sale route', copy:'Flight line into the easiest airport-to-snow transfer corridor.', meta:['Flight','US West','Sale watch']},
       'dtw-cts': {title:'DTW → CTS via Tokyo', copy:'Long-haul Hokkaido access route for powder upside.', meta:['Flight','Japan','Connection risk']},
-      'grr-yyc': {title:'GRR → YYC comparison', copy:'Calgary gateway comparison for Banff and Lake Louise.', meta:['Flight','Canada','Shared shuttle']},
-      'global-europe': {title:'Europe → Arlberg/Tyrol', copy:'Top-level Europe view for Arlberg and Tyrol using sourced gateway and resort markers; pricing is not a saved baseline yet.', meta:['Europe','INN/ZRH gateways','Source-backed overview']},
-      'global-bc-powder': {title:'BC Powder Highway', copy:'Top-level British Columbia powder view for Revelstoke, Kicking Horse, and Panorama using sourced resort markers.', meta:['Canada','YVR/YYC gateways','Source-backed overview']}
+      'grr-yyc': {title:'GRR → YYC comparison', copy:'Calgary gateway comparison for Banff and Lake Louise.', meta:['Flight','Canada','Shared shuttle']}
     };
     const routePathState = {
       'cts-niseko': ['dtw-cts','cts-niseko'],
@@ -1459,9 +1360,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'dtw-slc': ['dtw-slc','slc-cottonwoods'],
       'yyc-banff': ['grr-yyc','yyc-banff'],
       'yyc-lake-louise': ['grr-yyc','yyc-lake-louise'],
-      'grr-yyc': ['grr-yyc','yyc-banff'],
-      'global-europe': [],
-      'global-bc-powder': []
+      'grr-yyc': ['grr-yyc','yyc-banff']
     };
     const routeState = {
       'cts-niseko': {focus:'japan', profile:'japan', itinerary:'hokkaido-cts', markers:['DTW','CTS','jp-hokkaido-niseko','jp-hokkaido-rusutsu','niseko-hirafu'], layers:['airport','resort-region','lodging-zone','transfer-route']},
@@ -1472,9 +1371,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'dtw-slc': {focus:'us-west', profile:'us-west', itinerary:'utah-slc', markers:['DTW','GRR','SLC','us-utah-cottonwoods','slc-sandy','slc-downtown'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'yyc-banff': {focus:'canada', profile:'canada', itinerary:'banff-yyc', markers:['GRR','YYC','ca-banff-lake-louise','ca-lake-louise','banff-town'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'yyc-lake-louise': {focus:'canada', profile:'canada', itinerary:'banff-yyc', markers:['GRR','YYC','ca-lake-louise','ca-banff-lake-louise','banff-town'], layers:['airport','resort-region','lodging-zone','transfer-route']},
-      'grr-yyc': {focus:'canada', profile:'canada', itinerary:'banff-yyc', markers:['GRR','YYC','ca-banff-lake-louise','ca-lake-louise','banff-town'], layers:['airport','resort-region','lodging-zone','transfer-route']},
-      'global-europe': {focus:'europe', profile:'canada', itinerary:'banff-yyc', markers:['INN','ZRH','at-arlberg-tyrol'], layers:['airport','resort-region','transfer-route']},
-      'global-bc-powder': {focus:'bc-powder', profile:'canada', itinerary:'banff-yyc', markers:['YVR','ca-interior-bc-powder-highway'], layers:['airport','resort-region','transfer-route']}
+      'grr-yyc': {focus:'canada', profile:'canada', itinerary:'banff-yyc', markers:['GRR','YYC','ca-banff-lake-louise','ca-lake-louise','banff-town'], layers:['airport','resort-region','lodging-zone','transfer-route']}
     };
     const selectedItineraryState = {
       routeId:'cts-niseko',
@@ -1494,11 +1391,10 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       DTW:'dtw-cts', GRR:'grr-yyc', SLC:'dtw-slc', CTS:'dtw-cts', YYC:'grr-yyc',
       'us-utah-cottonwoods':'slc-cottonwoods', 'jp-hokkaido-niseko':'cts-niseko', 'jp-hokkaido-rusutsu':'cts-rusutsu',
       'ca-banff-lake-louise':'yyc-banff', 'ca-lake-louise':'yyc-lake-louise',
-      'INN':'global-europe', 'ZRH':'global-europe', 'at-arlberg-tyrol':'global-europe', 'YVR':'global-bc-powder', 'ca-interior-bc-powder-highway':'global-bc-powder',
       'slc-sandy':'slc-cottonwoods', 'slc-downtown':'slc-cottonwoods', 'niseko-hirafu':'cts-niseko', 'banff-town':'yyc-banff'
     };
     const markerDisplayLabels = {
-      DTW:'DTW Detroit origin', GRR:'GRR Grand Rapids origin', SLC:'SLC gateway', CTS:'CTS gateway', YYC:'YYC Calgary gateway', INN:'INN Innsbruck gateway', ZRH:'ZRH Zurich gateway', YVR:'YVR Vancouver gateway'
+      DTW:'DTW Detroit origin', GRR:'GRR Grand Rapids origin', SLC:'SLC gateway', CTS:'CTS gateway', YYC:'YYC Calgary gateway'
     };
     const realMapRoutes = {
       'dtw-slc': ['DTW','SLC'],
@@ -1508,9 +1404,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'cts-niseko': ['CTS','jp-hokkaido-niseko','niseko-hirafu'],
       'cts-rusutsu': ['CTS','jp-hokkaido-rusutsu'],
       'yyc-banff': ['YYC','ca-banff-lake-louise','banff-town'],
-      'yyc-lake-louise': ['YYC','ca-lake-louise'],
-      'global-europe': ['INN','ZRH','at-arlberg-tyrol'],
-      'global-bc-powder': ['YVR','ca-interior-bc-powder-highway']
+      'yyc-lake-louise': ['YYC','ca-lake-louise']
     };
     let realMapInstance = null;
     let realMapLayers = null;

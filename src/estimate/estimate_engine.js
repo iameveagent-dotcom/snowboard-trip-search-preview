@@ -162,11 +162,14 @@ function calculateTripEstimate(input) {
       if (item.cost[key]?.currency !== 'USD') throw new Error(`Line item "${item.label}" must be normalized to USD before calculation`);
     }
   }
-  const totals = lineItems.reduce((sum, item) => ({
-    low: sum.low + item.cost.low.amount,
-    expected: sum.expected + item.cost.expected.amount,
-    high: sum.high + item.cost.high.amount,
-  }), { low: 0, expected: 0, high: 0 });
+  const totals = lineItems.reduce((sum, item) => {
+    if (item.required === false) return sum;
+    return {
+      low: sum.low + item.cost.low.amount,
+      expected: sum.expected + item.cost.expected.amount,
+      high: sum.high + item.cost.high.amount,
+    };
+  }, { low: 0, expected: 0, high: 0 });
   const confidence = confidenceSummary(lineItems);
   return {
     id: input.id,

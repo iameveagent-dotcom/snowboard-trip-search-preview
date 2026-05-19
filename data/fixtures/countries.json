@@ -4,7 +4,10 @@
     "name": "United States",
     "currency": "USD",
     "common_gateway_airport_codes": [
-      "SLC"
+      "DEN",
+      "RNO",
+      "SLC",
+      "SMF"
     ],
     "travel_notes": [
       "Domestic flights and rental cars are common for Cottonwood Canyon trips."
@@ -13,6 +16,8 @@
       "Winter canyon road restrictions and traction rules can affect rental-car feasibility."
     ],
     "resort_region_ids": [
+      "us-colorado-summit-county",
+      "us-tahoe-north-south",
       "us-utah-cottonwoods"
     ],
     "provenance": [
@@ -57,6 +62,66 @@
         "retrieved_at": "2026-05-18T00:00:00.000Z",
         "display_caveat": "Country summary is source-backed but not live travel/entry advice.",
         "source_url": "https://www.japan.travel/en/"
+      }
+    ]
+  },
+  {
+    "id": "CA",
+    "name": "Canada",
+    "currency": "CAD",
+    "common_gateway_airport_codes": [
+      "YVR",
+      "YYC",
+      "YLW"
+    ],
+    "travel_notes": [
+      "Whistler and Interior BC require mountain-road and transfer planning from gateway airports."
+    ],
+    "driving_notes": [
+      "Winter tires, mountain passes, and storm timing materially affect transfer reliability."
+    ],
+    "resort_region_ids": [
+      "ca-whistler-sea-to-sky",
+      "ca-interior-bc-powder-highway"
+    ],
+    "provenance": [
+      {
+        "source_type": "editorial_reference",
+        "source_name": "Destination Canada ski travel reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Country summary is source-backed but not live travel advice.",
+        "source_url": "https://travel.destinationcanada.com/"
+      }
+    ]
+  },
+  {
+    "id": "AT",
+    "name": "Austria",
+    "currency": "EUR",
+    "common_gateway_airport_codes": [
+      "ZRH",
+      "INN"
+    ],
+    "travel_notes": [
+      "Arlberg/Tyrol trips commonly combine rail or shuttle transfers from Zurich or Innsbruck."
+    ],
+    "train_or_shuttle_notes": [
+      "European rail and resort shuttles can reduce rental-car need but schedules must be checked for exact dates."
+    ],
+    "resort_region_ids": [
+      "at-arlberg-tyrol"
+    ],
+    "provenance": [
+      {
+        "source_type": "editorial_reference",
+        "source_name": "Austria tourism winter travel reference",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Country summary is source-backed but not live travel/entry advice.",
+        "source_url": "https://www.austria.info/"
       }
     ]
   }

@@ -86,5 +86,225 @@
       "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
       "source_url": "https://www.niseko.ne.jp/en/"
     }
+  },
+  {
+    "id": "colorado-summit-snowboard-package",
+    "resort_or_region_id": "us-colorado-summit-county",
+    "package_type": "board_boots_bindings",
+    "daily_range": {
+      "low": {
+        "amount": 36,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 68,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 93,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Snowboard + boots + bindings fixture range."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype us-colorado-summit-county gear rental fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.breckenridge.com/"
+      }
+    },
+    "multi_day_discount_notes": [
+      "Multi-day discounts may apply; fixture does not model exact discount tables."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype us-colorado-summit-county gear rental fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+      "source_url": "https://www.breckenridge.com/"
+    }
+  },
+  {
+    "id": "tahoe-snowboard-package",
+    "resort_or_region_id": "us-tahoe-north-south",
+    "package_type": "board_boots_bindings",
+    "daily_range": {
+      "low": {
+        "amount": 37,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 73,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 103,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Snowboard + boots + bindings fixture range."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype us-tahoe-north-south gear rental fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.palisadestahoe.com/"
+      }
+    },
+    "multi_day_discount_notes": [
+      "Multi-day discounts may apply; fixture does not model exact discount tables."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype us-tahoe-north-south gear rental fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+      "source_url": "https://www.palisadestahoe.com/"
+    }
+  },
+  {
+    "id": "whistler-snowboard-package",
+    "resort_or_region_id": "ca-whistler-sea-to-sky",
+    "package_type": "board_boots_bindings",
+    "daily_range": {
+      "low": {
+        "amount": 38,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 76,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 110,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Snowboard + boots + bindings fixture range."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype ca-whistler-sea-to-sky gear rental fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.whistlerblackcomb.com/"
+      }
+    },
+    "multi_day_discount_notes": [
+      "Multi-day discounts may apply; fixture does not model exact discount tables."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype ca-whistler-sea-to-sky gear rental fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+      "source_url": "https://www.whistlerblackcomb.com/"
+    }
+  },
+  {
+    "id": "arlberg-snowboard-package",
+    "resort_or_region_id": "at-arlberg-tyrol",
+    "package_type": "board_boots_bindings",
+    "daily_range": {
+      "low": {
+        "amount": 35,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 55,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 75,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Snowboard + boots + bindings fixture range."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype at-arlberg-tyrol gear rental fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.skiarlberg.at/en"
+      }
+    },
+    "multi_day_discount_notes": [
+      "Multi-day discounts may apply; fixture does not model exact discount tables."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype at-arlberg-tyrol gear rental fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+      "source_url": "https://www.skiarlberg.at/en"
+    }
+  },
+  {
+    "id": "interior-bc-snowboard-package",
+    "resort_or_region_id": "ca-interior-bc-powder-highway",
+    "package_type": "board_boots_bindings",
+    "daily_range": {
+      "low": {
+        "amount": 35,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 55,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 76,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Snowboard + boots + bindings fixture range."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype ca-interior-bc-powder-highway gear rental fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.powderhighway.com/"
+      }
+    },
+    "multi_day_discount_notes": [
+      "Multi-day discounts may apply; fixture does not model exact discount tables."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype ca-interior-bc-powder-highway gear rental fixture",
+      "confidence": "fixture_estimate",
+      "freshness": "recent",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+      "source_url": "https://www.powderhighway.com/"
+    }
   }
 ]

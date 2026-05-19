@@ -67,7 +67,15 @@
         "retrieved_at": "2026-05-18T00:00:00.000Z",
         "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
       }
-    ]
+    ],
+    "friction": {
+      "no_car_viability": "no",
+      "booking_complexity": "medium",
+      "weather_risk": "high",
+      "schedule_risk": "low",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
   },
   {
     "id": "slc-cottonwoods-shuttle",
@@ -141,7 +149,15 @@
         "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
         "source_url": "https://www.visitsaltlake.com/"
       }
-    ]
+    ],
+    "friction": {
+      "no_car_viability": "partial",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
   },
   {
     "id": "cts-resort-shuttle",
@@ -215,7 +231,15 @@
         "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
         "source_url": "https://www.niseko.ne.jp/en/access/"
       }
-    ]
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
   },
   {
     "id": "cts-niseko-train-bus",
@@ -289,7 +313,15 @@
         "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
         "source_url": "https://www.japan.travel/en/"
       }
-    ]
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "high",
+      "weather_risk": "medium",
+      "schedule_risk": "high",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
+    }
   },
   {
     "id": "cts-hokkaido-rental-car",
@@ -360,6 +392,379 @@
         "retrieved_at": "2026-05-18T00:00:00.000Z",
         "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote."
       }
-    ]
+    ],
+    "friction": {
+      "no_car_viability": "partial",
+      "booking_complexity": "medium",
+      "weather_risk": "high",
+      "schedule_risk": "low",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "den-summit-rental-car",
+    "from_airport_code": "DEN",
+    "to_region_or_resort_id": "us-colorado-summit-county",
+    "mode": "rental_car",
+    "duration": {
+      "low_minutes": 90,
+      "expected_minutes": 180,
+      "high_minutes": 360,
+      "assumptions": [
+        "Winter transfer buffer fixture."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Manual DEN to us-colorado-summit-county route fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.flydenver.com/"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 620,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 760,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 980,
+        "currency": "USD"
+      },
+      "unit": "vehicle",
+      "assumptions": [
+        "Round-trip transfer or rental-car buffer for two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype transfer fixture: us-colorado-summit-county",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.flydenver.com/"
+      }
+    },
+    "snow_driving_risk": "high",
+    "car_required_after_arrival": true,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.flydenver.com/",
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype transfer fixture: us-colorado-summit-county",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.flydenver.com/"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "no",
+      "booking_complexity": "medium",
+      "weather_risk": "high",
+      "schedule_risk": "low",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "rno-tahoe-rental-car",
+    "from_airport_code": "RNO",
+    "to_region_or_resort_id": "us-tahoe-north-south",
+    "mode": "rental_car",
+    "duration": {
+      "low_minutes": 90,
+      "expected_minutes": 180,
+      "high_minutes": 360,
+      "assumptions": [
+        "Winter transfer buffer fixture."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Manual RNO to us-tahoe-north-south route fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.visitrenotahoe.com/"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 260,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 420,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 700,
+        "currency": "USD"
+      },
+      "unit": "vehicle",
+      "assumptions": [
+        "7-day practical rental/transfer allowance; not a luxury SUV worst-case."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "User-anchored Tahoe car/transfer fixture",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "User-anchored prototype planning range; verify exact dates and live prices before booking.",
+        "source_url": "https://www.visitrenotahoe.com/"
+      }
+    },
+    "snow_driving_risk": "high",
+    "car_required_after_arrival": true,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.visitrenotahoe.com/",
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype transfer fixture: us-tahoe-north-south",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.visitrenotahoe.com/"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "no",
+      "booking_complexity": "medium",
+      "weather_risk": "high",
+      "schedule_risk": "low",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "yvr-whistler-shuttle",
+    "from_airport_code": "YVR",
+    "to_region_or_resort_id": "ca-whistler-sea-to-sky",
+    "mode": "shuttle",
+    "duration": {
+      "low_minutes": 90,
+      "expected_minutes": 180,
+      "high_minutes": 360,
+      "assumptions": [
+        "Winter transfer buffer fixture."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Manual YVR to ca-whistler-sea-to-sky route fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.whistler.com/getting-here/"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 170,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 240,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 380,
+        "currency": "USD"
+      },
+      "unit": "group",
+      "assumptions": [
+        "Round-trip transfer or rental-car buffer for two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype transfer fixture: ca-whistler-sea-to-sky",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.whistler.com/getting-here/"
+      }
+    },
+    "snow_driving_risk": "low",
+    "car_required_after_arrival": false,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.whistler.com/getting-here/",
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype transfer fixture: ca-whistler-sea-to-sky",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.whistler.com/getting-here/"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "zrh-arlberg-rail-shuttle",
+    "from_airport_code": "ZRH",
+    "to_region_or_resort_id": "at-arlberg-tyrol",
+    "mode": "rail_shuttle",
+    "duration": {
+      "low_minutes": 90,
+      "expected_minutes": 180,
+      "high_minutes": 360,
+      "assumptions": [
+        "Winter transfer buffer fixture."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Manual ZRH to at-arlberg-tyrol route fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.skiarlberg.at/en/region/getting-there"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 240,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 360,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 560,
+        "currency": "USD"
+      },
+      "unit": "group",
+      "assumptions": [
+        "Round-trip transfer or rental-car buffer for two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype transfer fixture: at-arlberg-tyrol",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.skiarlberg.at/en/region/getting-there"
+      }
+    },
+    "snow_driving_risk": "low",
+    "car_required_after_arrival": false,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.skiarlberg.at/en/region/getting-there",
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype transfer fixture: at-arlberg-tyrol",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.skiarlberg.at/en/region/getting-there"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "yyc-interior-bc-rental-car",
+    "from_airport_code": "YYC",
+    "to_region_or_resort_id": "ca-interior-bc-powder-highway",
+    "mode": "rental_car",
+    "duration": {
+      "low_minutes": 90,
+      "expected_minutes": 180,
+      "high_minutes": 360,
+      "assumptions": [
+        "Winter transfer buffer fixture."
+      ],
+      "provenance": {
+        "source_type": "derived_route",
+        "source_name": "Manual YYC to ca-interior-bc-powder-highway route fixture",
+        "confidence": "derived_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
+        "source_url": "https://www.powderhighway.com/"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 720,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 940,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 1250,
+        "currency": "USD"
+      },
+      "unit": "vehicle",
+      "assumptions": [
+        "Round-trip transfer or rental-car buffer for two travelers."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype transfer fixture: ca-interior-bc-powder-highway",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.powderhighway.com/"
+      }
+    },
+    "snow_driving_risk": "high",
+    "car_required_after_arrival": true,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.powderhighway.com/",
+    "provenance": [
+      {
+        "source_type": "manual_observation",
+        "source_name": "Prototype transfer fixture: ca-interior-bc-powder-highway",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
+        "source_url": "https://www.powderhighway.com/"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "no",
+      "booking_complexity": "medium",
+      "weather_risk": "high",
+      "schedule_risk": "low",
+      "duration_confidence": "derived",
+      "source_status": "planning-estimate"
+    }
   }
 ]

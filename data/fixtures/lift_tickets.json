@@ -88,5 +88,230 @@
       "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
       "source_url": "https://www.niseko.ne.jp/en/lift/"
     }
+  },
+  {
+    "id": "colorado-summit-day-ticket",
+    "resort_id": "us-colorado-summit-county",
+    "ticket_type": "multi_day",
+    "adult_range": {
+      "low": {
+        "amount": 145,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 205,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 280,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Per-adult day-ticket fixture blended across the destination; pass holders may pay less."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype us-colorado-summit-county lift ticket source set",
+        "confidence": "fixture_estimate",
+        "freshness": "aging",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+        "source_url": "https://www.breckenridge.com/"
+      }
+    },
+    "date_window": "Prototype winter season",
+    "caveats": [
+      "Not a live quote; verify exact dates and pass access."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype us-colorado-summit-county lift ticket source set",
+      "confidence": "fixture_estimate",
+      "freshness": "aging",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+      "source_url": "https://www.breckenridge.com/"
+    }
+  },
+  {
+    "id": "tahoe-day-ticket",
+    "resort_id": "us-tahoe-north-south",
+    "ticket_type": "multi_day",
+    "adult_range": {
+      "low": {
+        "amount": 150,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 220,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 310,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Per-adult day-ticket fixture blended across the destination; pass holders may pay less."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype us-tahoe-north-south lift ticket source set",
+        "confidence": "fixture_estimate",
+        "freshness": "aging",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+        "source_url": "https://www.palisadestahoe.com/"
+      }
+    },
+    "date_window": "Prototype winter season",
+    "caveats": [
+      "Not a live quote; verify exact dates and pass access."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype us-tahoe-north-south lift ticket source set",
+      "confidence": "fixture_estimate",
+      "freshness": "aging",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+      "source_url": "https://www.palisadestahoe.com/"
+    }
+  },
+  {
+    "id": "whistler-day-ticket",
+    "resort_id": "ca-whistler-sea-to-sky",
+    "ticket_type": "multi_day",
+    "adult_range": {
+      "low": {
+        "amount": 155,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 230,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 330,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Per-adult day-ticket fixture blended across the destination; pass holders may pay less."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype ca-whistler-sea-to-sky lift ticket source set",
+        "confidence": "fixture_estimate",
+        "freshness": "aging",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+        "source_url": "https://www.whistlerblackcomb.com/"
+      }
+    },
+    "date_window": "Prototype winter season",
+    "caveats": [
+      "Not a live quote; verify exact dates and pass access."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype ca-whistler-sea-to-sky lift ticket source set",
+      "confidence": "fixture_estimate",
+      "freshness": "aging",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+      "source_url": "https://www.whistlerblackcomb.com/"
+    }
+  },
+  {
+    "id": "arlberg-day-ticket",
+    "resort_id": "at-arlberg-tyrol",
+    "ticket_type": "multi_day",
+    "adult_range": {
+      "low": {
+        "amount": 80,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 115,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 160,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Per-adult day-ticket fixture blended across the destination; pass holders may pay less."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype at-arlberg-tyrol lift ticket source set",
+        "confidence": "fixture_estimate",
+        "freshness": "aging",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+        "source_url": "https://www.skiarlberg.at/en"
+      }
+    },
+    "date_window": "Prototype winter season",
+    "caveats": [
+      "Not a live quote; verify exact dates and pass access."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype at-arlberg-tyrol lift ticket source set",
+      "confidence": "fixture_estimate",
+      "freshness": "aging",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+      "source_url": "https://www.skiarlberg.at/en"
+    }
+  },
+  {
+    "id": "interior-bc-day-ticket",
+    "resort_id": "ca-interior-bc-powder-highway",
+    "ticket_type": "multi_day",
+    "adult_range": {
+      "low": {
+        "amount": 115,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 165,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 230,
+        "currency": "USD"
+      },
+      "unit": "day",
+      "assumptions": [
+        "Per-adult day-ticket fixture blended across the destination; pass holders may pay less."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Prototype ca-interior-bc-powder-highway lift ticket source set",
+        "confidence": "fixture_estimate",
+        "freshness": "aging",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+        "source_url": "https://www.powderhighway.com/"
+      }
+    },
+    "date_window": "Prototype winter season",
+    "caveats": [
+      "Not a live quote; verify exact dates and pass access."
+    ],
+    "provenance": {
+      "source_type": "manual_observation",
+      "source_name": "Prototype ca-interior-bc-powder-highway lift ticket source set",
+      "confidence": "fixture_estimate",
+      "freshness": "aging",
+      "retrieved_at": "2026-05-19T00:00:00.000Z",
+      "display_caveat": "Fixture range, not live ticket inventory; check resort ticket pages for exact dates.",
+      "source_url": "https://www.powderhighway.com/"
+    }
   }
 ]
