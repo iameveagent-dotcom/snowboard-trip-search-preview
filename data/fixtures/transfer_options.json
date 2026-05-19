@@ -482,6 +482,106 @@
       "schedule_risk": "medium",
       "duration_confidence": "estimate",
       "source_status": "source-backed"
+    },
+    "pricing_model": {
+      "type": "per_guest_one_way",
+      "round_trip_segments": 2,
+      "low": {
+        "amount": 59,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 94,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 129,
+        "currency": "USD"
+      },
+      "source_note": "Epic Mountain Express publishes DIA-Summit County one-way guest fares; group trip cost scales by travelers \u00d7 two one-way seats."
+    }
+  },
+  {
+    "id": "den-summit-4wd-rental-car",
+    "from_airport_code": "DEN",
+    "to_region_or_resort_id": "us-colorado-summit-county",
+    "mode": "rental_car",
+    "vehicle_capacity": 5,
+    "duration": {
+      "low_minutes": 90,
+      "expected_minutes": 180,
+      "high_minutes": 360,
+      "assumptions": [
+        "DIA to Summit County self-drive on I-70; winter traffic and traction-law conditions can materially change timing."
+      ],
+      "provenance": {
+        "source_type": "official_winter_driving_reference",
+        "source_name": "Colorado Department of Transportation passenger vehicle traction law",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Route duration is a planning range; CDOT traction-law requirements make AWD/4WD with winter-capable tires or equivalent equipment a real assumption, not a generic economy-car rental.",
+        "source_url": "https://www.codot.gov/travel/winter-driving/tractionlaw"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 620,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 760,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 980,
+        "currency": "USD"
+      },
+      "unit": "vehicle",
+      "assumptions": [
+        "7-day AWD/4WD-capable vehicle planning allowance plus fuel/parking/winter logistics buffer; cost is for the vehicle and can be split across up to five travelers when everyone fits with gear."
+      ],
+      "provenance": {
+        "source_type": "manual_observation",
+        "source_name": "Summit County AWD/4WD rental vehicle planning range with CDOT traction-law context",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Planning range, not a live checkout quote; verify exact dates, vehicle class, AWD/4WD guarantee, tires/chains, insurance, parking, and fees before booking.",
+        "source_url": "https://www.codot.gov/travel/winter-driving/tractionlaw"
+      }
+    },
+    "snow_driving_risk": "high",
+    "car_required_after_arrival": true,
+    "route_polyline_source": "fixture",
+    "booking_or_info_url": "https://www.codot.gov/travel/winter-driving/tractionlaw",
+    "provenance": [
+      {
+        "source_type": "official_winter_driving_reference",
+        "source_name": "Colorado Department of Transportation passenger vehicle traction law",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Confirms AWD/4WD or traction equipment requirements that matter for winter I-70 self-drive planning.",
+        "source_url": "https://www.codot.gov/travel/winter-driving/tractionlaw"
+      },
+      {
+        "source_type": "manual_observation",
+        "source_name": "Summit County AWD/4WD rental vehicle planning range",
+        "confidence": "fixture_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Planning range, not live rental-car inventory or an exact quote.",
+        "source_url": "https://www.codot.gov/travel/winter-driving/tractionlaw"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "no",
+      "booking_complexity": "medium",
+      "weather_risk": "high",
+      "schedule_risk": "low",
+      "duration_confidence": "estimate",
+      "source_status": "planning-estimate"
     }
   },
   {

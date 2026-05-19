@@ -104,7 +104,8 @@
       "summit-county-frisco-silverthorne"
     ],
     "transfer_option_ids": [
-      "den-summit-rental-car"
+      "den-summit-shared-shuttle",
+      "den-summit-4wd-rental-car"
     ],
     "season_notes": [
       "Verify exact dates, weather, pass access, and lodging before booking."
@@ -278,6 +279,54 @@
         "retrieved_at": "2026-05-19T00:00:00.000Z",
         "display_caveat": "Prototype region summary; verify current resort, road, and transit conditions.",
         "source_url": "https://www.powderhighway.com/"
+      }
+    ]
+  },
+  {
+    "id": "ca-banff-lake-louise",
+    "country_id": "CA",
+    "name": "Banff / Lake Louise",
+    "description": "Source-backed Canada snowboard trip region using Calgary International Airport and scheduled Brewster Express shuttle access to Banff and Lake Louise.",
+    "centroid_lat_lng": [
+      51.1784,
+      -115.5708
+    ],
+    "gateway_airport_codes": [
+      "YYC"
+    ],
+    "resort_ids": [
+      "lake-louise",
+      "sunshine-village"
+    ],
+    "lodging_zone_ids": [
+      "banff-town-shuttle-base"
+    ],
+    "transfer_option_ids": [
+      "yyc-banff-brewster-express",
+      "yyc-lake-louise-brewster-express"
+    ],
+    "season_notes": [
+      "Winter schedules are source-backed but must be checked for exact travel dates before booking."
+    ],
+    "no_car_viability": "easy",
+    "provenance": [
+      {
+        "source_type": "operator_schedule",
+        "source_name": "Brewster Express winter schedule",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Schedule excerpts support route feasibility/duration; verify current departures before booking.",
+        "source_url": "https://www.banffjaspercollection.com/brewster-express/schedule/"
+      },
+      {
+        "source_type": "tourism_reference",
+        "source_name": "Banff & Lake Louise Tourism getting here",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Tourism guidance confirms Calgary airport as gateway and shuttle/transfer availability.",
+        "source_url": "https://www.banfflakelouise.com/getting-here"
       }
     ]
   }
