@@ -1312,7 +1312,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
         <section class="decision-summary" data-decision-comparison aria-label="Decision comparison summary">
           <span class="tag">Decision summary</span>
           <h2>Trip comparison: cost, friction, pass fit, and source confidence</h2>
-          <p class="small">Use this table to compare the currently modeled options before drilling into route cards. Costs show party total and per-person estimate, with included components stated in each row.</p>
+          <p class="small">Use this table to compare the currently modeled options before drilling into route cards. Costs show party total and per-person estimate when a saved pricing baseline exists; regional context rows are included without fabricated totals.</p>
           <table>
             <thead>
               <tr>
@@ -1358,6 +1358,26 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
                     <a data-control-kind="navigation" href="https://www.ikonpass.com/">Pass fit</a>
                   </div>
                 </td>
+              </tr>
+              <tr data-control-kind="state-mutation" data-trip-option="us-west-tahoe" data-map-control="decision" data-map-focus="us-west" data-route-id="rno-tahoe" data-active-layers="airport,resort-region,transfer-route" data-active-markers="RNO,us-california-tahoe" role="button" tabindex="0" onclick="selectComparisonRow(this)" onkeydown="handleComparisonKey(event,this)">
+                <td><strong>Tahoe / California via RNO</strong><br><span class="small">Regional context, not priced baseline</span></td>
+                <td>Not yet priced as saved baseline<br><span class="small">Shown so US West is not reduced to Utah; use route/context cards for Tahoe logistics until full trip pricing is promoted.</span></td>
+                <td>Regional Tahoe base context: Palisades Tahoe, Heavenly, Kirkwood, and other Sierra options.</td>
+                <td>RNO/Tahoe gateway context<br><span class="small">Storm timing and Sierra road conditions can dominate actual transfer friction.</span></td>
+                <td>Car helpful / shuttle varies<br><span class="small">No-car viability depends heavily on resort/base and dates.</span></td>
+                <td>Ikon/Epic: varies by resort<br><span class="small">Pass inventory below lists exact resort membership.</span></td>
+                <td>Regional context only<br><span class="small">No fabricated party total.</span></td>
+                <td>See route cards below<div class="links"><a data-control-kind="navigation" href="https://www.ikonpass.com/">Ikon</a><a data-control-kind="navigation" href="https://www.epicpass.com/">Epic</a></div></td>
+              </tr>
+              <tr data-control-kind="state-mutation" data-trip-option="us-west-colorado" data-map-control="decision" data-map-focus="us-west" data-route-id="den-colorado-rockies" data-active-layers="airport,resort-region,transfer-route" data-active-markers="DEN,us-colorado-rockies" role="button" tabindex="0" onclick="selectComparisonRow(this)" onkeydown="handleComparisonKey(event,this)">
+                <td><strong>Colorado Rockies via DEN</strong><br><span class="small">Regional context, not priced baseline</span></td>
+                <td>Not yet priced as saved baseline<br><span class="small">Shown so US West includes Colorado alongside Utah and Tahoe without inventing a trip total.</span></td>
+                <td>Regional Colorado context: Breckenridge, Vail/Beaver Creek, Copper, Winter Park, A-Basin, and nearby Rockies options.</td>
+                <td>DEN/I-70 gateway context<br><span class="small">Traffic, storms, and resort distance are the core friction variables.</span></td>
+                <td>Car or shuttle varies<br><span class="small">No-car viability depends on exact resort and lodging base.</span></td>
+                <td>Ikon/Epic: varies by resort<br><span class="small">Pass inventory below lists exact resort membership.</span></td>
+                <td>Regional context only<br><span class="small">No fabricated party total.</span></td>
+                <td>See route cards below<div class="links"><a data-control-kind="navigation" href="https://www.ikonpass.com/">Ikon</a><a data-control-kind="navigation" href="https://www.epicpass.com/">Epic</a></div></td>
               </tr>
 
               <tr data-control-kind="state-mutation" data-trip-option="banff-yyc" data-map-control="decision" data-map-focus="canada" data-route-id="yyc-banff" data-active-layers="airport,resort-region,lodging-zone,transfer-route" data-active-markers="GRR,YYC,ca-banff-lake-louise,ca-lake-louise,banff-town" role="button" tabindex="0" onclick="selectComparisonRow(this)" onkeydown="handleComparisonKey(event,this)">
@@ -1493,8 +1513,8 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'cts-niseko-train-bus': {focus:'japan', profile:'japan', itinerary:'hokkaido-cts', markers:['DTW','CTS','jp-hokkaido-niseko','jp-hokkaido-rusutsu','niseko-hirafu'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'dtw-cts': {focus:'japan', profile:'japan', itinerary:'hokkaido-cts', markers:['DTW','CTS','jp-hokkaido-niseko','jp-hokkaido-rusutsu','niseko-hirafu'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'slc-cottonwoods': {focus:'us-west', profile:'us-west', itinerary:'utah-slc', markers:['DTW','GRR','SLC','us-utah-cottonwoods','slc-sandy','slc-downtown'], layers:['airport','resort-region','lodging-zone','transfer-route']},
-      'rno-tahoe': {focus:'us-west', profile:'us-west', itinerary:'utah-slc', markers:['RNO','us-california-tahoe'], layers:['airport','resort-region','transfer-route']},
-      'den-colorado-rockies': {focus:'us-west', profile:'us-west', itinerary:'utah-slc', markers:['DEN','us-colorado-rockies'], layers:['airport','resort-region','transfer-route']},
+      'rno-tahoe': {focus:'us-west', profile:'us-west', itinerary:'us-west-tahoe', markers:['RNO','us-california-tahoe'], layers:['airport','resort-region','transfer-route']},
+      'den-colorado-rockies': {focus:'us-west', profile:'us-west', itinerary:'us-west-colorado', markers:['DEN','us-colorado-rockies'], layers:['airport','resort-region','transfer-route']},
       'dtw-slc': {focus:'us-west', profile:'us-west', itinerary:'utah-slc', markers:['DTW','GRR','SLC','us-utah-cottonwoods','slc-sandy','slc-downtown'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'global-us-west': {focus:'us-west', profile:'us-west', itinerary:'utah-slc', markers:['DTW','GRR','SLC','RNO','DEN','us-utah-cottonwoods','us-california-tahoe','us-colorado-rockies','slc-sandy','slc-downtown'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'yyc-banff': {focus:'canada', profile:'canada', itinerary:'banff-yyc', markers:['GRR','YYC','ca-banff-lake-louise','ca-lake-louise','banff-town'], layers:['airport','resort-region','lodging-zone','transfer-route']},
