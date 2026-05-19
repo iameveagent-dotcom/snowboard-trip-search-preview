@@ -369,7 +369,7 @@
     "ski_days": 5,
     "dates_or_window": "Prototype January powder week",
     "lodging_zone_id": "summit-county-frisco-silverthorne",
-    "transfer_option_id": "den-summit-rental-car",
+    "transfer_option_id": "den-summit-shared-shuttle",
     "assumptions": [
       "Fixture estimates are prototype planning ranges, not live/exact quotes.",
       "Food budget uses a manual planning range; verify menus/groceries/taxes before booking."
@@ -431,10 +431,10 @@
       },
       {
         "category": "transfer",
-        "label": "Airport transfer / winter logistics buffer",
+        "label": "DIA to Summit County shared shuttle for two travelers",
         "fixture_ref": {
           "file": "transfer_options.json",
-          "id": "den-summit-rental-car",
+          "id": "den-summit-shared-shuttle",
           "range_field": "estimated_cost"
         },
         "per_person": false,

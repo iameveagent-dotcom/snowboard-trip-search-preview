@@ -403,76 +403,85 @@
     }
   },
   {
-    "id": "den-summit-rental-car",
+    "id": "den-summit-shared-shuttle",
     "from_airport_code": "DEN",
     "to_region_or_resort_id": "us-colorado-summit-county",
-    "mode": "rental_car",
+    "mode": "shuttle",
     "duration": {
       "low_minutes": 90,
       "expected_minutes": 180,
       "high_minutes": 360,
       "assumptions": [
-        "Winter transfer buffer fixture."
+        "DIA to Breckenridge/Keystone/Frisco/Silverthorne/Copper scheduled shuttle corridor; winter I-70 buffer remains material."
       ],
       "provenance": {
-        "source_type": "derived_route",
-        "source_name": "Manual DEN to us-colorado-summit-county route fixture",
-        "confidence": "derived_estimate",
-        "freshness": "recent",
+        "source_type": "operator_schedule",
+        "source_name": "Epic Mountain Express DIA to Summit County shuttle corridor",
+        "confidence": "source_backed_range",
+        "freshness": "rates through 2026-04-30",
         "retrieved_at": "2026-05-19T00:00:00.000Z",
-        "display_caveat": "Estimated route/duration fixture; winter traffic, weather, and schedules can materially change times.",
-        "source_url": "https://www.flydenver.com/"
+        "display_caveat": "Duration remains a planning range; I-70 weather and traffic can materially change transfer time.",
+        "source_url": "https://www.epicmountainexpress.com/rates"
       }
     },
     "estimated_cost": {
       "low": {
-        "amount": 620,
+        "amount": 236,
         "currency": "USD"
       },
       "expected": {
-        "amount": 760,
+        "amount": 376,
         "currency": "USD"
       },
       "high": {
-        "amount": 980,
+        "amount": 516,
         "currency": "USD"
       },
-      "unit": "vehicle",
+      "unit": "group",
       "assumptions": [
-        "Round-trip transfer or rental-car buffer for two travelers."
+        "Epic Mountain Express DIA-Breck/Keystone/Frisco/Silverthorne/Copper door-to-door shared shuttle lists $59\u2013$129 per guest through 04/30/2026; two travelers round-trip = 4 one-way guest seats ($236\u2013$516), midpoint expected $376."
       ],
       "provenance": {
-        "source_type": "manual_observation",
-        "source_name": "Prototype transfer fixture: us-colorado-summit-county",
-        "confidence": "fixture_estimate",
-        "freshness": "recent",
+        "source_type": "operator_published_rate",
+        "source_name": "Epic Mountain Express DIA to Breck/Keystone/Frisco/Silverthorne/Copper rates",
+        "confidence": "source_backed_range",
+        "freshness": "rates through 2026-04-30",
         "retrieved_at": "2026-05-19T00:00:00.000Z",
-        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
-        "source_url": "https://www.flydenver.com/"
+        "display_caveat": "Published shuttle range, not a live checkout quote; exact fare depends on date, pickup/dropoff, availability, fees, and Epic Mountain Rewards eligibility.",
+        "source_url": "https://www.epicmountainexpress.com/rates"
       }
     },
     "snow_driving_risk": "high",
-    "car_required_after_arrival": true,
+    "car_required_after_arrival": false,
     "route_polyline_source": "fixture",
-    "booking_or_info_url": "https://www.flydenver.com/",
+    "booking_or_info_url": "https://www.epicmountainexpress.com/rates",
     "provenance": [
       {
-        "source_type": "manual_observation",
-        "source_name": "Prototype transfer fixture: us-colorado-summit-county",
-        "confidence": "fixture_estimate",
-        "freshness": "recent",
+        "source_type": "operator_schedule",
+        "source_name": "Epic Mountain Express DIA to Summit County shuttle corridor",
+        "confidence": "source_backed_range",
+        "freshness": "rates through 2026-04-30",
         "retrieved_at": "2026-05-19T00:00:00.000Z",
-        "display_caveat": "Prototype fixture cost range, not live inventory or an exact quote.",
-        "source_url": "https://www.flydenver.com/"
+        "display_caveat": "Duration remains a planning range; I-70 weather and traffic can materially change transfer time.",
+        "source_url": "https://www.epicmountainexpress.com/rates"
+      },
+      {
+        "source_type": "operator_published_rate",
+        "source_name": "Epic Mountain Express DIA to Breck/Keystone/Frisco/Silverthorne/Copper rates",
+        "confidence": "source_backed_range",
+        "freshness": "rates through 2026-04-30",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Published shuttle range, not a live checkout quote; exact fare depends on date, pickup/dropoff, availability, fees, and Epic Mountain Rewards eligibility.",
+        "source_url": "https://www.epicmountainexpress.com/rates"
       }
     ],
     "friction": {
-      "no_car_viability": "no",
+      "no_car_viability": "partial",
       "booking_complexity": "medium",
       "weather_risk": "high",
-      "schedule_risk": "low",
-      "duration_confidence": "derived",
-      "source_status": "planning-estimate"
+      "schedule_risk": "medium",
+      "duration_confidence": "estimate",
+      "source_status": "source-backed"
     }
   },
   {
@@ -765,6 +774,170 @@
       "schedule_risk": "low",
       "duration_confidence": "derived",
       "source_status": "planning-estimate"
+    }
+  },
+  {
+    "id": "yyc-banff-brewster-express",
+    "from_airport_code": "YYC",
+    "to_region_or_resort_id": "ca-banff-lake-louise",
+    "mode": "shuttle",
+    "duration": {
+      "low_minutes": 120,
+      "expected_minutes": 120,
+      "high_minutes": 180,
+      "assumptions": [
+        "Brewster Express winter westbound schedule from Calgary International Airport; schedule subject to change."
+      ],
+      "provenance": {
+        "source_type": "operator_schedule",
+        "source_name": "Brewster Express winter schedule",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Use for planning context only; verify current departure times before booking.",
+        "source_url": "https://www.banffjaspercollection.com/brewster-express/schedule/"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 160,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 240,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 380,
+        "currency": "USD"
+      },
+      "unit": "group",
+      "assumptions": [
+        "Round-trip airport shuttle planning range for two travelers; exact fare not live-quoted."
+      ],
+      "provenance": {
+        "source_type": "operator_reference",
+        "source_name": "Brewster Express / Banff airport transfer context",
+        "confidence": "planning_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Cost range is a planning allowance; verify exact fares for dates and party size.",
+        "source_url": "https://www.banffjaspercollection.com/brewster-express/schedule/"
+      }
+    },
+    "snow_driving_risk": "low",
+    "car_required_after_arrival": false,
+    "route_polyline_source": "source-backed schedule endpoints",
+    "booking_or_info_url": "https://www.banffjaspercollection.com/brewster-express/schedule/",
+    "provenance": [
+      {
+        "source_type": "operator_schedule",
+        "source_name": "Brewster Express winter schedule",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Schedule supports duration/route context; verify live departures.",
+        "source_url": "https://www.banffjaspercollection.com/brewster-express/schedule/"
+      },
+      {
+        "source_type": "tourism_reference",
+        "source_name": "Banff & Lake Louise Tourism getting here",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Confirms Calgary International Airport and shuttle/transfer access.",
+        "source_url": "https://www.banfflakelouise.com/getting-here"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "sourced",
+      "source_status": "source-backed"
+    }
+  },
+  {
+    "id": "yyc-lake-louise-brewster-express",
+    "from_airport_code": "YYC",
+    "to_region_or_resort_id": "ca-banff-lake-louise",
+    "mode": "shuttle",
+    "duration": {
+      "low_minutes": 225,
+      "expected_minutes": 225,
+      "high_minutes": 300,
+      "assumptions": [
+        "Brewster Express winter westbound schedule from Calgary International Airport; schedule subject to change."
+      ],
+      "provenance": {
+        "source_type": "operator_schedule",
+        "source_name": "Brewster Express winter schedule",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Use for planning context only; verify current departure times before booking.",
+        "source_url": "https://www.banffjaspercollection.com/brewster-express/schedule/"
+      }
+    },
+    "estimated_cost": {
+      "low": {
+        "amount": 160,
+        "currency": "USD"
+      },
+      "expected": {
+        "amount": 240,
+        "currency": "USD"
+      },
+      "high": {
+        "amount": 380,
+        "currency": "USD"
+      },
+      "unit": "group",
+      "assumptions": [
+        "Round-trip airport shuttle planning range for two travelers; exact fare not live-quoted."
+      ],
+      "provenance": {
+        "source_type": "operator_reference",
+        "source_name": "Brewster Express / Banff airport transfer context",
+        "confidence": "planning_estimate",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Cost range is a planning allowance; verify exact fares for dates and party size.",
+        "source_url": "https://www.banffjaspercollection.com/brewster-express/schedule/"
+      }
+    },
+    "snow_driving_risk": "low",
+    "car_required_after_arrival": false,
+    "route_polyline_source": "source-backed schedule endpoints",
+    "booking_or_info_url": "https://www.banffjaspercollection.com/brewster-express/schedule/",
+    "provenance": [
+      {
+        "source_type": "operator_schedule",
+        "source_name": "Brewster Express winter schedule",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Schedule supports duration/route context; verify live departures.",
+        "source_url": "https://www.banffjaspercollection.com/brewster-express/schedule/"
+      },
+      {
+        "source_type": "tourism_reference",
+        "source_name": "Banff & Lake Louise Tourism getting here",
+        "confidence": "source_backed_range",
+        "freshness": "recent",
+        "retrieved_at": "2026-05-19T00:00:00.000Z",
+        "display_caveat": "Confirms Calgary International Airport and shuttle/transfer access.",
+        "source_url": "https://www.banfflakelouise.com/getting-here"
+      }
+    ],
+    "friction": {
+      "no_car_viability": "yes",
+      "booking_complexity": "medium",
+      "weather_risk": "medium",
+      "schedule_risk": "medium",
+      "duration_confidence": "sourced",
+      "source_status": "source-backed"
     }
   }
 ]
