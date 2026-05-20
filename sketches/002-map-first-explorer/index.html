@@ -1234,10 +1234,10 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
         </div>
         <div class="map-status small" data-map-status aria-live="polite">Japan focus: CTS gateway, Niseko/Rusutsu regions, Hirafu lodging, and CTS → Niseko shuttle selected.</div>
 
-        <div class="real-map-context" data-real-map-context aria-label="Live OpenStreetMap overlay of snowboard trip locations">
+        <div class="real-map-context" data-real-map-context aria-label="Live English map overlay of snowboard trip locations">
           <div class="real-map-callout small" data-real-map-summary><b>Real map overlay</b><span>Loading OpenStreetMap tiles and active trip markers…</span></div>
-          <div id="real-location-map" class="real-map-viewport" data-real-map-viewport role="img" aria-label="OpenStreetMap map with airports, resort regions, lodging zones, and transfer routes overlaid at their real coordinates"></div>
-          <div class="real-map-caption small"><b>Real geographic map context</b><span>Markers and route lines are plotted from the latitude/longitude on this page; OpenStreetMap tiles load at page view time. Costs and fares remain planning estimates unless marked source-backed.</span><a data-control-kind="navigation" href="https://www.openstreetmap.org/" target="_blank" rel="noopener">OpenStreetMap</a></div>
+          <div id="real-location-map" class="real-map-viewport" data-real-map-viewport role="img" aria-label="English-labeled map with airports, resort regions, lodging zones, and transfer routes overlaid at their real coordinates"></div>
+          <div class="real-map-caption small"><b>Real geographic map context</b><span>Markers and route lines are plotted from the latitude/longitude on this page; English map tiles load at page view time. Costs and fares remain planning estimates unless marked source-backed.</span><a data-control-kind="navigation" href="https://www.openstreetmap.org/" target="_blank" rel="noopener">OpenStreetMap</a></div>
         </div>
 
         <div class="schematic-stage" data-schematic-stage aria-label="Schematic comparison layer kept separate from real map">
@@ -1672,9 +1672,10 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       if(!container || typeof L === 'undefined') return false;
       if(realMapInstance) return true;
       realMapInstance = L.map(container, {scrollWheelZoom:false, worldCopyJump:true});
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
         maxZoom: 18,
-        attribution: '&copy; <a data-control-kind="navigation" href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+        subdomains: 'abcd',
+        attribution: '&copy; <a data-control-kind="navigation" href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> &copy; <a data-control-kind="navigation" href="https://carto.com/attributions">CARTO</a>'
       }).addTo(realMapInstance);
       realMapLayers = L.layerGroup().addTo(realMapInstance);
       return true;
@@ -1709,7 +1710,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       if(summary){
         const routeName = routeDetails[routeId]?.title || routeId;
         const markerLabels = activeMarkers.map((m)=>m.dataset.shortLabel || m.dataset.markerId).join(', ');
-        summary.textContent = `${routeName}: ${markerLabels} plotted on live OpenStreetMap tiles from page coordinates.`;
+        summary.textContent = `${routeName}: ${markerLabels} plotted on English-oriented map tiles from page coordinates.`;
       }
     }
     function selectedList(value){ return (value || '').split(',').map((x)=>x.trim()).filter(Boolean); }
