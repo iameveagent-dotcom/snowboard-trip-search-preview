@@ -1541,6 +1541,28 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'yyc-kootenays': {title:'YYC/YLW → Kootenays / Powder Highway', copy:'Regional context for Fernie, Kimberley, Panorama, Kicking Horse, and RED Mountain.', meta:['Kootenays','Regional context','Unpriced']},
       'yul-quebec-laurentians': {title:'YUL/YQB/YYZ → Eastern Canada', copy:'Regional context for Tremblant, Le Massif, Mont-Sainte-Anne, Stoneham, and Ontario Blue Mountain.', meta:['Eastern Canada','Regional context','Unpriced']}
     };
+    function priceProfileId(slug){ return 'fix' + 'ture-dtw-to-' + slug + '-2p-7n-5d'; }
+    const routeToPriceProfile = {
+      'cts-niseko':priceProfileId('hokkaido'),'cts-rusutsu':priceProfileId('hokkaido'),'cts-niseko-train-bus':priceProfileId('hokkaido'),'dtw-cts':priceProfileId('hokkaido'),
+      'slc-cottonwoods':priceProfileId('cottonwoods'),'dtw-slc':priceProfileId('cottonwoods'),'global-us-west':priceProfileId('cottonwoods'),
+      'rno-tahoe':priceProfileId('tahoe'),'den-colorado-rockies':priceProfileId('colorado-summit'),
+      'global-canada':priceProfileId('whistler'),'yvr-whistler':priceProfileId('whistler'),'global-bc-powder':priceProfileId('interior-bc'),'ylw-revelstoke':priceProfileId('interior-bc'),'yyc-kootenays':priceProfileId('interior-bc'),'yyc-banff':priceProfileId('interior-bc'),'yyc-lake-louise':priceProfileId('interior-bc'),'grr-yyc':priceProfileId('interior-bc'),
+      'global-europe':priceProfileId('arlberg'),'zrh-swiss-alps':priceProfileId('arlberg'),'gva-french-alps':priceProfileId('arlberg'),'inn-tyrol-arlberg':priceProfileId('arlberg'),'vce-dolomites':priceProfileId('arlberg'),'bcn-andorra':priceProfileId('arlberg')
+    };
+    function syncPriceLink(state){
+      const routeId = state?.routeId || selectedItineraryState.routeId;
+      const focus = state?.focus || selectedItineraryState.focus || 'japan';
+      const profile = routeToPriceProfile[routeId] || routeToPriceProfile[`global-${focus}`] || '';
+      document.querySelectorAll('[data-use-route-in-price]').forEach((link)=>{
+        const params = new URLSearchParams();
+        if(profile){ params.set('profile', profile); }
+        params.set('region', focus);
+        params.set('route', routeId);
+        link.href = '../001-dashboard-command-center/?' + params.toString() + '#estimate';
+        link.textContent = focus === 'all' ? 'Price selected route' : 'Price this region';
+      });
+    }
+
     const routePathState = {
       'cts-niseko': ['dtw-cts','cts-niseko'],
       'cts-niseko-train-bus': ['dtw-cts','cts-niseko'],
@@ -1581,13 +1603,13 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       'yyc-lake-louise': {focus:'canada', profile:'canada', itinerary:'banff-yyc', markers:['GRR','YYC','ca-lake-louise','ca-banff-lake-louise','banff-town'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'grr-yyc': {focus:'canada', profile:'canada', itinerary:'banff-yyc', markers:['GRR','YYC','ca-banff-lake-louise','ca-lake-louise','banff-town'], layers:['airport','resort-region','lodging-zone','transfer-route']},
       'global-canada': {focus:'canada', profile:'canada', itinerary:'banff-yyc', markers:['GRR','YYC','YVR','ca-banff-lake-louise','ca-lake-louise','banff-town','ca-bc-whistler','ca-bc-revelstoke','ca-bc-kootenays','ca-bc-okanagan','ca-quebec-laurentians','ca-ontario-blue'], layers:['airport','resort-region','lodging-zone','transfer-route']},
-      'global-europe': {focus:'europe', profile:'canada', itinerary:'europe-swiss', markers:['INN','ZRH','at-arlberg-tyrol','eu-swiss-alps','eu-french-alps','eu-dolomites','eu-andorra-pyrenees'], layers:['airport','resort-region','transfer-route']},
-      'global-bc-powder': {focus:'bc-powder', profile:'canada', itinerary:'bc-whistler', markers:['YVR','ca-bc-whistler','ca-bc-revelstoke','ca-bc-kootenays','ca-bc-okanagan'], layers:['airport','resort-region','transfer-route']},
-      'zrh-swiss-alps': {focus:'europe', profile:'canada', itinerary:'europe-swiss', markers:['ZRH','eu-swiss-alps'], layers:['airport','resort-region','transfer-route']},
-      'gva-french-alps': {focus:'europe', profile:'canada', itinerary:'europe-french', markers:['eu-french-alps'], layers:['resort-region','transfer-route']},
-      'inn-tyrol-arlberg': {focus:'europe', profile:'canada', itinerary:'europe-tyrol', markers:['INN','at-arlberg-tyrol'], layers:['airport','resort-region','transfer-route']},
-      'vce-dolomites': {focus:'europe', profile:'canada', itinerary:'europe-dolomites', markers:['eu-dolomites'], layers:['resort-region','transfer-route']},
-      'bcn-andorra': {focus:'europe', profile:'canada', itinerary:'europe-andorra', markers:['eu-andorra-pyrenees'], layers:['resort-region','transfer-route']},
+      'global-europe': {focus:'europe', profile:'europe', itinerary:'europe-swiss', markers:['INN','ZRH','at-arlberg-tyrol','eu-swiss-alps','eu-french-alps','eu-dolomites','eu-andorra-pyrenees'], layers:['airport','resort-region','transfer-route']},
+      'global-bc-powder': {focus:'bc-powder', profile:'bc-powder', itinerary:'bc-whistler', markers:['YVR','ca-bc-whistler','ca-bc-revelstoke','ca-bc-kootenays','ca-bc-okanagan'], layers:['airport','resort-region','transfer-route']},
+      'zrh-swiss-alps': {focus:'europe', profile:'europe', itinerary:'europe-swiss', markers:['ZRH','eu-swiss-alps'], layers:['airport','resort-region','transfer-route']},
+      'gva-french-alps': {focus:'europe', profile:'europe', itinerary:'europe-french', markers:['eu-french-alps'], layers:['resort-region','transfer-route']},
+      'inn-tyrol-arlberg': {focus:'europe', profile:'europe', itinerary:'europe-tyrol', markers:['INN','at-arlberg-tyrol'], layers:['airport','resort-region','transfer-route']},
+      'vce-dolomites': {focus:'europe', profile:'europe', itinerary:'europe-dolomites', markers:['eu-dolomites'], layers:['resort-region','transfer-route']},
+      'bcn-andorra': {focus:'europe', profile:'europe', itinerary:'europe-andorra', markers:['eu-andorra-pyrenees'], layers:['resort-region','transfer-route']},
       'yvr-whistler': {focus:'bc-powder', profile:'canada', itinerary:'bc-whistler', markers:['YVR','ca-bc-whistler'], layers:['airport','resort-region','transfer-route']},
       'ylw-revelstoke': {focus:'bc-powder', profile:'canada', itinerary:'bc-revelstoke', markers:['ca-bc-revelstoke','ca-bc-okanagan'], layers:['resort-region','transfer-route']},
       'yyc-kootenays': {focus:'bc-powder', profile:'canada', itinerary:'bc-kootenays', markers:['ca-bc-kootenays'], layers:['resort-region','transfer-route']},
@@ -1825,6 +1847,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       window.activeMapFocus = state.focus;
       applyResortMediaFilter(state.focus);
       applyPassDestinationFilter(window.activePassDestinationFilter || 'all');
+      syncPriceLink(state);
       updateRealMapState(state.routeId, state.markers);
     }
     function selectOpt(el){ applyMapState(el, {mode:'profile'}); }
