@@ -324,7 +324,12 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       japan:'fixture-dtw-to-hokkaido-2p-7n-5d', niseko:'fixture-dtw-to-hokkaido-2p-7n-5d', rusutsu:'fixture-dtw-to-hokkaido-2p-7n-5d', hokkaido:'fixture-dtw-to-hokkaido-2p-7n-5d',
       usa:'fixture-dtw-to-cottonwoods-2p-7n-5d', 'salt-lake-cottonwoods':'fixture-dtw-to-cottonwoods-2p-7n-5d', cottonwoods:'fixture-dtw-to-cottonwoods-2p-7n-5d', 'summit-county-colorado':'fixture-dtw-to-colorado-summit-2p-7n-5d', colorado:'fixture-dtw-to-colorado-summit-2p-7n-5d', 'tahoe-north-south':'fixture-dtw-to-tahoe-2p-7n-5d', tahoe:'fixture-dtw-to-tahoe-2p-7n-5d',
       canada:'fixture-dtw-to-whistler-2p-7n-5d', 'whistler-blackcomb':'fixture-dtw-to-whistler-2p-7n-5d', whistler:'fixture-dtw-to-whistler-2p-7n-5d', 'revelstoke':'fixture-dtw-to-interior-bc-2p-7n-5d', 'big-white':'fixture-dtw-to-interior-bc-2p-7n-5d', 'interior-bc':'fixture-dtw-to-interior-bc-2p-7n-5d', 'banff-lake-louise':'fixture-dtw-to-interior-bc-2p-7n-5d',
-      austria:'fixture-dtw-to-arlberg-2p-7n-5d', europe:'fixture-dtw-to-arlberg-2p-7n-5d', 'austria-arlberg':'fixture-dtw-to-arlberg-2p-7n-5d', 'st-anton-arlberg':'fixture-dtw-to-arlberg-2p-7n-5d', 'arlberg':'fixture-dtw-to-arlberg-2p-7n-5d'
+      austria:'fixture-dtw-to-arlberg-2p-7n-5d', europe:'fixture-dtw-to-arlberg-2p-7n-5d', 'austria-arlberg':'fixture-dtw-to-arlberg-2p-7n-5d', 'austria-soelden':'fixture-dtw-to-arlberg-2p-7n-5d', 'austria-zillertal':'fixture-dtw-to-arlberg-2p-7n-5d', 'austria-ischgl':'fixture-dtw-to-arlberg-2p-7n-5d', 'austria-kitzbuehel':'fixture-dtw-to-arlberg-2p-7n-5d', 'st-anton-arlberg':'fixture-dtw-to-arlberg-2p-7n-5d', 'arlberg':'fixture-dtw-to-arlberg-2p-7n-5d',
+      switzerland:'fixture-dtw-to-arlberg-2p-7n-5d', 'switzerland-zermatt':'fixture-dtw-to-arlberg-2p-7n-5d', 'switzerland-verbier':'fixture-dtw-to-arlberg-2p-7n-5d', 'zermatt-matterhorn':'fixture-dtw-to-arlberg-2p-7n-5d', 'verbier-4-vall-es':'fixture-dtw-to-arlberg-2p-7n-5d', 'swiss-alps-valais':'fixture-dtw-to-arlberg-2p-7n-5d',
+      france:'fixture-dtw-to-arlberg-2p-7n-5d', 'france-chamonix':'fixture-dtw-to-arlberg-2p-7n-5d', 'france-val-disere-tignes':'fixture-dtw-to-arlberg-2p-7n-5d', 'chamonix-mont-blanc':'fixture-dtw-to-arlberg-2p-7n-5d', 'val-d-is-re-tignes':'fixture-dtw-to-arlberg-2p-7n-5d', 'french-alps':'fixture-dtw-to-arlberg-2p-7n-5d',
+      italy:'fixture-dtw-to-arlberg-2p-7n-5d', 'italy-cortina':'fixture-dtw-to-arlberg-2p-7n-5d', 'italy-val-gardena':'fixture-dtw-to-arlberg-2p-7n-5d', 'cortina-d-ampezzo':'fixture-dtw-to-arlberg-2p-7n-5d', 'val-gardena':'fixture-dtw-to-arlberg-2p-7n-5d', 'italian-dolomites':'fixture-dtw-to-arlberg-2p-7n-5d',
+      finland:'fixture-dtw-to-arlberg-2p-7n-5d', 'finland-levi':'fixture-dtw-to-arlberg-2p-7n-5d', 'finland-ruka':'fixture-dtw-to-arlberg-2p-7n-5d', 'levi-ski-resort':'fixture-dtw-to-arlberg-2p-7n-5d', 'ruka-ski-resort':'fixture-dtw-to-arlberg-2p-7n-5d', 'finnish-lapland':'fixture-dtw-to-arlberg-2p-7n-5d',
+      'jackson-hole-wyoming':'fixture-dtw-to-colorado-summit-2p-7n-5d', 'bend-mount-bachelor':'fixture-dtw-to-tahoe-2p-7n-5d'
     };
     function priceRegionContextForCard(card){
       const page = card.closest('.country-page');
@@ -332,7 +337,7 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
       const chip = card.querySelector('.chips .tag')?.textContent || card.dataset.regionCard || country;
       const region = card.dataset.regionCard || slugifyPriceRegion(chip) || country;
       const profile = regionToPriceProfile[region] || regionToPriceProfile[country] || '';
-      return {country, region, profile};
+      return {country, region, profile, label: chip};
     }
     function hydratePriceRegionLinks(){
       document.querySelectorAll('[data-price-region-link]').forEach(function(link){
@@ -342,8 +347,9 @@ html,body{max-width:100%;overflow-x:hidden}*{min-width:0}@media(max-width:640px)
         if(context.profile){ params.set('profile', context.profile); }
         params.set('region', context.region || context.country);
         params.set('country', context.country);
+        params.set('selectedRegionLabel', context.label || (context.region || context.country).replaceAll('-', ' '));
         link.href = '../001-dashboard-command-center/?' + params.toString() + '#estimate';
-        link.setAttribute('aria-label', 'Price ' + (context.region || context.country).replaceAll('-', ' ') + ' region');
+        link.setAttribute('aria-label', 'Price ' + (context.label || context.region || context.country).replaceAll('-', ' ') + ' region');
       });
     }
     function buildCountryTrip(country){
